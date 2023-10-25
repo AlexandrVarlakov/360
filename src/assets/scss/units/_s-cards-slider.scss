@@ -1,0 +1,28 @@
+.s-cards-slider__inner{
+    width: 100%;
+}
+
+
+.s-cards-slider__title-block{
+    
+
+    margin-bottom: 48px;
+
+    @media (min-width: 1024px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    
+}
+
+
+.s-cards-slider__right{
+    display: none;
+
+    @media (min-width: 1024px){
+        display: block;
+    }
+}

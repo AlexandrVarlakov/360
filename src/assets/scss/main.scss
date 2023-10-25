@@ -1,0 +1,326 @@
+@use "sass:math";
+@import 'functions';
+@import 'fonts-include/brutal-type';
+
+@mixin calculateResponsiveText($startBreakPoint, $endBreakPoint, $startValue, $finishValue ){
+	@media (min-width: $startBreakPoint){
+		font-size: calculateResponsiveValue( $startBreakPoint, $endBreakPoint, $startValue, $finishValue );
+		
+	}
+
+	@media (min-width: $endBreakPoint){
+		font-size: $finishValue;		
+	}
+}
+
+@mixin calculateResponsiveProperty($startBreakPoint, $endBreakPoint, $startValue, $finishValue, $property ){
+	@media (min-width: $startBreakPoint){
+		#{$property}: calculateResponsiveValue( $startBreakPoint, $endBreakPoint, $startValue, $finishValue );
+		
+	}
+
+	@media (min-width: $endBreakPoint){
+		#{$property}: $finishValue;
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--primary-color: rgb(68, 66, 66);
+}
+
+html{
+	
+	font-family: 'Brutal Type';
+	font-size: 16px !important;
+}
+
+body{
+	font-family: 'Brutal Type';
+	
+}
+
+
+a{
+	text-decoration: none;
+	outline: none;
+	transition: 300ms;
+}
+
+path{
+	transition: 300ms;
+}
+
+
+
+input, textarea{
+	font-family: inherit;
+	border: none;
+	background: #fff;
+	outline: none;
+}
+
+button{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	transition: 300ms;
+	font-family: 'Brutal Type';
+}
+
+address{
+	font-style: normal;
+}
+
+ul{
+	list-style: none;
+}
+
+.no-scroll{
+	overflow: hidden;
+}
+.section{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@include calculateResponsiveProperty(390px, 1920px, 1.25rem, 3.125rem, padding-left );
+	@include calculateResponsiveProperty(390px, 1920px, 1.25rem, 3.125rem, padding-right );
+}
+.first-section{
+	padding-top: 50px;
+    @include calculateResponsiveProperty(390px, 1920px, 3.125rem, 6.25rem, padding-top );
+}
+
+	
+.section-inner{
+	width: 100%;
+}
+
+body{
+	
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin-bottom: 30px;
+	@include calculateResponsiveProperty(390px, 1920px, 2rem, 6.25rem, row-gap );
+	@include calculateResponsiveProperty(390px, 1920px, 2rem, 6.25rem, margin-bottom );
+}
+
+.text-center{
+	text-align: center;
+}
+
+@import 'units/common/font-size';
+@import 'units/common/text-color';
+@import 'units/common/font-weight';
+@import 'units/common/offsets';
+.bg-lightblue{	
+	background: #F9F9F9;
+}
+
+
+
+.btn{
+	display: flex;
+	padding: 22px 32px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	
+	text-align: center;
+	font-family: 'Brutal Type';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 100%; /* 16px */
+	letter-spacing: 1.12px;
+	text-transform: uppercase; 
+
+	@media (min-width: 1024px){
+		padding: 28px 45px;
+	}
+}
+
+.btn.btn-darkgreen{
+	color: #fff;
+	background: #3F5452;
+	
+	&:hover{
+		background-color: #556B69;
+	}
+}
+
+
+.btn-mob-100{
+	width: 100%;
+	@media (min-width: 480px){
+		width: auto;
+	}
+}
+
+.b-radius{
+	border-radius: 10px;
+}
+
+.link-favorites{
+	width: 24px;
+	height: 24px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+
+
+	path{
+		fill: #fff;
+	}
+
+	&:hover{
+		path{
+			fill: #E7B05F;
+			stroke: #E7B05F;
+		}
+		.link-favorites__qty{
+			background-color: #1E1E1E;
+		}
+	}
+
+	@media (min-width: 1200px){
+		order: 1;
+	}
+
+}
+
+
+.is-favorite{
+
+}
+
+.add-to-favorite{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	z-index: 10;
+	width: 26px;
+	height: 26px;
+
+	&:hover{
+		path{
+			
+			stroke: #E7B05F;
+		}
+	}
+}
+
+
+.is-favorite{
+	.add-to-favorite{
+		path{			
+			stroke: #E7B05F;
+			fill: #E7B05F;
+		}
+	}
+}
+.realty-single{
+	
+	
+	.in-favorite {
+		display: none;
+	}
+	
+}
+.realty-single.is-favorite{
+	.no-favorite {
+		display: none;
+	}
+	
+		.in-favorite {
+			display: initial;
+		}
+		.rs-short-description__btn{
+			path{			
+				stroke: #E7B05F;
+				fill: #E7B05F;
+			}
+		}
+}
+.link-favorites__qty{
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	transition: 300ms;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(33%, -33%);
+	border-radius: 50%;
+	background-color: #E7B05F;
+	
+
+	
+	text-align: center;	
+	font-size: 12px;	
+	font-weight: 500;
+	line-height: 100%; /* 14px */
+}
+
+
+
+.part-number{
+	color: #1E1E1E;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 100%; /* 16px */
+	letter-spacing: 0.16px;
+	text-transform: uppercase;
+	opacity: .2;
+	@include calculateResponsiveProperty(390px, 1920px, 1rem, 2.8125rem, font-size );
+}
+
+label{
+	user-select: none
+}
+
+@import 'units/header';
+@import 'units/footer';
+@import 'units/menu';
+@import 'units/title-section';
+@import 'units/s-about';
+@import 'units/s-branch';
+@import 'scrolling-tabs.scss';
+@import 'units/s-cards-slider';
+@import 'units/realty-card';
+@import 'units/s-attractive';
+@import 'units/s-catalog-form';
+@import 'units/s-top-consultation';
+@import 'units/modal';
+@import 'units/s-areas-list';
+@import 'units/s-catalog';
+@import 'units/breadcrumbs';
+@import 'units/filter-form';
+@import 'units/combo-select';
+@import 'units/realty-single';
+@import 'units/blog';
+@import 'units/article';
+@import 'units/single-area';

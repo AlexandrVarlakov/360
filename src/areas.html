@@ -1,0 +1,104 @@
+@@include('templates/header.html')
+<main>
+    <section class="section s-areas-list first-section">
+        <div class="s-areas-list__inner">
+            <div class="s-areas-list__title-block">
+                <p class="text-1 text-center">Откройте для себя Дубаи</p>
+                <h1 class="title-lg text-center">Районы Дубая</h1>
+                <p class="text-1 text-center">Выберите лучший район для проживания
+                    с необходимой вам инфраструктурой.</p>
+            </div>
+
+
+            <div class="areas-list">
+                <a class="area-item" href="area-dubai-islands.html">
+                    <div class="area-item__img">
+                        <img src="assets/img/areas/1.jpg" alt="" class="">
+                    </div>
+                    <div class="area-item__name">
+                        <span class="title">Dubai Islands</span>
+                        <img src="assets/img/icons/areas-arrow.svg" alt=""> 
+                    </div>
+                </a>
+
+                <a class="area-item" href="area-single.html">
+                    <div class="area-item__img">
+                        <img src="assets/img/areas/2.jpg" alt="" class="">
+                    </div>
+                    <div class="area-item__name">
+                        <span class="title">Umm Suqeim 1</span>
+                        <img src="assets/img/icons/areas-arrow.svg" alt=""> 
+                    </div>
+                </a>
+
+                <a class="area-item" href="area-single.html">
+                    <div class="area-item__img">
+                        <img src="assets/img/areas/3.jpg" alt="" class="">
+                    </div>
+                    <div class="area-item__name">
+                        <span class="title">Downtown Jebel Ali</span>
+                        <img src="assets/img/icons/areas-arrow.svg" alt=""> 
+                    </div>
+                </a>
+
+                <a class="area-item" href="area-single.html">
+                    <div class="area-item__img">
+                        <img src="assets/img/areas/4.jpg" alt="" class="">
+                    </div>
+                    <div class="area-item__name">
+                        <span class="title">Dubai Healthcare City</span>
+                        <img src="assets/img/icons/areas-arrow.svg" alt=""> 
+                    </div>
+                </a>
+
+                <a class="area-item" href="area-single.html">
+                    <div class="area-item__img">
+                        <img src="assets/img/areas/5.jpg" alt="" class="">
+                    </div>
+                    <div class="area-item__name">
+                        <span class="title">Jumeirah</span>
+                        <img src="assets/img/icons/areas-arrow.svg" alt=""> 
+                    </div>
+                </a>
+
+                <a class="area-item" href="area-single.html">
+                    <div class="area-item__img">
+                        <img src="assets/img/areas/6.jpg" alt="" class="">
+                    </div>
+                    <div class="area-item__name">
+                        <span class="title">Jumeirah</span>
+                        <img src="assets/img/icons/areas-arrow.svg" alt=""> 
+                    </div>
+                </a>
+            </div>
+
+            <div class="download-more-areas-block">
+                
+                <button class="download-more-areas title">ПОКАЗАТЬ ЕЩЁ 12 ИЗ 21</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section s-catalog-form" id="catalog">
+        <div class="s-catalog-form__inner b-radius bg-lightblue">
+            <div class="s-catalog-form__text-block">
+                <h2 class="title-lg">Получить актуальный<br> каталог недвижимости</h2>
+                <p class="text-1">Мы не присылаем спам, отписаться можно в любое время</p>
+            </div>
+            <form class="s-catalog-form__form" action="script.name">
+                <div class="s-catalog-form__input-wrap">
+                    <input type="text" class="input with-icon" id="inp-1" placeholder="Введите почту или телефона" required minlength="8" name="contact">
+                    <p class="form-error">Поле не может быть пустым</p>
+                    <label for="inp-1" class="s-catalog-form__icon-label">
+                        <img src="assets/img/icons/pdf.svg" alt="" width="34" height="34">
+                    </label>
+                </div>
+                <div class="s-catalog-form__submit-wrap">
+                    <button class="btn btn-darkgreen">Получить каталог</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+@@include('templates/footer.html')

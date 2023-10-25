@@ -1,0 +1,37 @@
+
+.f-single-area{
+    padding-top: 50px;
+    @include calculateResponsiveProperty(390px, 1920px, 3.125rem, 6.25rem, padding-top );
+    .text-1{
+        max-width: 690px;
+    }
+}
+
+.f-single-area__inner{
+    width: 100%;
+}
+
+.single-areas-banner{
+    position: relative;
+    max-width: 100%;
+    
+    height: 450px;
+    
+    @include calculateResponsiveProperty(390px, 1024px, 28.125rem, 37.5rem, height );
+
+    img{
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: translate(-50%, 0);
+    }
+}
+
+.sa-info {
+}
+.sa-info__item {
+}

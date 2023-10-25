@@ -1,0 +1,22 @@
+.text-lightgray{
+	color: #9A9AB1;
+}
+
+.text-white{
+	color: #fff;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+.text-transform-none{
+	text-transform: none;
+}
+.text-opacity{
+	opacity: 0.5;
+}
+.link-dark{
+	color: #1E1E1E;
+	&:hover{
+		color: #E7B05F;
+	}
+}

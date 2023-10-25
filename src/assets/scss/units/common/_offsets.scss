@@ -1,0 +1,54 @@
+/*break-points*/
+
+$lg: 992px;
+
+
+$break-points: (
+  lg: $lg,
+);
+
+
+$offsets:(
+    5: 5px, //0
+    10: 10px, //4
+    15: 15px, // 8
+    20: 20px, // 12 
+    25: 25px, // 16
+    30: 30px, // 20
+    35: 35px, // 24
+    40: 40px, //32
+    45: 45px, // 40
+    50: 50px, // 48
+   
+);
+@each $number, $offset in $offsets {
+
+    //margin-bottom
+    .mb-#{$number}{
+        margin-bottom: $offset ;
+    }
+    
+}
+
+@each $bp-name, $break-point in $break-points {
+    @each $number, $offset in $offsets {
+        
+        //margin-bottom
+        .mb-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                margin-bottom: $offset ;
+            }
+            
+        }
+    }
+}
+
+.block-margin-bottom{
+    margin-bottom: 30px;
+    @include calculateResponsiveProperty(390px, 1920px, 1.875rem, 3.125rem, margin-bottom );
+}
+    
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}

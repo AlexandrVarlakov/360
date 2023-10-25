@@ -1,0 +1,1361 @@
+@@include('templates/header.html')
+    <main>
+        <section class="title-section">
+            <div class="title-section__inner">
+                <picture>
+                    <source srcset="assets/img/index.jpg" media="(min-width: 768px)" />                    
+                    <img src="assets/img/index-mob.jpg" alt="" class="title-section__bg">
+                </picture>
+                
+
+
+                <div class="title-section__content">
+                    <h1 class="title-lg text-center">Высококачественная недвижимость от ведущих застройщиков</h1>
+                    <p class="text-1 text-center">представляющих лучшие проекты в Дубае.</p>
+
+                    <a href="#catalog" class="btn btn-darkgreen btn-mob-100" >Скачать каталог</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section s-cards-slider">
+            <div class="s-cards-slider__inner">
+                <div class="s-cards-slider__title-block">
+                    <div class="s-cards-slider__left">
+                        <h2 class="title-lg">Лучше предложения</h2>
+                    </div>
+                    <div class="s-cards-slider__right">
+                        <button class="btn btn-darkgreen" data-hystmodal="#feedback-modal">получить консультацию</button>
+                    </div>
+                </div>
+                <div class="swiper realty-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
+                            <div class="realty-card">
+                                <button class="add-to-favorite fvw-realty-card">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </button>
+                                <div class="realty-card__img-block">
+                                    <div class="realty-card__img-block--inner">
+                                        <div class="swiper realty-gallery-swiper">
+                                            <div class="swiper-wrapper">
+                                                <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-17">
+                                                    <img src="assets/img/gallery/1.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-17">
+                                                    <img src="assets/img/gallery/2.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-18">
+                                                    <img src="assets/img/gallery/3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="realty-gallery-swiper__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="realty-card__body">
+                                    <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                    <div class="realty-card__description">
+                                        <span class="realty-card__type">Apartment</span>
+                                        <span class="realty-card__location">The Address Beach Resort</span>
+                                    </div>
+
+                                    <div class="realty-card__options">
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            3
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            4
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            1 939 sq.ft
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="realty-card__footer">
+                                    <p class="realty-card__price h4">$2.565.000</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="realty-card">
+                                <button class="add-to-favorite fvw-realty-card">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </button>
+                                <div class="realty-card__img-block">
+                                    <div class="realty-card__img-block--inner">
+                                        <div class="swiper realty-gallery-swiper">
+                                            <div class="swiper-wrapper">
+                                                <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-19">
+                                                    <img src="assets/img/gallery/1.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-19">
+                                                    <img src="assets/img/gallery/2.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-19">
+                                                    <img src="assets/img/gallery/3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="realty-gallery-swiper__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="realty-card__body">
+                                    <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                    <div class="realty-card__description">
+                                        <span class="realty-card__type">Apartment</span>
+                                        <span class="realty-card__location">The Address Beach Resort</span>
+                                    </div>
+
+                                    <div class="realty-card__options">
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            3
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            4
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            1 939 sq.ft
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="realty-card__footer">
+                                    <p class="realty-card__price h4">$2.565.000</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="realty-card">
+                                <button class="add-to-favorite fvw-realty-card">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </button>
+                                <div class="realty-card__img-block">
+                                    <div class="realty-card__img-block--inner">
+                                        <div class="swiper realty-gallery-swiper">
+                                            <div class="swiper-wrapper">
+                                                <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-20">
+                                                    <img src="assets/img/gallery/1.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-20">
+                                                    <img src="assets/img/gallery/2.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-20">
+                                                    <img src="assets/img/gallery/3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="realty-gallery-swiper__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="realty-card__body">
+                                    <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                    <div class="realty-card__description">
+                                        <span class="realty-card__type">Apartment</span>
+                                        <span class="realty-card__location">The Address Beach Resort</span>
+                                    </div>
+
+                                    <div class="realty-card__options">
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            3
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            4
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            1 939 sq.ft
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="realty-card__footer">
+                                    <p class="realty-card__price h4">$2.565.000</p>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="realty-card">
+                                <button class="add-to-favorite fvw-realty-card">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </button>
+                                <div class="realty-card__img-block">
+                                    <div class="realty-card__img-block--inner">
+                                        <div class="swiper realty-gallery-swiper">
+                                            <div class="swiper-wrapper">
+                                                <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-21">
+                                                    <img src="assets/img/gallery/1.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-21">
+                                                    <img src="assets/img/gallery/2.jpg" alt="">
+                                                </a>
+                                                <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-21">
+                                                    <img src="assets/img/gallery/3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="realty-gallery-swiper__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="realty-card__body">
+                                    <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                    <div class="realty-card__description">
+                                        <span class="realty-card__type">Apartment</span>
+                                        <span class="realty-card__location">The Address Beach Resort</span>
+                                    </div>
+
+                                    <div class="realty-card__options">
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            3
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            4
+                                        </div>
+                                        <div class="realty-card__option-item">
+                                            <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                            1 939 sq.ft
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="realty-card__footer">
+                                    <p class="realty-card__price h4">$2.565.000</p>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section s-about">
+            <div class="s-about-content">
+                <div class="s-about-content__left-block bg-lightblue">
+                    <div class="block-content">
+                        <h3 class="title-md">Постоянный спрос на аренду и покупку недвижимости</h3>
+
+                        <div class="results-block">
+                            <div class="results-block__num">306 353
+                                <img src="assets/img/ellipse-decor.svg" alt="" class="results-block__num-decor">
+                            </div>
+                            <p class="text-1">договора в январе-июне 2022 года.</p>
+                        </div>
+
+                        <div class="bottom-result">
+                            <p class="text-1">в первом полугодии 2022 года количество заключенных договоров об аренде увеличилось</p>
+                            <mark>более чем на 3 000</mark>
+                            <p class="text-1">по сравнению с аналогичным периодом прошлого года</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="s-about-content__right-block bg-lightblue">
+                    <h3 class="title-md">Лучшая система<br/>
+                        <span class="uderlined">
+                            налогообложения
+                            <img src="assets/img/title-underline.svg" alt="" class="line">
+                        </span><br/>
+                        в мире</h3>
+                    <p class="text-1">Репатриация доходов, минимальное налогообложение, простые процедуры получения виз, оформления торговыхсделок, регистрации и получения разрешений.</p>
+
+
+                    <div class="decoration-img">
+                        <img src="assets/img/about-decoration-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section s-branch">
+            <div class="s-branch__inner b-radius bg-lightblue">
+                <div class="s-branch__text-block text-block-1">
+                    <h2 class="title-lg">Развитая<br />туристическая<br />отрасль</h2>
+                </div>
+                
+
+                <div class="s-branch__round">
+                    <div class="s-branch__round--inner">
+                        <img src="assets/img/result-img.png" alt="">
+                    </div>
+                </div>
+
+                <div class="s-branch__text-block text-block-2">
+                    <p class="text-3">В течение 8 месяцев 2022 года отдохнули<br/>в Дубае 395 тыс. граждан России, что</p>
+                    <h3 class="title-md">на 68% больше</h3>
+                    <p class="text-3">чем за аналогичный период 2021 года.</p>
+                </div>
+
+                <div class="s-branch__text-block text-block-3">
+                    <p class="text-3">За период июнь-август 2022 года<br/>количество туристов, составило</p>
+                    <h3 class="title-md">9,12 млн</h3>
+                    <p class="text-3">что в 3 раза превышает показатель<br/>прошлого года (3,23 млн).</p>
+                </div>
+
+                <div class="s-branch__text-block text-block-4">
+                    <p class="text-3">Россия заняла</p>
+                    <h3 class="title-md">5 место</h3>
+                    <p class="text-3">среди стран мира по числу гостей.</p>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="section s-cards-slider">
+            <div class="s-cards-slider__inner">
+                <div class="s-cards-slider__title-block">
+                    <div class="s-cards-slider__left">
+                        <h2 class="title-lg">Недвижимость off-plan Дубая</h2>
+    
+                        <div class="scrolling-tabs realty-tabs" data-sheets-container="#sheets-container-1">
+                            <div class="scrolling-tabs-wrapper ">
+                                <button class="scrolling-tab " data-target="#sheet-1">Пентхаусы</button>
+                                <button class="scrolling-tab " data-target="#sheet-2">Квартиры</button>
+                                <button class="scrolling-tab "  data-target="#sheet-3">Таунхаусы</button>
+                                <button class="scrolling-tab " data-target="#sheet-4">Виллы</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-cards-slider__right">
+                        <button class="btn btn-darkgreen" data-hystmodal="#feedback-modal">получить консультацию</button>
+                    </div>
+                </div>
+    
+                <div id="sheets-container-1" >
+                    <div class="s-sheet active" id="sheet-1">
+                        <div class="swiper realty-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-1">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-1">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-1">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-2">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-2">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-2">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-3">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-3">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-3">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-4">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-4">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-4">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+    
+                    </div>
+
+                    <div class="s-sheet " id="sheet-2">
+                        <div class="swiper realty-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-4">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-4">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-4">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-5">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-5">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-5">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-6">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-6">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-6">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-7">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-7">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-7">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="s-sheet " id="sheet-3">
+                        <div class="swiper realty-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-8">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-8">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-8">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-9">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-9">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-9">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-10">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-10">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-10">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-11">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-11">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-11">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="s-sheet " id="sheet-4">
+                        <div class="swiper realty-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-12">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-12">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-12">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-13">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-13">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-13">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-14">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-14">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-14">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="realty-card">
+                                        <button class="add-to-favorite fvw-realty-card">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </button>
+                                        <div class="realty-card__img-block">
+                                            <div class="realty-card__img-block--inner">
+                                                <div class="swiper realty-gallery-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-15">
+                                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-15">
+                                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                                        </a>
+                                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-15">
+                                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="realty-gallery-swiper__pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="realty-card__body">
+                                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                                            <div class="realty-card__description">
+                                                <span class="realty-card__type">Apartment</span>
+                                                <span class="realty-card__location">The Address Beach Resort</span>
+                                            </div>
+
+                                            <div class="realty-card__options">
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    3
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    4
+                                                </div>
+                                                <div class="realty-card__option-item">
+                                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                                    1 939 sq.ft
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="realty-card__footer">
+                                            <p class="realty-card__price h4">$2.565.000</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </section>
+
+
+
+        <section class="section s-attractive">
+            <div class="s-attractive__inner b-radius bg-lightblue">
+                <div class="s-attractive__text-block">
+                    <h2 class="title-lg">Откройте для себя Дубаи</h2>
+                    <div>
+                        <div>
+                            <p class="text-1">Выберите лучший район для 
+                                проживания с необходимой вам
+                                инфраструктурой.</p>
+                            <p class="text-1">Узнайте больше об удобствах
+                                районов Дубая.</p>
+                        </div>
+
+                        <div class="s-attractive__button-wrap">
+                            <a class="btn btn-darkgreen btn-mob-100" href="areas.html">Обзор районов</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="s-attractive__img-block">
+                    <div class="s-attractive__img">
+                        <img src="assets/img/attaractive.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section s-top-consultation">
+            <div class="s-top-consultation__inner">
+                <div class="s-top-consultation__block block-1">
+                    <h2 class="title-lg text-white">Консультация<br/>
+                        с Топ Брокером</h2>
+                    <p class="text-1 text-white">Наши эксперты помогут
+                        выбрать Вам лучшее.</p>
+                    <p class="text-1 text-white">Вы получите полную информацию
+                        об интересующем вас объекте и
+                        доступных вариантах планировок.</p>
+                </div>
+                <div class="s-top-consultation__block block-2">
+                    <button class="btn btn-darkgreen btn-mob-100" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                </div>
+                <div class="s-top-consultation__block block-3">
+                    <h2 class="title-lg text-white">Иван Меркулов</h2>
+                    <p class="text-1 text-white">Главный эксперт Trust Real Estate
+                        по инвестициям в недвижимость</p>
+                </div>
+                <div class="s-top-consultation__block block-4">
+                    <a href="tel:+971502246756" class="title-lg text-white tel">+9 715 022 467 56</a>
+                    <address ><span class="text-1 text-white">Office 1913, Al Manara Tower,<br/>
+                        Business Bay, Dubai, UAE</span>
+                        <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3155 1.92865C11.8413 -0.685023 17.4042 -0.63934 21.8875 2.04831C26.3267 4.79071 29.0248 9.68507 28.9997 14.95C28.8963 20.1805 26.0033 25.0971 22.3869 28.8978C20.2997 31.1014 17.9647 33.0499 15.4297 34.7036C15.1687 34.8537 14.8827 34.9541 14.5859 35C14.3003 34.9879 14.0222 34.904 13.7766 34.7559C9.90645 32.2712 6.51119 29.0995 3.75411 25.3935C1.44707 22.2999 0.136371 18.5624 2.41032e-06 14.6885C-0.00299495 9.41345 2.78973 4.54232 7.3155 1.92865ZM9.93101 16.8721C10.6923 18.7375 12.4893 19.9543 14.4829 19.9543C15.7889 19.9636 17.0443 19.4436 17.9695 18.5103C18.8946 17.5769 19.4126 16.3077 19.408 14.9854C19.4149 12.967 18.2194 11.1435 16.3796 10.3662C14.5397 9.58889 12.4185 10.0112 11.0064 11.4359C9.59425 12.8606 9.16972 15.0067 9.93101 16.8721Z" fill="white"/>
+                        </svg>
+                    </address>
+                </div>
+
+                <img src="assets/img/man.png" alt="" class="man">
+            </div>
+        </section>
+
+        <section class="section s-catalog-form" id="catalog">
+            <div class="s-catalog-form__inner b-radius bg-lightblue">
+                <div class="s-catalog-form__text-block">
+                    <h2 class="title-lg">Получить актуальный<br> каталог недвижимости</h2>
+                    <p class="text-1">Мы не присылаем спам, отписаться можно в любое время</p>
+                </div>
+                <form class="s-catalog-form__form" action="script.name">
+                    <div class="s-catalog-form__input-wrap">
+                        <input type="text" class="input with-icon" id="inp-1" placeholder="Введите почту или телефона" required minlength="8" name="contact">
+                        <p class="form-error">Поле не может быть пустым</p>
+                        <label for="inp-1" class="s-catalog-form__icon-label">
+                            <img src="assets/img/icons/pdf.svg" alt="" width="34" height="34">
+                        </label>
+                    </div>
+                    <div class="s-catalog-form__submit-wrap">
+                        <button class="btn btn-darkgreen">Получить каталог</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+@@include('templates/footer.html')
+
+    

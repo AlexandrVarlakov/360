@@ -1,0 +1,135 @@
+.s-areas-list{
+    
+}
+
+.s-areas-list__inner{
+    width: 100%;
+}
+
+.s-areas-list{
+    .title-lg{
+        margin: 10px 0;
+    }
+}
+
+.areas-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    padding-bottom: 40px;
+    @media (min-width: 640px){
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px 25px;
+
+        border-bottom: 1px solid rgba(176, 188, 194, 0.50);
+    }
+    @media (min-width: 1024px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px 25px;
+        padding-bottom: 70px;
+    }
+
+    
+}
+
+.s-areas-list__title-block{
+    margin-bottom: 50px;
+
+    @media (min-width: 1024px){
+        margin-bottom: 70px;
+    }
+}
+
+.area-item__img{
+    padding-bottom: 128.5714285%;
+    
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+
+    
+    @media (min-width: 1024px){
+        padding-bottom: 118.644067797%;
+        margin-bottom: 35px;
+    }
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: 4000ms;
+        
+    }
+}
+
+.area-item{
+    &:hover{
+        .area-item__img img{
+            transform: scale(1.1);
+            transition: 2000ms;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+}
+
+
+.area-item.appended{
+    opacity: 0;
+    transform:  translate(0, 10%) ;
+    animation: animationAreas 700ms forwards;
+}
+.realty-card.appended{
+    opacity: 0;
+    transform:  translate(0, 10%) ;
+    animation: animationAreas 700ms forwards;
+}
+.article.appended{
+    opacity: 0;
+    transform:  translate(0, 10%) ;
+    animation: animationAreas 700ms forwards;
+}
+
+@keyframes animationAreas {
+    to{
+        opacity: 1;
+        transform: translate(0, 0%);
+    }
+}
+    
+
+
+.area-item__name{
+    display: flex;
+    gap: 0 24px;
+    .title{
+        color: #1E1E1E;
+    }
+    img{
+        flex-shrink: 0;
+    }
+}
+
+.download-more-areas-block{
+    
+    
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 1024px){
+        padding-top: 50px;
+    }
+}
+
+.download-more-areas{
+    color: #1E1E1E;
+
+    &:hover{
+        color: #E7B05F;
+    }
+}
+

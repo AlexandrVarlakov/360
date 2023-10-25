@@ -1,0 +1,125 @@
+.footer{
+    background-color: #F7F7FA;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media (min-width: 1024px){
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+}
+
+.footer__content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+
+    position: relative;
+    @media (min-width: 768px){
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+
+        gap: 32px 40px;
+    }
+}
+
+.footer__logo{
+    img{
+        width: 100px;
+        height: 100px;
+        mix-blend-mode: darken;
+    }
+
+    @media (min-width: 768px){
+        order: 1;
+    }
+}
+
+.footer-soc-links{
+    display: flex;
+    align-items: center;
+    gap: 0 36px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (min-width: 768px){
+        position: static;
+        order: 3;
+        margin-left: auto;
+    }
+
+    @media (min-width: 1024px){
+        margin-top: 12px;
+    }
+}
+
+.footer__address{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+
+    @media (min-width: 768px){
+        order: 3;
+    }
+
+    @media (min-width: 1024px){
+        align-items: flex-start;
+    }
+    
+}
+
+.footer__address-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (min-width: 1024px){
+        gap: 24px;
+        padding-top: 12px;
+    }
+}
+
+.footer__nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    @media (min-width: 768px){
+        order: 2;
+    }
+
+    @media (min-width: 1200px){
+        grid-template-columns: auto auto;
+        grid-gap: 65px;
+    }
+}
+
+.footer__menu-col{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.footer__copyright{
+    border-top: 1px solid #D5DFED;
+    padding: 20px 0;
+    @media (min-width: 768px){
+        width: 100%;
+        order: 4;
+    }
+    span{
+        display: block;
+
+        @media (min-width: 768px){
+            display: inline;
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.s-branch__inner{
+    padding: 40px 24px;
+    width: 100%;
+
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding );
+}
+
+.s-branch__inner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 36px;
+
+    @media (min-width: 768px){
+        position: relative;
+
+        height: 100vw;
+    }
+    @media (min-width: 1024px){
+        height: 46.09375vw;
+        min-height: 740px;
+    }
+    
+}
+
+.s-branch__round {
+    padding-bottom: 100%;
+    position: relative;
+
+    @media (min-width: 540px){
+        padding-bottom: 0;
+        width: 50vw;
+        height: 50vw;
+        margin: 0 auto;
+    }
+    @media (min-width: 768px){
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: 1024px){
+        width: 40.677083333vw;
+        height: 40.677083333vw;
+        
+    }
+}
+.s-branch__round--inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border: 1px solid #E7B05F;
+        border-radius: 50%;
+        padding: 12px;
+        @media (min-width: 1024px){
+            padding: 24px;
+        }
+    }
+}
+
+.s-branch__text-block{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+    @media (min-width: 768px){
+        max-width: 380px;
+        width: 100;
+        position: absolute;
+    }
+}
+
+.s-branch__text-block.text-block-1{
+    
+    @media (min-width: 768px){
+        left: 24px;
+        top: 40px;
+    }
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, left );
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, top );
+}
+.s-branch__text-block.text-block-2{
+    
+    @media (min-width: 768px){
+        right: 24px;
+        top: 40px;
+        & > *{
+            text-align: right;
+        }
+    }
+
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, right );
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, top );
+}
+.s-branch__text-block.text-block-3{
+    @media (min-width: 768px){
+        left: 24px;
+        bottom: 40px;
+    }
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, left );
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, bottom );
+}
+.s-branch__text-block.text-block-4{
+    
+    @media (min-width: 768px){
+        right: 24px;
+        bottom: 40px;
+        & > *{
+            text-align: right;
+        }
+    }
+
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, right );
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, bottom );
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Краткое описание страницы"/>
+    <title>Сайт</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/swiper.min.css"> 
+    <link rel="stylesheet" href="assets/css/fancybox.min.css"> 
+    <link rel="stylesheet" href="assets/css/hystmodal.min.css"> 
+    <link rel="stylesheet" href="assets/css/main.min.css">     
+    
+</head>
+<body>
+    <header class="header section">
+        <div class="header__content">
+            
+            <div class="header__left-block">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+
+                <nav class="desktop-menu">
+                    <ul class="desktop-menu__list">
+                        <li class="desktop-menu__item"><a href="sales.html" class="desktop-menu__link link-2 link-dark">Покупки</a></li>
+                        <li class="desktop-menu__item"><a href="rent.html" class="desktop-menu__link link-2 link-dark">Аренда</a></li>
+                        <li class="desktop-menu__item"><a href="new-buildings.html" class="desktop-menu__link link-2 link-dark">Новостройки</a></li>
+                        <li class="desktop-menu__item"><a href="areas.html" class="desktop-menu__link link-2 link-dark">Районы</a></li>                        
+                        <li class="desktop-menu__item"><a href="brokers.html" class="desktop-menu__link link-2 link-dark">Брокеры</a></li>
+                        <li class="desktop-menu__item"><a href="blog.html" class="desktop-menu__link link-2 link-dark">Блог</a></li>
+                        <li class="desktop-menu__item"><a href="about-us.html" class="desktop-menu__link link-2 link-dark">О нас</a></li>                        
+                    </ul>                    
+                </nav>
+            </div>
+
+            <div class="header__right-block">
+
+                
+
+
+                <div class="lang-switcher">
+                    <div class="lang-switcher__outer-block">
+                        <div class="lang-switcher__value-block">
+                            <span class="lang-switcher__icon-value">
+                                <img src="assets/img/icons/russian.svg" alt="">
+                            </span>
+                            <span class="lang-switcher__text-value">Русский</span>                            
+                        </div>                        
+                    </div>
+                    
+
+                    <ul class="lang-switcher__list">
+                        <li class="lang-switcher__item active">RU</li>
+                        <li class="lang-switcher__item">EN</li>
+                        <li class="lang-switcher__item">ES</li>
+                        <li class="lang-switcher__item">DE</li>
+                    </ul>
+                </div>
+
+
+                <a href="tel:+97144286160" class="header__contact link-dark">+971 4 428 61 60</a>
+
+
+                <a href="#" class="link-favorites">
+                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7484 19.3538C8.46358 18.0179 6.33801 16.4456 4.40978 14.6652C3.05414 13.3829 2.02211 11.8198 1.39273 10.0954C0.260151 6.75031 1.58308 2.92083 5.28539 1.78752C7.23117 1.19243 9.35626 1.53255 10.9959 2.70148C12.6361 1.53398 14.7605 1.19398 16.7064 1.78752C20.4087 2.92083 21.7411 6.75031 20.6086 10.0954C19.9792 11.8198 18.9471 13.3829 17.5915 14.6652C15.6633 16.4456 13.5377 18.0179 11.2529 19.3538L11.0054 19.5L10.7484 19.3538Z" stroke="#B0BCC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="link-favorites__qty">5</span>
+
+
+                </a>
+                
+                <button class="btn btn-darkgreen header__feed-btn" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                <div class="hamburger">
+                    <div class="hamburger__cross-line line-1"></div>
+                    <div class="hamburger__cross-line line-2"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="mob-menu-layer">
+        <div class="mob-menu">
+            
+            
+            <div class="mob-menu__content">
+                
+                
+                <nav class="mob-menu__nav">
+                    <ul class="mob-menu__list">                       
+
+                        <li class="mob-menu__item"><a href="sales.html" class="mob-menu__link  link-dark text-center">Покупки</a></li>
+                        <li class="mob-menu__item"><a href="rent.html" class="mob-menu__link  link-dark text-center">Аренда</a></li>
+                        <li class="mob-menu__item"><a href="new-buildings.html" class="mob-menu__link link-dark text-center">Новостройки</a></li>
+                        <li class="mob-menu__item"><a href="areas.html" class="mob-menu__link  link-dark text-center">Районы</a></li>                        
+                        <li class="mob-menu__item"><a href="brokers.html" class="mob-menu__link  link-dark text-center">Брокеры</a></li>
+                        <li class="mob-menu__item"><a href="blog.html" class="mob-menu__link link-dark text-center">Блог</a></li>
+                        <li class="mob-menu__item"><a href="about-us.html" class="mob-menu__link link-dark text-center">О нас</a></li>
+                    </ul>
+                </nav>
+
+                <div  class="mob-menu__bottom">
+                    <div class="mob-menu__tbottom">
+
+                        <div class="lang-switcher">
+                            <div class="lang-switcher__outer-block">
+                                <div class="lang-switcher__value-block">
+                                    <span class="lang-switcher__icon-value">
+                                        <img src="assets/img/icons/russian.svg" alt="">
+                                    </span>
+                                    
+                                </div>                        
+                            </div>
+                            
+        
+                            <ul class="lang-switcher__list">
+                                <li class="lang-switcher__item active">RU</li>
+                                <li class="lang-switcher__item">EN</li>
+                                <li class="lang-switcher__item">ES</li>
+                                <li class="lang-switcher__item">DE</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="mob-menu__soc-links">
+                            <a href="#" target="_blank"><img src="assets/img/icons/telegram.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="assets/img/icons/instagram.svg" alt=""></a>
+                        </div>
+                    </div>
+
+
+                    <div class="mob-menu__feed-btn-container">
+                        <button class="btn btn-darkgreen  btn-mob-100" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+<main>
+    <section class="section f-single-area">
+        <div class="section-inner">
+            <div class="block-margin-bottom">
+                <h1 class="title-lg mb-10 mb-lg-15 text-center mx-auto">Dubai Island</h1>
+                <p class="text-1 text-center mx-auto">Dubailand появился в 2003 году. Dubai Holding заявила о строительстве семейного развлекательного центра на юге от Palm Jumeirah и Downtown Dubai в районе Sheikh Mohammad bin Zayed Road.</p>
+            </div>
+            
+
+            <div class="single-areas-banner">
+                <img src="assets/img/areas/single/islands.jpg" alt="">
+
+                <div class="sa-info">
+                    <div class="sa-info__item">
+
+                    </div>
+                    <div class="sa-info__item">
+                        
+                    </div>
+                    <div class="sa-info__item">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer section">
+    <div class="footer__content">
+        <a href="index.html" class="footer__logo"><img src="assets/img/logo.png" alt=""></a>
+
+        <div class="footer__address">
+            <img src="assets/img/icons/location.svg" alt="">
+            <div class="footer__address-text">
+                <p class="text-2 text-lightgray">Адрес офиса в ОАЕ</p>
+                <address class="text-2">Office 1931, Al Manara Tower,<br/>
+                    Business Bay, Dubai, UAE</address>
+            </div>
+        </div>
+
+        <nav class="footer__nav">
+            <ul class="footer__menu-col">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Покупка</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Инвестирование</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Ипотека</a></li>
+            </ul>
+            <ul class="footer__menu-col">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Управление недвижимостью</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Недвижимость за криптовалюту</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Приемка</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__copyright text-center">
+            <span class="text-2">Все права защищены © 2023. </span>
+            <span class="text-2">Политика конфиденциальности</span>
+        </div>
+
+        <div class="footer-soc-links">
+            <a href="#" target="_blank"><img src="assets/img/icons/telegram.svg" alt=""></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/instagram.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<div class="hystmodal"  aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="modal show fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="callbackLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-hystclose>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.497173 0.497175C1.16007 -0.165723 2.23484 -0.165723 2.89774 0.497175L24.5028 22.1023C25.1657 22.7652 25.1657 23.8399 24.5028 24.5028C23.8399 25.1657 22.7652 25.1657 22.1023 24.5028L0.497174 2.89774C-0.165724 2.23484 -0.165725 1.16007 0.497173 0.497175Z" fill="#B0BCC2"/>
+                            <path d="M0.497173 24.5028C1.16007 25.1657 2.23484 25.1657 2.89774 24.5028L24.5028 2.89774C25.1657 2.23484 25.1657 1.16007 24.5028 0.497173C23.8399 -0.165724 22.7652 -0.165724 22.1023 0.497173L0.497174 22.1023C-0.165724 22.7652 -0.165725 23.8399 0.497173 24.5028Z" fill="#B0BCC2"/>
+                            </svg> 
+                        </svg>
+                    </button>
+
+                    <div class="modal-wrap">
+                        <div class="modal-body feedback-modal">
+                            
+                            <div class="feedback-modal__text-block">
+                                <h3 class="title-md">Наши эксперты помогут выбрать Вам лучшее.</h3>
+                                <p class="text-1">Вы получите полную информацию
+                                    об интересующем вас объекте и доступных
+                                    вариантах планировок.</p>
+                            </div>
+                            <div class="feedback-modal__img-block">
+                                <img src="assets/img/modal-bg.jpg" alt="">
+                            </div>
+
+                            <form action="script.url" class="feedback-modal__form">
+                                <div class="modal-input-wrap">
+                                    <input type="text" placeholder="Ваше имя" name="name" class="f-feedback-input " required>    
+                                    <p class="form-error">Поле не может быть пустым</p>                                    
+                                </div>
+                                <div class="modal-input-wrap">
+                                    <input type="tel" placeholder="Ваше телефон" name="phone" class="f-feedback-input " required minlength="16">
+                                    <p class="form-error">Поле не может быть пустым</p>                                    
+                                </div>
+                                <div class="modal-approve-text">Отправляя данную форму вы соглашаетесь
+                                    с <a href="privacy-politic.html" target="_blank">политикой конфиденциальности</a></div>
+                                <button class="btn btn-darkgreen">получить консультацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+<div class="hystmodal"  aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="modal show fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="callbackLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-hystclose>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.497173 0.497175C1.16007 -0.165723 2.23484 -0.165723 2.89774 0.497175L24.5028 22.1023C25.1657 22.7652 25.1657 23.8399 24.5028 24.5028C23.8399 25.1657 22.7652 25.1657 22.1023 24.5028L0.497174 2.89774C-0.165724 2.23484 -0.165725 1.16007 0.497173 0.497175Z" fill="#B0BCC2"/>
+                            <path d="M0.497173 24.5028C1.16007 25.1657 2.23484 25.1657 2.89774 24.5028L24.5028 2.89774C25.1657 2.23484 25.1657 1.16007 24.5028 0.497173C23.8399 -0.165724 22.7652 -0.165724 22.1023 0.497173L0.497174 22.1023C-0.165724 22.7652 -0.165725 23.8399 0.497173 24.5028Z" fill="#B0BCC2"/>
+                            </svg> 
+                        </svg>
+                    </button>
+
+                    <div class="modal-wrap">
+                        <div class="modal-body thanks-modal">
+                            <div class="thanks-modal__content">
+                                <a href="index.html" class="thanks-modal__logo">
+                                    <img src="assets/img/logo-thanks.png" alt="">
+                                </a>
+                                <h3 class="title-md text-white text-center">Заявка принята</h3>
+                                <p class="text-1 text-center text-white">Наш менеджер свяжется с вами
+                                    в ближайшее время и ответит
+                                    на все вопросы</p>
+                            </div>
+                            
+
+                            <div class="text-1 text-center text-white timer">Окно закроется автоматически через <span class="timer-count"></span> секунд</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+    <script src="assets/js/scrolling-tabs.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/hystmodal.min.js"></script>
+    <script src="assets/js/imask.js"></script>
+    <script src="assets/js/combo-select.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

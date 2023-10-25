@@ -1,0 +1,132 @@
+.realty-card{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    user-select: none;
+    position: relative;
+}
+
+.realty-card__img-block{
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.realty-card__body{
+    .title {
+        margin-bottom: 10px;
+        color:  #1E1E1E;;
+
+        
+    }
+}
+.realty-card__options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.realty-card__description {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.realty-card__type, .realty-card__location {
+    color: #1E1E1E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    letter-spacing: 0.18px;
+}
+.realty-card__location {
+    opacity: .5;
+}
+
+.realty-card__option-icon{
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+}
+
+.realty-card__option-item{
+    display: inline-flex;
+    align-items: center;
+    gap: 0 10px;
+    color: #1E1E1E;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 100%; /* 17px */
+    letter-spacing: 0.17px;
+}
+
+
+.realty-card__img-block--inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.realty-gallery-swiper {
+    position: relative;
+}
+
+.realty-gallery-swiper__pagination{
+    position: absolute;
+    z-index: 15;
+    display: flex;
+    gap: 0 8px;
+    padding: 0 8px;
+    justify-content: center;
+    .swiper-pagination-bullet{
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 10px;
+        opacity: 1;
+        max-width: 40px;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background-color: #E7B05F;
+    }
+}
+
+.realty-swiper{
+    .swiper-scrollbar{
+        margin-top: 40px;
+        height: 7px;
+        position: static;
+
+        @media (min-width: 1024px){
+            display: none;
+        }
+    }
+}
+
+
+.realty-card__footer{
+    padding-top: 35px;
+    border-top: 1px solid rgba(176, 188, 194, 0.50);
+}
+
+.realty-gallery-swiper{
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        cursor: zoom-in;
+    }
+
+    
+}

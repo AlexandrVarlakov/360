@@ -1,0 +1,131 @@
+
+.s-top-consultation__inner {
+    width: 100%;
+    border-radius: 10px;
+    background: #202929; 
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px 0;
+    @media (min-width: 1024px){
+        position: relative;
+        height: 480px;
+    }
+    @include calculateResponsiveProperty(1024px, 1920px, 30rem, 40.625rem, height);
+    .man{
+        width: calc(100% + 48px);
+        margin-left: -24px;
+
+        @media (min-width: 1024px){
+            width: 33.354vw;
+            position: absolute;
+            margin-left: 0;
+            left: 55%;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            
+        }
+        @media (min-width: 1440px){
+            
+            width: 46.354166666vw;
+        }
+    }
+
+    .btn{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @media (min-width: 1024px){
+        .btn{
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+    }
+}
+
+.s-top-consultation__block.block-1{
+    margin-bottom: 35px;
+    .title-lg{
+        margin-bottom: 24px;
+    }
+    .text-1:first-of-type{
+        margin-bottom: 16px;
+        @media (min-width: 1024px){
+            margin-bottom: 0px;
+        }
+    }
+
+    @media (min-width: 1024px){
+        position: absolute;
+    }
+    @include calculateResponsiveProperty(1024px, 1920px, 1.5rem, 4.375rem, left );
+    @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 4.375rem, top );
+    @include calculateResponsiveProperty(1024px, 1920px, 20rem, 30rem, max-width );
+}
+.s-top-consultation__block.block-2{
+    margin-bottom: 35px;
+    @media (min-width: 1024px){
+        margin-bottom: 0px;
+        position: absolute;
+    }
+    @include calculateResponsiveProperty(1024px, 1920px, 1.5rem, 4.375rem, left );
+    @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 4.375rem, bottom );
+}
+.s-top-consultation__block.block-3{
+    margin-bottom: 15px;
+    .title-lg{
+        margin-bottom: 15px;
+
+        
+    }
+    .text-1{
+        opacity: 0.5;
+    }
+
+    @media (min-width: 1024px){
+        margin-bottom: 35px;
+        position: absolute;
+        max-width: 300px;
+        & > *{
+            text-align: right
+        }
+    }
+    @include calculateResponsiveProperty(1024px, 1920px, 1.5rem, 4.375rem, right );
+    @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 4.375rem, top );
+}
+.s-top-consultation__block.block-4{
+    .tel{
+        font-weight: 500;
+
+        &:hover{
+            color: #E7B05F;
+        }
+        @include calculateResponsiveProperty(1024px, 1920px, 2rem, 2.8125rem, font-size );
+        @media (min-width: 1024px){
+            font-weight: 400;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+
+    address{
+        display: none;
+
+        @media (min-width: 1024px){
+            display: flex;
+            justify-content: flex-end;
+            gap: 0 20px;
+            align-items: center;
+            span{
+                opacity: .5;
+            }
+        }    
+    }
+    margin-bottom: 30px;
+    @media (min-width: 1024px){
+        margin-bottom: 0px;
+        position: absolute;
+    }
+    @include calculateResponsiveProperty(1024px, 1920px, 1.5rem, 4.375rem, right );
+    @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 4.375rem, bottom );
+}

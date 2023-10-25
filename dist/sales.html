@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Краткое описание страницы"/>
+    <title>Сайт</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/swiper.min.css"> 
+    <link rel="stylesheet" href="assets/css/fancybox.min.css"> 
+    <link rel="stylesheet" href="assets/css/hystmodal.min.css"> 
+    <link rel="stylesheet" href="assets/css/main.min.css">     
+    
+</head>
+<body>
+    <header class="header section">
+        <div class="header__content">
+            
+            <div class="header__left-block">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+
+                <nav class="desktop-menu">
+                    <ul class="desktop-menu__list">
+                        <li class="desktop-menu__item"><a href="sales.html" class="desktop-menu__link link-2 link-dark">Покупки</a></li>
+                        <li class="desktop-menu__item"><a href="rent.html" class="desktop-menu__link link-2 link-dark">Аренда</a></li>
+                        <li class="desktop-menu__item"><a href="new-buildings.html" class="desktop-menu__link link-2 link-dark">Новостройки</a></li>
+                        <li class="desktop-menu__item"><a href="areas.html" class="desktop-menu__link link-2 link-dark">Районы</a></li>                        
+                        <li class="desktop-menu__item"><a href="brokers.html" class="desktop-menu__link link-2 link-dark">Брокеры</a></li>
+                        <li class="desktop-menu__item"><a href="blog.html" class="desktop-menu__link link-2 link-dark">Блог</a></li>
+                        <li class="desktop-menu__item"><a href="about-us.html" class="desktop-menu__link link-2 link-dark">О нас</a></li>                        
+                    </ul>                    
+                </nav>
+            </div>
+
+            <div class="header__right-block">
+
+                
+
+
+                <div class="lang-switcher">
+                    <div class="lang-switcher__outer-block">
+                        <div class="lang-switcher__value-block">
+                            <span class="lang-switcher__icon-value">
+                                <img src="assets/img/icons/russian.svg" alt="">
+                            </span>
+                            <span class="lang-switcher__text-value">Русский</span>                            
+                        </div>                        
+                    </div>
+                    
+
+                    <ul class="lang-switcher__list">
+                        <li class="lang-switcher__item active">RU</li>
+                        <li class="lang-switcher__item">EN</li>
+                        <li class="lang-switcher__item">ES</li>
+                        <li class="lang-switcher__item">DE</li>
+                    </ul>
+                </div>
+
+
+                <a href="tel:+97144286160" class="header__contact link-dark">+971 4 428 61 60</a>
+
+
+                <a href="#" class="link-favorites">
+                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7484 19.3538C8.46358 18.0179 6.33801 16.4456 4.40978 14.6652C3.05414 13.3829 2.02211 11.8198 1.39273 10.0954C0.260151 6.75031 1.58308 2.92083 5.28539 1.78752C7.23117 1.19243 9.35626 1.53255 10.9959 2.70148C12.6361 1.53398 14.7605 1.19398 16.7064 1.78752C20.4087 2.92083 21.7411 6.75031 20.6086 10.0954C19.9792 11.8198 18.9471 13.3829 17.5915 14.6652C15.6633 16.4456 13.5377 18.0179 11.2529 19.3538L11.0054 19.5L10.7484 19.3538Z" stroke="#B0BCC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="link-favorites__qty">5</span>
+
+
+                </a>
+                
+                <button class="btn btn-darkgreen header__feed-btn" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                <div class="hamburger">
+                    <div class="hamburger__cross-line line-1"></div>
+                    <div class="hamburger__cross-line line-2"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="mob-menu-layer">
+        <div class="mob-menu">
+            
+            
+            <div class="mob-menu__content">
+                
+                
+                <nav class="mob-menu__nav">
+                    <ul class="mob-menu__list">                       
+
+                        <li class="mob-menu__item"><a href="sales.html" class="mob-menu__link  link-dark text-center">Покупки</a></li>
+                        <li class="mob-menu__item"><a href="rent.html" class="mob-menu__link  link-dark text-center">Аренда</a></li>
+                        <li class="mob-menu__item"><a href="new-buildings.html" class="mob-menu__link link-dark text-center">Новостройки</a></li>
+                        <li class="mob-menu__item"><a href="areas.html" class="mob-menu__link  link-dark text-center">Районы</a></li>                        
+                        <li class="mob-menu__item"><a href="brokers.html" class="mob-menu__link  link-dark text-center">Брокеры</a></li>
+                        <li class="mob-menu__item"><a href="blog.html" class="mob-menu__link link-dark text-center">Блог</a></li>
+                        <li class="mob-menu__item"><a href="about-us.html" class="mob-menu__link link-dark text-center">О нас</a></li>
+                    </ul>
+                </nav>
+
+                <div  class="mob-menu__bottom">
+                    <div class="mob-menu__tbottom">
+
+                        <div class="lang-switcher">
+                            <div class="lang-switcher__outer-block">
+                                <div class="lang-switcher__value-block">
+                                    <span class="lang-switcher__icon-value">
+                                        <img src="assets/img/icons/russian.svg" alt="">
+                                    </span>
+                                    
+                                </div>                        
+                            </div>
+                            
+        
+                            <ul class="lang-switcher__list">
+                                <li class="lang-switcher__item active">RU</li>
+                                <li class="lang-switcher__item">EN</li>
+                                <li class="lang-switcher__item">ES</li>
+                                <li class="lang-switcher__item">DE</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="mob-menu__soc-links">
+                            <a href="#" target="_blank"><img src="assets/img/icons/telegram.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="assets/img/icons/instagram.svg" alt=""></a>
+                        </div>
+                    </div>
+
+
+                    <div class="mob-menu__feed-btn-container">
+                        <button class="btn btn-darkgreen  btn-mob-100" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <main >
+        <section class="section s-catalog">
+            <div class="s-catalog__inner">
+                <div class="s-catalog__top">
+                    <nav class="breadcrumbs">
+                        <div class="breadcrumbs__inner">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                            <a  class="breadcrumbs__link">НЕДВИЖИМОСТЬ НА ПРОДАЖУ В ДУБАЕ</a>
+                        </div>
+                    </nav>
+    
+                    <div class="s-catalog__title-block">
+                        <h2 class="title-md">НЕДВИЖИМОСТЬ НА ПРОДАЖУ</h2>
+                    </div>
+    
+                    <form action="script.php" class="filter-form">
+                        <div class="filter-form__search-string-container">
+                            <div class="filter-form__search-string-wrap">
+                                <button >
+                                    <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-zoom-icon">
+                                        <path d="M21.3049 21.9286L26 26.5M24.9512 13.1905C24.9512 19.6469 19.5896 24.881 12.9756 24.881C6.36166 24.881 1 19.6469 1 13.1905C1 6.734 6.36166 1.5 12.9756 1.5C19.5896 1.5 24.9512 6.734 24.9512 13.1905Z" stroke="#9A9AB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </button>
+                                <input type="text" class="filter-form__search-string" id="filter-form__search-string" placeholder="Недвижимость или местоположение" >
+                            </div>
+    
+                            <div class="show-all-filters">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.53792 16.0351H1.00049M13.4613 3.96492H21M20.9999 16.0351C20.9999 17.6726 19.6564 19 17.9991 19C16.3418 19 14.9984 17.6726 14.9984 16.0351C14.9984 14.3964 16.3418 13.0702 17.9991 13.0702C19.6564 13.0702 20.9999 14.3964 20.9999 16.0351ZM1 3.96492C1 5.60361 2.34348 6.92983 4.00075 6.92983C5.65803 6.92983 7.00151 5.60361 7.00151 3.96492C7.00151 2.32743 5.65803 1 4.00075 1C2.34348 1 1 2.32743 1 3.96492Z" stroke="#9A9AB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                  
+                                
+                                <div class="show-all-filters__qty active">3</div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="filter-form__hr"></div>
+
+                        <p class="filter-form__search-results text-3 text-opacity text-uppercase fw-400">Найдено 115 предложений</p>
+
+
+                        <div class="filter-form__deep-filters">
+                            <div class="input-wrap">
+                                <p class="text-nav">Тип жилья</p>
+                                <div class="combo-select">
+                                    <div class="combo-select__outer-box">
+                                        <div class="combo-select__current-value">Apartments</div>
+                                        <div class="combo-select__arrow">
+                                            <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6L1 1" stroke="#B0BCC2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    <div class="combo-select__drop">
+                                        <div class="combo-select__drop--scroll">
+                                            <ul>
+                                                <li>                                                
+                                                    <label for="realty-type-1" class="combo-select__item-text">Apartments
+                                                        <input type="radio" name="realty-type" id="realty-type-1" data-value="Apartments" value="Apartments" class="combo-select__radio" >
+                                                    </label>
+                                                </li>
+                                                <li>                                                
+                                                    <label for="realty-type-2" class="combo-select__item-text">Villas
+                                                        <input type="radio" name="realty-type" id="realty-type-2" value="Villas" data-value="Villas" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+                                                <li>                                                
+                                                    <label for="realty-type-3" class="combo-select__item-text">Penthouses
+                                                        <input type="radio" name="realty-type" id="realty-type-3" value="Penthouses" data-value="Penthouses" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+                                                <li>                                                
+                                                    <label for="realty-type-4" class="combo-select__item-text">Townhouses
+                                                        <input type="radio" name="realty-type" id="realty-type-4" value="Townhouses" data-value="Townhouses" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+                                                <li>                                                
+                                                    <label for="realty-type-5" class="combo-select__item-text">Duplexes
+                                                        <input type="radio" name="realty-type" id="realty-type-5" value="Duplexes" data-value="Duplexes" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+                                                <li>                                                
+                                                    <label for="realty-type-6" class="combo-select__item-text">Hotel Apartments
+                                                        <input type="radio" name="realty-type" id="realty-type-6" value="Hotel Apartments" data-value="Hotel Apartments" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+                                                
+                                                <li>                                                
+                                                    <label for="realty-type-7" class="combo-select__item-text">Whole Buildings
+                                                        <input type="radio" name="realty-type" id="realty-type-7" value="Whole Buildings" data-value="Whole Buildings" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+        
+        
+                                                <li>                                                
+                                                    <label for="realty-type-8" class="combo-select__item-text">Short-Terms
+                                                        <input type="radio" name="realty-type" id="realty-type-8" value="Short-Terms" data-value="Short-Terms" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+        
+                                                <li>                                                
+                                                    <label for="realty-type-9" class="combo-select__item-text">Full Floor Properties
+                                                        <input type="radio" name="realty-type" id="realty-type-9" value="Full Floor Properties" data-value="Full Floor Properties" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+        
+                                                <li>                                                
+                                                    <label for="realty-type-10" class="combo-select__item-text">Half Floor Properties
+                                                        <input type="radio" name="realty-type" id="realty-type-10" value="Half Floor Properties" data-value="Half Floor Properties" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+        
+                                                <li>                                                
+                                                    <label for="realty-type-11" class="combo-select__item-text">Commercial Properties
+                                                        <input type="radio" name="realty-type" id="realty-type-11" value="Commercial Properties" data-value="Commercial Properties" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+        
+                                                <li>                                                
+                                                    <label for="realty-type-12" class="combo-select__item-text">Showrooms
+                                                        <input type="radio" name="realty-type" id="realty-type-12" value="Showrooms" data-value="Showrooms" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+        
+                                                <li>                                                
+                                                    <label for="realty-type-13" class="combo-select__item-text">Plots
+                                                        <input type="radio" name="realty-type" id="realty-type-13" value="Plots" data-value="Plots" class="combo-select__radio">
+                                                    </label>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="input-wrap">
+                                <p class="text-nav ">Количество комнат</p>
+
+                                <div class="combo-select" data-type="multi" data-placeholder="Кол-во комнат">
+                                    <div class="combo-select__outer-box">
+                                        <div class="combo-select__current-value"></div>
+                                        <div class="combo-select__arrow">
+                                            <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6L1 1" stroke="#B0BCC2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    <div class="combo-select__drop">
+                                        <div class="combo-select__drop--scroll">
+                                            <ul>
+                                                <li>                                                
+                                                    <label for="rooms-1" class="combo-select__item-text">
+                                                        <input type="checkbox" name="realty-type" id="rooms-1"  value="1" class="combo-select__checkbox" >
+                                                        <span>1</span>
+                                                    </label>
+                                                </li>
+                                                
+                                                <li>                                                
+                                                    <label for="rooms-2" class="combo-select__item-text">
+                                                        <input type="checkbox" name="realty-type" id="rooms-2"  value="2" class="combo-select__checkbox" >
+                                                        <span>2</span>
+                                                    </label>
+                                                </li>
+
+                                                <li>                                                
+                                                    <label for="rooms-3" class="combo-select__item-text">
+                                                        <input type="checkbox" name="realty-type" id="rooms-3"  value="3" class="combo-select__checkbox" >
+                                                        <span>3</span>
+                                                    </label>
+                                                </li>
+
+
+                                                <li>                                                
+                                                    <label for="rooms-4" class="combo-select__item-text">
+                                                        <input type="checkbox" name="realty-type" id="rooms-4"  value="4" class="combo-select__checkbox" >
+                                                        <span>4</span>
+                                                    </label>
+                                                </li>
+                                                
+                                                <li>                                                
+                                                    <label for="rooms-5" class="combo-select__item-text">
+                                                        <input type="checkbox" name="realty-type" id="rooms-5"  value="5" class="combo-select__checkbox" >
+                                                        <span>5</span>
+                                                    </label>
+                                                </li>
+
+                                                <li>                                                
+                                                    <label for="rooms-5plus" class="combo-select__item-text">
+                                                        <input type="checkbox" name="realty-type" id="rooms-5plus" data-value="5+" value="5+" class="combo-select__checkbox" >
+                                                        <span>5+</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                            <div class="type-deal-wrap">
+                                <p class="text-nav ">Вас интересует</p>
+
+                                <div class="type-deal">
+                                    <div class="type-deal__item">
+                                        <input type="radio" class="type-deal__radio" name="type-deal" id="type-deal-1" value="Аренда" >
+                                        <label for="type-deal-1" class="type-deal__label">Аренда</label>
+                                    </div>
+                                    <div class="type-deal__item">
+                                        <input type="radio" class="type-deal__radio" name="type-deal" id="type-deal-2" value="Покупка"> 
+                                        <label for="type-deal-2" class="type-deal__label">Покупка</label>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+
+                            <div class="filter-currency-container">
+                                <div class="filter-currency-block">
+                                    <p class="text-nav">Стоимость</p>
+                                    <div class="filter-currency-input-wrap"> 
+                                        <label for="filter-currency-min" class="filter-currency-label">от</label>
+                                        <input type="text" class="filter-currency-input" id="filter-currency-min" data-range="" data-default="0" value="0">
+                                    </div>
+                                    
+                                </div>
+                                <div class="filter-currency-block">
+                                    <div class="filter-currency-types">
+                                        <div class="currency-type">
+                                            <input type="radio" name="currency-type" id="currency-type-1" class="currency-type-radio" value="USD">
+                                            <label for="currency-type-1" class="currency-type-label">USD</label>
+                                        </div>
+                                        <div class="currency-type">
+                                            <input type="radio" name="currency-type" id="currency-type-2" class="currency-type-radio" value="RUB">
+                                            <label for="currency-type-2" class="currency-type-label">RUB</label>
+                                        </div>
+                                        <div class="currency-type">
+                                            <input type="radio" name="currency-type" id="currency-type-3" class="currency-type-radio" value="AED">
+                                            <label for="currency-type-3" class="currency-type-label">AED</label>
+                                        </div>
+                                        <div class="currency-type">
+                                            <input type="radio" name="currency-type" id="currency-type-4" class="currency-type-radio" value="EUR">
+                                            <label for="currency-type-4" class="currency-type-label text-nav-1">EUR</label>
+                                        </div>
+                                    </div>
+                                    <div class="filter-currency-input-wrap"> 
+                                        <label for="filter-currency-max" class="filter-currency-label">до</label>
+                                        <input type="text" class="filter-currency-input" id="filter-currency-max" data-range="" data-default="5000000" value="5000000">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-submit-wrap">
+                                <button class="btn btn-darkgreen">Поиск</button>
+                            </div>
+                        </div>
+
+
+                        <div class="filter-form__sort-wrap">
+                            <div class="combo-select">
+                                <div class="combo-select__outer-box">
+                                    <div class="combo-select__current-value">Сначала дорогие</div>
+                                    <div class="combo-select__arrow">
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6L1 1" stroke="#B0BCC2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                    </div>
+                                </div>
+                                <div class="combo-select__drop">
+                                    <div class="combo-select__drop--scroll">
+                                        <ul>
+                                            <li>                                                
+                                                <label for="order-by-1" class="combo-select__item-text">Сначала дорогие
+                                                    <input type="radio" name="order-by" id="order-by-1" data-value="Сначала дорогие" value="DESC price" class="combo-select__radio" data-default="" checked>
+                                                </label>
+                                            </li>
+
+                                            <li>                                                
+                                                <label for="order-by-2" class="combo-select__item-text">Сначала недорогие
+                                                    <input type="radio" name="order-by" id="order-by-2" data-value="Сначала недорогие" value="ASK price" class="combo-select__radio" >
+                                                </label>
+                                            </li>
+                                                                                      
+                                            <li>                                                
+                                                <label for="order-by-3" class="combo-select__item-text">Площадь по возрастанию
+                                                    <input type="radio" name="order-by" id="order-by-3" data-value="Площадь по возрастанию" value="ASK square" class="combo-select__radio" >
+                                                </label>
+                                            </li>
+
+                                            <li>                                                
+                                                <label for="order-by-4" class="combo-select__item-text">Площадь по убыванию
+                                                    <input type="radio" name="order-by" id="order-by-4" data-value="Площадь по убыванию" value="DESC square" class="combo-select__radio" >
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </form>
+                </div>
+                
+
+                <div class="realty-grid">
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-18">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+    
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-18">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+    
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-18">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+    
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-18">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+    
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-18">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+    
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-17">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-18">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+    
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+
+                    <div class="realty-card">
+                        <button class="add-to-favorite fvw-realty-card">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7484 21.8538C10.4636 20.5179 8.33801 18.9456 6.40978 17.1652C5.05414 15.8829 4.02211 14.3198 3.39273 12.5954C2.26015 9.25031 3.58308 5.42083 7.28539 4.28752C9.23117 3.69243 11.3563 4.03255 12.9959 5.20148C14.6361 4.03398 16.7605 3.69398 18.7064 4.28752C22.4087 5.42083 23.7411 9.25031 22.6086 12.5954C21.9792 14.3198 20.9471 15.8829 19.5915 17.1652C17.6633 18.9456 15.5377 20.5179 13.2529 21.8538L13.0054 22L12.7484 21.8538Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <div class="realty-card__img-block">
+                            <div class="realty-card__img-block--inner">
+                                <div class="swiper realty-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" href="assets/img/gallery/1.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/1.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/2.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/2.jpg" alt="">
+                                        </a>
+                                        <a class="swiper-slide" href="assets/img/gallery/3.jpg" data-fancybox="realty-gallery-19">
+                                            <img src="assets/img/gallery/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="realty-gallery-swiper__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="realty-card__body">
+                            <h3 class="title">SAFA TWO OT DAMAC PROPERTIES</h3>
+                            <div class="realty-card__description">
+                                <span class="realty-card__type">Apartment</span>
+                                <span class="realty-card__location">The Address Beach Resort</span>
+                            </div>
+
+                            <div class="realty-card__options">
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/floors.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    3
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/rooms.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    4
+                                </div>
+                                <div class="realty-card__option-item">
+                                    <img src="assets/img/icons/realty-options/square.svg" alt="" class="realty-card__option-icon" width="23" height="23">
+                                    1 939 sq.ft
+                                </div>
+                            </div>
+                        </a>
+                        <div class="realty-card__footer">
+                            <p class="realty-card__price h4">$2.565.000</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="download-more-realty-block">
+                    <button class="download-more-realty title">ПОКАЗАТЬ ЕЩЁ 12 ИЗ 21</button>
+                </div>
+                
+
+
+            </div>
+        </section>
+    </main>
+<footer class="footer section">
+    <div class="footer__content">
+        <a href="index.html" class="footer__logo"><img src="assets/img/logo.png" alt=""></a>
+
+        <div class="footer__address">
+            <img src="assets/img/icons/location.svg" alt="">
+            <div class="footer__address-text">
+                <p class="text-2 text-lightgray">Адрес офиса в ОАЕ</p>
+                <address class="text-2">Office 1931, Al Manara Tower,<br/>
+                    Business Bay, Dubai, UAE</address>
+            </div>
+        </div>
+
+        <nav class="footer__nav">
+            <ul class="footer__menu-col">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Покупка</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Инвестирование</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Ипотека</a></li>
+            </ul>
+            <ul class="footer__menu-col">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Управление недвижимостью</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Недвижимость за криптовалюту</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link text-2 link-dark">Приемка</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__copyright text-center">
+            <span class="text-2">Все права защищены © 2023. </span>
+            <span class="text-2">Политика конфиденциальности</span>
+        </div>
+
+        <div class="footer-soc-links">
+            <a href="#" target="_blank"><img src="assets/img/icons/telegram.svg" alt=""></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/instagram.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<div class="hystmodal"  aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="modal show fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="callbackLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-hystclose>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.497173 0.497175C1.16007 -0.165723 2.23484 -0.165723 2.89774 0.497175L24.5028 22.1023C25.1657 22.7652 25.1657 23.8399 24.5028 24.5028C23.8399 25.1657 22.7652 25.1657 22.1023 24.5028L0.497174 2.89774C-0.165724 2.23484 -0.165725 1.16007 0.497173 0.497175Z" fill="#B0BCC2"/>
+                            <path d="M0.497173 24.5028C1.16007 25.1657 2.23484 25.1657 2.89774 24.5028L24.5028 2.89774C25.1657 2.23484 25.1657 1.16007 24.5028 0.497173C23.8399 -0.165724 22.7652 -0.165724 22.1023 0.497173L0.497174 22.1023C-0.165724 22.7652 -0.165725 23.8399 0.497173 24.5028Z" fill="#B0BCC2"/>
+                            </svg> 
+                        </svg>
+                    </button>
+
+                    <div class="modal-wrap">
+                        <div class="modal-body feedback-modal">
+                            
+                            <div class="feedback-modal__text-block">
+                                <h3 class="title-md">Наши эксперты помогут выбрать Вам лучшее.</h3>
+                                <p class="text-1">Вы получите полную информацию
+                                    об интересующем вас объекте и доступных
+                                    вариантах планировок.</p>
+                            </div>
+                            <div class="feedback-modal__img-block">
+                                <img src="assets/img/modal-bg.jpg" alt="">
+                            </div>
+
+                            <form action="script.url" class="feedback-modal__form">
+                                <div class="modal-input-wrap">
+                                    <input type="text" placeholder="Ваше имя" name="name" class="f-feedback-input " required>    
+                                    <p class="form-error">Поле не может быть пустым</p>                                    
+                                </div>
+                                <div class="modal-input-wrap">
+                                    <input type="tel" placeholder="Ваше телефон" name="phone" class="f-feedback-input " required minlength="16">
+                                    <p class="form-error">Поле не может быть пустым</p>                                    
+                                </div>
+                                <div class="modal-approve-text">Отправляя данную форму вы соглашаетесь
+                                    с <a href="privacy-politic.html" target="_blank">политикой конфиденциальности</a></div>
+                                <button class="btn btn-darkgreen">получить консультацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+<div class="hystmodal"  aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="modal show fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="callbackLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-hystclose>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.497173 0.497175C1.16007 -0.165723 2.23484 -0.165723 2.89774 0.497175L24.5028 22.1023C25.1657 22.7652 25.1657 23.8399 24.5028 24.5028C23.8399 25.1657 22.7652 25.1657 22.1023 24.5028L0.497174 2.89774C-0.165724 2.23484 -0.165725 1.16007 0.497173 0.497175Z" fill="#B0BCC2"/>
+                            <path d="M0.497173 24.5028C1.16007 25.1657 2.23484 25.1657 2.89774 24.5028L24.5028 2.89774C25.1657 2.23484 25.1657 1.16007 24.5028 0.497173C23.8399 -0.165724 22.7652 -0.165724 22.1023 0.497173L0.497174 22.1023C-0.165724 22.7652 -0.165725 23.8399 0.497173 24.5028Z" fill="#B0BCC2"/>
+                            </svg> 
+                        </svg>
+                    </button>
+
+                    <div class="modal-wrap">
+                        <div class="modal-body thanks-modal">
+                            <div class="thanks-modal__content">
+                                <a href="index.html" class="thanks-modal__logo">
+                                    <img src="assets/img/logo-thanks.png" alt="">
+                                </a>
+                                <h3 class="title-md text-white text-center">Заявка принята</h3>
+                                <p class="text-1 text-center text-white">Наш менеджер свяжется с вами
+                                    в ближайшее время и ответит
+                                    на все вопросы</p>
+                            </div>
+                            
+
+                            <div class="text-1 text-center text-white timer">Окно закроется автоматически через <span class="timer-count"></span> секунд</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+    <script src="assets/js/scrolling-tabs.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/hystmodal.min.js"></script>
+    <script src="assets/js/imask.js"></script>
+    <script src="assets/js/combo-select.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+    
+        

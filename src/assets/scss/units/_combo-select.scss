@@ -1,0 +1,319 @@
+.combo-select{
+    position: relative;
+
+}
+.combo-select__outer-box{
+    border-radius: 10px ;
+    background: #F7F7FA; 
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 12px;
+    padding: 16px 20px;
+    cursor: pointer;
+
+    @media (min-width: 1400px){
+        
+        padding: 13px 15px;
+    }
+}
+
+
+.combo-select__drop{
+    border-radius:  0px 0px 10px 10px;
+    background: #FFF;;
+    transition: 200ms;
+    width: 100%;
+    display: none;
+    position: absolute;
+        transform: translate(0, 100%);
+        bottom: 0;
+        z-index: 1;
+    @media (min-width: 768px){
+        
+    }
+    
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        
+        padding: 10px 0;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.combo-select__drop--scroll{
+    
+    
+    width: 100%;
+    
+    
+    transition: 300ms;
+    
+    
+
+    
+}
+    
+.combo-select__arrow{
+    transition: 300ms;
+    line-height: 0;
+    svg{
+        width: 13px;
+        height: 7px;
+    }
+    
+    @media (min-width: 768px){
+        svg{
+            width: auto;
+            height: auto;
+        }
+        
+    }
+}
+
+.combo-select.active{
+    z-index: 10;
+    .combo-select__drop{
+        display: block;
+        padding-bottom: 12px;
+    }
+    .combo-select__arrow{
+        transform: rotate(180deg);
+    }
+    
+
+
+    .combo-select__qty-values{
+        font-size: 8px;
+        width: 16px;
+        height: 16px;
+    }
+}
+.combo-select__action-text{
+    display: none;
+}
+
+/*
+.combo-select.active[data-type="multi"]{
+    .combo-select__placeholder--text{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        @media (min-width: 768px){
+            font-size: 14px;
+        }
+        color: #4F4F4F;
+    }
+
+    .combo-select__action-text{
+        display: block;
+        
+        @media (min-width: 768px){
+            margin-top: 4px;
+        }
+        
+    }
+    .combo-select__current-value{
+        align-items: flex-end;
+    }
+}
+*/
+
+
+.combo-select[data-type="multi"]{
+
+    
+    .combo-select__outer-box{
+        display: none;
+
+        @media (min-width: 640px){
+            display: flex;
+        }
+    }
+
+    .combo-select__drop{
+
+        @media (max-width: 640px){
+            display: flex;
+            flex-direction: row;
+            position: static;
+            transform: translate(0, 0);    
+        }
+        
+    }
+
+    .combo-select__drop ul{
+        @media (max-width: 640px){
+            flex-direction: row;
+            gap:  5px 10px;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        @media (min-width: 640px){
+            padding: 8px 15px;
+            gap: 5px;
+        }
+    }
+
+    .combo-select__item-text{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        background: #F7F7FA; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 640px){
+            width: 100%;
+        }
+        span{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #1E1E1E;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 100%; /* 14px */
+            letter-spacing: 0.14px; 
+
+            @media (min-width: 640px){
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .combo-select__checkbox:checked + span{
+            background-color: #FFF;
+            border-radius: 10px;
+            color: #1E8CCA; 
+            font-weight: 500;
+        }
+    }
+}
+
+
+.combo-select__qty-values{
+    display: none;
+}
+
+.combo-select__qty-values.active{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin-left: 4px;
+}
+
+.combo-select__current-value{
+    color: #1E1E1E;
+    font-family: 'Brutal Type';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+.combo-select__radio{
+    display: none;
+}
+
+.combo-select__item-text{
+    color: #1E1E1E;
+    padding: 15px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */ 
+    display: block;
+    
+}
+
+
+.form-checkbox{
+    font-size: 16px;
+    
+    input{
+        display: none;
+    }
+    label{
+        display: flex;   
+        cursor: pointer;
+    }
+
+    input:checked + label .form-checkbox__visible-box::before{
+        opacity: 1;
+    }
+
+    .form-checkbox__visible-box{
+        flex-shrink: 0;
+        margin-right: 0.75em;
+        display: inline-block;
+        width: 1.25em;
+        height: 1.25em;
+        border: 0.0625em solid #8FAAF0;
+
+        
+
+        background-color: #fff;
+        border-radius: .25em;
+        cursor: pointer;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 50%;
+            width: .625em;
+            height: .5em;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.875 1.5L3.625 6.74977L1 4.125' stroke='%238FAAF0' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+            background-size: 100% 100%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+}
+
+
+.combo-select__checkbox{
+    display: none;
+}
+
+.combo-select__current-value{
+        
+    @media (min-width: 1500px){
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: calc(100% - 20px);
+    }
+}
+
+.combo-select.currency-select{
+    ul{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .combo-select__drop{
+        padding-bottom: 6px !important;
+    }
+}
