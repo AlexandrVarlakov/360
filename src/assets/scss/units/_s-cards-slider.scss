@@ -7,17 +7,22 @@
     
 
     margin-bottom: 48px;
-
-    @media (min-width: 1024px){
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    
 
 
     
 }
-
+.s-cards-slider__text-right{
+    @media (min-width: 1024px){
+        max-width: 440px;    
+    }
+    
+}
 
 .s-cards-slider__right{
     display: none;

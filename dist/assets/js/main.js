@@ -746,7 +746,7 @@ let testBlogArticles = [
         url: "article.html", 
         img: "assets/img/blogs/1.jpg",
         category: "лайфстайл", 
-        category_url: "category-blog.html",
+       
         category_name: "lifestyle", 
         date_public: "9.10.2023",
         title: "Palm Jebel Ali — новый проект в Дубае",
@@ -756,7 +756,7 @@ let testBlogArticles = [
         url: "article.html", 
         img: "assets/img/blogs/2.jpg",
         category: "лайфстайл", 
-        category_url: "category-blog.html",
+       
         category_name: "lifestyle", 
         date_public: "9.10.2023",
         title: "Palm Jebel Ali — новый проект в Дубае",
@@ -766,7 +766,7 @@ let testBlogArticles = [
         url: "article.html", 
         img: "assets/img/blogs/3.jpg",
         category: "лайфстайл", 
-        category_url: "category-blog.html",
+       
         category_name: "lifestyle", 
         date_public: "9.10.2023",
         title: "Palm Jebel Ali — новый проект в Дубае",
@@ -776,7 +776,7 @@ let testBlogArticles = [
         url: "article.html", 
         img: "assets/img/blogs/4.jpg",
         category: "лайфстайл", 
-        category_url: "category-blog.html",
+       
         category_name: "lifestyle", 
         date_public: "9.10.2023",
         title: "Palm Jebel Ali — новый проект в Дубае",
@@ -786,7 +786,7 @@ let testBlogArticles = [
         url: "article.html", 
         img: "assets/img/blogs/5.jpg",
         category: "лайфстайл", 
-        category_url: "category-blog.html",
+       
         category_name: "lifestyle", 
         date_public: "9.10.2023",
         title: "Palm Jebel Ali — новый проект в Дубае",
@@ -796,7 +796,7 @@ let testBlogArticles = [
         url: "article.html", 
         img: "assets/img/blogs/6.jpg",
         category: "лайфстайл", 
-        category_url: "category-blog.html",
+       
         category_name: "lifestyle", 
         date_public: "9.10.2023",
         title: "Palm Jebel Ali — новый проект в Дубае",
@@ -806,12 +806,12 @@ let testBlogArticles = [
 
 
 if ( downloadMoreArticles && blogList){
-    function createArticleCard( url, img, category, category_name, category_url, date_public, title, text ){
+    function createArticleCard( url, img, category, category_name,  date_public, title, text ){
         let article  = createNode('a', 'article', '', url);
         let imgBlock = createNode('div', 'article__img');
         let imgArticle = createNode('img', '', img);
         let articleInfoBlock = createNode('div', 'article__info');
-        let articleCategory =  createNode('a', 'article__category' + ' ' + category_name, '', category_url, category);
+        let articleCategory =  createNode('div', 'article__category' + ' ' + category_name, '', '', category);
         let articleDatePublic =  createNode('div', 'text-1 text-opacity',  '', '', date_public);
         let articleTextBlock =  createNode('div', 'article__text-block');
         let articleTitle =  createNode('h3', 'article__title h3', '', '', title);
@@ -848,13 +848,13 @@ if ( downloadMoreArticles && blogList){
                     
                 
 
-                    let card =  createArticleCard(testBlogArticles[testI].url, testBlogArticles[testI].img,  testBlogArticles[testI].category, testBlogArticles[testI].category_name, testBlogArticles[testI].category_url, testBlogArticles[testI].date_public, testBlogArticles[testI].title, testBlogArticles[testI].text);
+                    let card =  createArticleCard(testBlogArticles[testI].url, testBlogArticles[testI].img,  testBlogArticles[testI].category, testBlogArticles[testI].category_name,  testBlogArticles[testI].date_public, testBlogArticles[testI].title, testBlogArticles[testI].text);
                     card.classList.add('appended');
                     colCurrent.append(card);     
                     
                     testI++;           
 
-                    card =  createArticleCard(testBlogArticles[testI].url, testBlogArticles[testI].img,  testBlogArticles[testI].category, testBlogArticles[testI].category_name, testBlogArticles[testI].category_url, testBlogArticles[testI].date_public, testBlogArticles[testI].title, testBlogArticles[testI].text);
+                    card =  createArticleCard(testBlogArticles[testI].url, testBlogArticles[testI].img,  testBlogArticles[testI].category, testBlogArticles[testI].category_name,  testBlogArticles[testI].date_public, testBlogArticles[testI].title, testBlogArticles[testI].text);
                     card.classList.add('appended');
                     colCurrent.append(card);     
                     testI++;           
@@ -1311,3 +1311,20 @@ if (  addFavoriteInRealtyCard.length ){
         })
     } )
 }
+
+
+let swiperNav  = new Swiper(".swiper.sa-inner-nav-swiper", {
+    speed: 1000,
+    slidesPerView: "auto",
+    spaceBetween: 35,
+    freeMode: true,
+    watchSlidesProgress: true,
+
+    
+    breakpoints: {
+        
+        1024: {            
+            spaceBetween: 45
+        }
+    }
+})

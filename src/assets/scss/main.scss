@@ -123,6 +123,10 @@ main{
 	@include calculateResponsiveProperty(390px, 1920px, 2rem, 6.25rem, margin-bottom );
 }
 
+main.sa-main{
+	gap: 0;
+}
+
 .text-center{
 	text-align: center;
 }
@@ -153,7 +157,7 @@ main{
 	text-transform: uppercase; 
 
 	@media (min-width: 1024px){
-		padding: 28px 45px;
+		padding: 23px 45px;
 	}
 }
 
