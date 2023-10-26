@@ -18,9 +18,7 @@
     
 }
 .s-cards-slider__text-right{
-    @media (min-width: 1024px){
-        max-width: 440px;    
-    }
+   
     
 }
 
@@ -30,4 +28,11 @@
     @media (min-width: 1024px){
         display: block;
     }
+}
+
+.swiper.realty-swiper{
+    & > .swiper-wrapper{
+        height: auto;
+    }
+    
 }

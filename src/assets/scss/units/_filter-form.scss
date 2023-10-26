@@ -8,7 +8,7 @@
     }
 
     @media (min-width: 1400px){
-        grid-template-columns: 1fr 874px;
+        grid-template-columns: 1fr 930px;
         grid-gap: 35px;
 
     }
@@ -171,7 +171,7 @@
     @media (min-width: 1400px){
         display: grid !important;
         grid-gap: 25px !important;    
-        grid-template-columns: 180px 160px 310px 148px !important; 
+        grid-template-columns: 180px 160px 360px 148px !important; 
     }
 }
 
@@ -288,7 +288,7 @@
 
 .filter-currency-input{
     padding: 14px 15px;
-    padding-left: 40px;
+    padding-left: 55px;
     border-radius: 10px;
     background: #F7F7FA; 
     color: #1E1E1E;

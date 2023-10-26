@@ -34,7 +34,7 @@
     @media (min-width: 768px){
         
     }
-    
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.04);
 
     ul{
         display: flex;
@@ -54,9 +54,13 @@
     
     transition: 300ms;
     
+    border-radius: 0 0 5px 5px;
+    
     
 
-    
+    ul{
+        padding: 5px;
+    }
 }
     
 .combo-select__arrow{
@@ -155,22 +159,44 @@
             flex-wrap: wrap;
         }
         @media (min-width: 640px){
-            padding: 8px 15px;
-            gap: 5px;
+            padding: 15px 5px;
+            gap: 0px;
         }
     }
+    .combo-select__drop{
+        box-shadow: none;
 
+        @media (min-width: 640px){
+            box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.04);
+        }
+    }
+    
     .combo-select__item-text{
         width: 50px;
         height: 50px;
         padding: 5px;
         border-radius: 10px;
-        background: #F7F7FA; 
+        .check-arrow{
+            display: none;
+
+            @media (min-width: 640px){
+                display: initial;
+                transition: 300ms;
+                opacity: 0;
+            }
+        }
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: 640px){
+            background: #F7F7FA; 
+        }
+
         @media (min-width: 640px){
             width: 100%;
+            justify-content: space-between;
+            padding-right: 15px;
         }
         span{
             width: 100%;
@@ -193,10 +219,18 @@
         }
 
         .combo-select__checkbox:checked + span{
-            background-color: #FFF;
-            border-radius: 10px;
-            color: #1E8CCA; 
-            font-weight: 500;
+
+            @media (max-width: 640px){
+                background-color: #FFF;
+                border-radius: 10px;
+                color: #1E8CCA; 
+                font-weight: 500;
+            }
+            
+        }
+
+        .combo-select__checkbox:checked + span + .check-arrow{
+            opacity: 1;
         }
     }
 }
@@ -237,13 +271,18 @@
 
 .combo-select__item-text{
     color: #1E1E1E;
-    padding: 15px;
+    padding: 15px 10px;
+    border-radius: 5px;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 14px */ 
     display: block;
-    
+    transition: 300ms;
+    cursor: pointer;
+    &:hover{
+        background-color: #F7F7FA;
+    }
 }
 
 

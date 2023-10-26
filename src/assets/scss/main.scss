@@ -143,7 +143,7 @@ main.sa-main{
 
 .btn{
 	display: flex;
-	padding: 22px 32px;
+	padding: 22px 30px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
@@ -158,7 +158,12 @@ main.sa-main{
 
 	@media (min-width: 1024px){
 		padding: 23px 45px;
+		
 	}
+}
+
+.btn.fz-16{
+	font-size: 16px;
 }
 
 .btn.btn-darkgreen{

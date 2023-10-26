@@ -1328,3 +1328,125 @@ let swiperNav  = new Swiper(".swiper.sa-inner-nav-swiper", {
         }
     }
 })
+
+
+let filterCurrencyInputs = document.querySelectorAll('.filter-currency-input');
+
+if ( filterCurrencyInputs.length ){
+
+    filterCurrencyInputs.forEach( fi => {
+        currencyMask = IMask(
+            fi,
+            {
+              mask: [
+                  { mask: '' },
+                  {
+                      mask: 'num',
+                      lazy: false,
+                      blocks: {
+                          num: {
+                              mask: Number,
+                              scale: 2,
+                              thousandsSeparator: '.',
+                              padFractionalZeros: true,
+                              radix: ',',
+                              mapToRadix: ['.'],
+                          }
+                      }
+                  }
+              ]
+            });
+    } )
+
+    
+}
+
+
+const linksToAnchor = document.querySelectorAll('.link-to-anchor');
+
+if ( linksToAnchor.length ){
+    let innerNav = document.querySelector('.sa-inner-nav');
+    linksToAnchor.forEach( la => {
+        la.addEventListener('click', function(event){
+            event.preventDefault();
+
+            let targetClick = document.querySelector(this.getAttribute('href'));
+
+            if (targetClick){
+
+
+                let ot = targetClick.offsetTop;
+                
+                let innerNavHeight = innerNav.offsetHeight;
+                ot = ot - innerNavHeight - 20;
+                
+                window.scrollTo({
+                    top: ot,
+                    left: 0,
+                    behavior: "smooth"
+                });
+
+                
+            }
+
+        })
+    } )
+    let lastScroll = 0;
+    window.addEventListener('scroll', function(){
+
+        let deltaScroll = window.scrollY - lastScroll;
+        console.log(deltaScroll);
+        lastScroll = window.scrollY;
+        
+
+        linksToAnchor.forEach( la => {
+            let targetLink = document.querySelector(la.getAttribute('href'));
+
+            if (targetLink){
+
+                if ( deltaScroll > 0) {
+
+                    let br = targetLink.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+                    let result = br - windowHeight / 2;
+                    
+
+                    if ( result < 100 && result > 0 ){
+                        let activeLinks =  innerNav.querySelectorAll('.link-to-anchor.active-link'); 
+                        if ( activeLinks.length ){
+                            activeLinks.forEach( al => {
+                                al.classList.remove('active-link');
+                            } )
+                        }
+
+                        la.classList.add('active-link')
+                    }
+
+                } else{
+                    let br = targetLink.getBoundingClientRect().bottom;
+                    let windowHeight = window.innerHeight;
+                    let result = br - windowHeight / 2;
+                    
+
+                    if ( result < 100 && result > 0 ){
+                        let activeLinks =  innerNav.querySelectorAll('.link-to-anchor.active-link'); 
+                        if ( activeLinks.length ){
+                            activeLinks.forEach( al => {
+                                al.classList.remove('active-link');
+                            } )
+                        }
+
+                        la.classList.add('active-link')
+                    }
+                }
+
+
+
+                
+            }
+            
+        })
+    })
+}
+
+
