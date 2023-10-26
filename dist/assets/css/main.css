@@ -6245,6 +6245,28 @@ label {
 @media (min-width: 768px) {
   .entertainments {
     grid-template-columns: 1fr 1fr 1fr;
+    background: #F9F9F9;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .entertainments {
+    padding-bottom: calc(2.5rem + (1vw - 7.68px) * 5.9523809524);
+  }
+}
+@media (min-width: 1440px) {
+  .entertainments {
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  .entertainments {
+    padding-top: calc(2.5rem + (1vw - 7.68px) * 5.9523809524);
+  }
+}
+@media (min-width: 1440px) {
+  .entertainments {
+    padding-top: 5rem;
   }
 }
 

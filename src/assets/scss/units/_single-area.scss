@@ -376,9 +376,12 @@
 
     @media (min-width: 768px){
         grid-template-columns: 1fr 1fr 1fr;
+        background: #F9F9F9;
+        border-radius: 10px;
     }
     
-    
+    @include calculateResponsiveProperty(768px, 1440px, 2.5rem, 5rem, padding-bottom);
+    @include calculateResponsiveProperty(768px, 1440px, 2.5rem, 5rem, padding-top);
 }
 
 .entertainments__item{
