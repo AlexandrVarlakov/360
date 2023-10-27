@@ -1,0 +1,59 @@
+$widths:(
+    20: 20%,
+    25: 25%,
+    30: 30%,
+    33: 33.3333333333%,
+    35: 35%,
+    40: 40%,
+    50: 50%,
+    66: 66.666666%,
+    75: 75%,
+    280: 280px,
+    320: 320px,
+    360: 360px,
+    400: 400px,
+    440: 440px,
+    480: 480px,
+    520: 520px,
+    560: 560px,
+    600: 600px,
+    640: 640px,
+    680: 680px,
+    720: 720px,
+);
+
+@each $number, $w in $widths {    
+    .mw-#{$number}{
+        
+        max-width: $w ;
+
+        br{
+            display: none;
+
+            @media (min-width: 1280px){
+                display: initial;
+            }
+        }
+    }    
+}
+
+@each $bp-name, $break-point in $break-points {
+    @each $number, $w in $widths {
+        
+        
+        .mw-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                max-width: $w ;
+            }
+
+            br{
+                display: none;
+    
+                @media (min-width: 1280px){
+                    display: initial;
+                }
+            }
+            
+        }
+    }
+}
