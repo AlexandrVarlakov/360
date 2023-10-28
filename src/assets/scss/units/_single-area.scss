@@ -189,9 +189,7 @@
     @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding-bottom );
     @include calculateResponsiveProperty(1024px, 1920px, 1.25rem, 5rem, padding-left );
     @include calculateResponsiveProperty(1024px, 1920px, 1.25rem, 5rem, padding-right );
-    .text-1, .title-md{
-        max-width: 460px;
-    }
+    
 }
 
 .sa-islands-desc__item.item-1{
@@ -203,7 +201,7 @@
 .area-infrastructure{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    grid-gap: 20px;
 
     @media (min-width: 768px){
         grid-template-columns: 1fr 1fr;
@@ -484,7 +482,7 @@
     transition: 500ms;
     
 
-    .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text{
+    .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .svg-clock path{
         transition: 500ms;
     }
 
@@ -509,6 +507,12 @@
         .prop-img-container{
             img{
                 transform: scale(1.1);
+            }
+        }
+
+        .svg-clock{
+            path{
+                stroke: #fff;
             }
         }
 
@@ -804,12 +808,122 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0;
+    background-color: transparent;
+    
+    @media (min-width: 768px){
+        order: 3;
+    }
 
+    @media (min-width: 1280px){
+        flex-direction: row;
+        gap: 24px;
+
+       
+    }
 
 }
+
+.damac-infrastructure-1{
+    @media (min-width: 768px){
+        order: 1;
+    }
+}
+.damac-infrastructure-2{
+    @media (min-width: 768px){
+        order: 3;
+    }
+}
+.damac-infrastructure-3{
+    @media (min-width: 768px){
+        order: 2;
+    }
+}
+.damac-infrastructure-4{
+    @media (min-width: 768px){
+        order: 4;
+    }
+}
+
+
 .area-infrastructure__time-block{
     padding: 35px 20px;
     border-radius: 10px;
     background-color: #F9F9F9;
+
+    
 }
     
+.area-infrastructure__time-block{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .svg-clock{
+        flex-shrink: 0;
+    }
+    @media (min-width: 1280px){
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-shrink: 0;
+        width: calc(50% - 12px);
+        .svg-clock{
+            width: 70px;
+            height: 70px;
+        }
+    }
+   
+
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding-top );
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding-bottom );
+    @include calculateResponsiveProperty(1024px, 1920px, 1.25rem, 5rem, padding-left );
+    @include calculateResponsiveProperty(1024px, 1920px, 1.25rem, 5rem, padding-right );
+}
+
+.damac-entertainments{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    @media (min-width: 900px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1280px){
+        grid-gap: 50px;
+    }
+}
+
+.damac-entertainments__item{
+    padding: 35px 20px;
+    border-radius: 10px;
+    background: #F9F9F9;
+
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding-top );
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding-bottom );
+    
+}
+
+
+
+
+.damac-entertainments__item.item-1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding-left );
+    @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, padding-right );
+    @media (min-width: 1280px){
+        gap: 80px;
+    }
+}
+
+.damac-entertainments__item.item-2{
+    display: none;
+
+    @media (min-width: 900px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0px;
+    }
+}
