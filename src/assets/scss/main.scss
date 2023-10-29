@@ -175,6 +175,13 @@ main.sa-main{
 	}
 }
 
+.btn.fz-16-14{
+	font-size: 16px;
+
+	@media (min-width: 1024px){
+		font-size: 14px;
+	}
+}
 
 .btn-mob-100{
 	width: 100%;
@@ -311,6 +318,27 @@ label{
 	user-select: none
 }
 
+
+
+.order-1{
+	order: 1
+}
+.order-2{
+	order: 2
+}
+
+
+.order-lg-1{
+	@media (min-width: 1024px){
+		order: 1;
+	}
+}
+
+.order-lg-2{
+	@media (min-width: 1024px){
+		order: 2;
+	}
+}
 @import 'units/header';
 @import 'units/footer';
 @import 'units/menu';
