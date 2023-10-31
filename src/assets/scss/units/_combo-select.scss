@@ -148,7 +148,7 @@
             position: static;
             transform: translate(0, 0);    
         }
-        
+        padding-bottom: 0;
     }
 
     .combo-select__drop ul{
@@ -159,7 +159,7 @@
             flex-wrap: wrap;
         }
         @media (min-width: 640px){
-            padding: 15px 5px;
+            padding: 5px 5px;
             gap: 0px;
         }
     }

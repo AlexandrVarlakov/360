@@ -1,6 +1,7 @@
 .title-section {
     padding: 0;
     height: 731px;
+    min-height: 731px;;
     position: relative;
     @include calculateResponsiveProperty(1024px, 1920px, 2rem, 3.125rem, padding-left );
 	@include calculateResponsiveProperty(1024px, 1920px, 2rem, 3.125rem, padding-right );
@@ -14,11 +15,25 @@
         height: 100vh;
     }
     @media (min-width: 1260px){
-        margin-top: -135px;
+        margin-top: -137px;
         
     }
 
     @include calculateResponsiveProperty(1024px, 1920px, 0rem, 3.75rem, margin-bottom);
+
+
+    background: url(../img/index.jpg);
+    background-position-x: 13%;
+    background-position-y: 7%;
+    background-repeat: no-repeat;
+    background-size: auto 120% ;
+    
+
+    @media (min-width: 1024px){
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     
 }
 .title-section__inner {
@@ -44,6 +59,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    object-position: top left;
+    @media (min-width: 1024px){
+        object-position: top left;
+    }
 }
 
 .title-section__content{

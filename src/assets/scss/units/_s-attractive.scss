@@ -40,6 +40,10 @@
 
 .s-attractive__button-wrap{
     margin-top: 35px;
+
+    .btn{
+        display: inline-flex;
+    }
 }
 
 .s-attractive__img-block{
@@ -53,12 +57,12 @@
 }
 .s-attractive__img{
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 112%;
     overflow: hidden;
-    border-radius: 0 0 10px 10px;
-
+    border-radius: 0  0 10px  10px;
+    height: 100%;
     @media (min-width: 768px){
-        padding-bottom: 61.965811965%;
+        padding-bottom: 67.965812%;
         border-radius: 10px;
     }
     
@@ -70,7 +74,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        clip-path: ellipse(91% 79% at 50% 79%);
+       
 
         @media (min-width: 768px){
             clip-path: unset;

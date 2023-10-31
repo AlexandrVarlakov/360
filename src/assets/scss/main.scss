@@ -2,6 +2,10 @@
 @import 'functions';
 @import 'fonts-include/brutal-type';
 
+
+$primary-color: #7385A1;
+$primary-color-hover: #889BB9;
+
 @mixin calculateResponsiveText($startBreakPoint, $endBreakPoint, $startValue, $finishValue ){
 	@media (min-width: $startBreakPoint){
 		font-size: calculateResponsiveValue( $startBreakPoint, $endBreakPoint, $startValue, $finishValue );
@@ -168,10 +172,10 @@ main.sa-main{
 
 .btn.btn-darkgreen{
 	color: #fff;
-	background: #6F97A0;
+	background: $primary-color;
 	
 	&:hover{
-		background-color: #556B69;
+		background-color: $primary-color-hover;
 	}
 }
 
@@ -364,3 +368,4 @@ label{
 @import 'units/article';
 @import 'units/single-area';
 @import 'units/common/width';
+@import 'units/get-guide';

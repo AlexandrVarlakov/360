@@ -97,13 +97,20 @@
 
 .header__feed-btn{
     display: none;
-
+    
+    
     @media (min-width: 1260px){
         display: initial;
         order: 4;
 
         
     }
+
+    @media (min-width: 1260px) AND (max-width: 1360px){
+        font-size: 12px;
+        padding: 16px 12px;
+    }
+    
     font-size: 14px;
     padding-left: 24px;
     padding-right: 24px;
@@ -211,7 +218,7 @@
         color: #fff;
 
         &:hover{
-            color: #1E1E1E;
+            color: #E7B05F;
         }
     }
 
@@ -219,10 +226,19 @@
         color: #fff;
 
         &:hover{
-            color: #1E1E1E;
+            color: #E7B05F;
         }
     }
 
+    .header__feed-btn{
+        color: #1E1E1E !important ;
+        background-color: #fff !important;
+        &:hover{
+            background-color: #1E1E1E !important;;
+            color: #fff !important;
+        }
+    }
+    
     .link-favorites{
         path{
             stroke: #fff;
@@ -230,7 +246,7 @@
         }
 
         .link-favorites__qty{
-            background-color: #6F97A0;
+            background-color: #E7B05F;
         }
 
         &:hover{
@@ -257,4 +273,45 @@
     background: #fff;
 
 
+}
+
+
+.combo-select.site-currency{
+    .combo-select__current-value{
+        font-size: 16px;
+    }
+
+    .combo-select__outer-box{
+        border-radius: 0px;
+        padding: 0;
+        background: transparent;
+    }
+    .combo-select__item-text{
+        padding: 10px 6px;
+        font-size: 16px;
+    }
+    .combo-select__drop{
+        padding-bottom: 0 !important;
+        transform: translate(0, calc(100% + 5px));
+    }
+}
+
+.header.index-header:not(.scrolled, .menu-active){
+    .combo-select__current-value{
+        color: #fff;
+    }
+    path{
+        stroke: #fff;
+    }
+}
+
+
+.header__right-block{
+    .combo-select.site-currency{
+        display: none;
+
+        @media (min-width: 1200px){
+            display: block;
+        }
+    }
 }

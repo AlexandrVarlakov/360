@@ -283,16 +283,6 @@ const thanksModal = new HystModal({
 
 
 
-const phoneMasks = document.querySelectorAll("input[type='tel']");
-if (phoneMasks.length){
-    phoneMasks.forEach( (input) => {
-        IMask(
-            input, {
-              mask: '+{7} 000 000-00-00'
-          });
-    })
-}
-
 
 
 
@@ -1541,6 +1531,21 @@ if (  areaMap  ){
         areaMap.classList.add('clicked')
     })
 }
+
+
+
+
+
+let sortByRadioInputs = document.querySelectorAll('input[name="order-by"]');
+
+sortByRadioInputs.forEach( ri => {
+    ri.addEventListener('change', function(){
+        let formNode = this.closest('form');
+        formNode.submit();
+    })
+
+} )
+
 
 
 /*

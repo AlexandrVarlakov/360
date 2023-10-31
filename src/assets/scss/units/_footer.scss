@@ -112,6 +112,7 @@
     @media (min-width: 1200px){
         grid-template-columns: auto auto;
         grid-gap: 65px;
+        align-items: flex-start;
     }
 }
 
