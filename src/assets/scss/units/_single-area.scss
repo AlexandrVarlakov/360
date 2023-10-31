@@ -332,12 +332,31 @@
         object-position: center;
     }
 }
+#map.clicked{
+    &::before{
+        display: none;
+    }
+}
 
+#map{
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+}
 
 .s-area-map{
     position: relative;
     padding-bottom: 85%;
     
+
+    
+
     
     @media (min-width: 768px){
         padding-bottom: 38%;

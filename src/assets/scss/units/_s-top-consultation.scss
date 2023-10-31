@@ -2,13 +2,32 @@
 .s-top-consultation__inner {
     width: 100%;
     border-radius: 10px;
-    background: #202929; 
+    background: #F9F9F9;; 
     display: flex;
     flex-direction: column;
     padding: 40px 24px 0;
     @media (min-width: 1024px){
         position: relative;
         height: 480px;
+    }
+
+    @media (min-width: 1024px){
+        background: #5F7F86;
+        .text-1{
+            font-size: 16px;
+        }
+        .title-lg, .text-1{
+            color: #F9F9F9
+        }
+
+        .btn{
+            background-color: #fff;
+            color: #1E1E1E;
+            &:hover{
+                background-color: #556B69;
+                color: #fff;
+            }
+        }
     }
     @include calculateResponsiveProperty(1024px, 1920px, 30rem, 40.625rem, height);
     .man{

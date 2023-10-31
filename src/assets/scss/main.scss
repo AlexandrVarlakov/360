@@ -117,9 +117,9 @@ main{
 
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 50px;
 	margin-bottom: 30px;
-	@include calculateResponsiveProperty(390px, 1920px, 2rem, 6.25rem, row-gap );
+	
 	@include calculateResponsiveProperty(390px, 1920px, 2rem, 6.25rem, margin-bottom );
 }
 
@@ -157,7 +157,7 @@ main.sa-main{
 	text-transform: uppercase; 
 
 	@media (min-width: 1024px){
-		padding: 23px 45px;
+		padding: 28px 45px;
 		
 	}
 }
@@ -168,7 +168,7 @@ main.sa-main{
 
 .btn.btn-darkgreen{
 	color: #fff;
-	background: #3F5452;
+	background: #6F97A0;
 	
 	&:hover{
 		background-color: #556B69;
@@ -224,7 +224,9 @@ main.sa-main{
 	}
 
 }
-
+.no-wrap{
+	white-space: nowrap;
+}
 
 .is-favorite{
 

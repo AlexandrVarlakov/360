@@ -40,8 +40,8 @@
     }
 
     @media (min-width: 1024px){
-        width: 40.677083333vw;
-        height: 40.677083333vw;
+        width: 43.25vw;
+        height: 43.25vw;
         
     }
 }
@@ -61,7 +61,7 @@
         border-radius: 50%;
         padding: 12px;
         @media (min-width: 1024px){
-            padding: 24px;
+            padding: 16px;
         }
     }
 }
@@ -80,9 +80,16 @@
 
 .s-branch__text-block.text-block-1{
     
+    .text-1{
+        margin-top: 25px;
+    }
+
     @media (min-width: 768px){
         left: 24px;
         top: 40px;
+        .text-1{
+            display: none;
+        }
     }
     @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, left );
     @include calculateResponsiveProperty(1024px, 1920px, 2.5rem, 5rem, top );

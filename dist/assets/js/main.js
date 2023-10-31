@@ -1,3 +1,4 @@
+
 const hamburger = document.querySelector('.hamburger');
 const mobMenuLayer = document.querySelector('.mob-menu-layer');
 
@@ -69,7 +70,7 @@ mobMenuLayer.addEventListener('click', function(event){
 })
 
 
-
+/*
 
 const langSwithers = document.querySelectorAll('.lang-switcher');
 
@@ -95,7 +96,7 @@ langSwithers.forEach( ls => {
             }
         })
     })
-} )
+} )*/
 
 document.body.addEventListener('click', function(event){
     const activeSwitch =  document.querySelector('.lang-switcher.active');    
@@ -739,6 +740,58 @@ let testRealtyList = [
     },   
 
 ]
+
+if ( realtyList ){
+    realtyList.addEventListener('reartyappended', function(){
+
+        let newSwipers =  this.querySelectorAll('.swiper.realty-gallery-swiper:not(swiper-initialized)');
+        if ( newSwipers.length ){
+            newSwipers.forEach(itemSlider => {
+                const slider = new Swiper(itemSlider, {
+                  speed: 300,
+                  spaceBetween: 10,
+              
+                  pagination: {
+                    el: itemSlider.querySelector('.realty-gallery-swiper__pagination'),
+                    clickable: true,
+                  },
+                });
+                itemSlider.addEventListener('mousemove', function(event){
+                  
+                    if (this.classList.contains('moved')) return false;
+                    
+                    
+                    const xPosition = event.offsetX==undefined?event.layerX:event.offsetX
+            
+                    const current = slider.activeIndex;
+                    const count = slider.slides.length;
+                    const step =  100 / count;
+                    
+                    
+                    const position  = (xPosition / this.offsetWidth) * 100;
+                    
+                    const movePosition = Math.trunc(position / step);
+                    
+                    if ( movePosition > count ) return false;
+                    if ( movePosition < 0 ) return false;
+            
+                    if ( movePosition === current ) return false
+                    
+                    slider.slideTo(movePosition, 0, function(){})
+                    this.classList.add('moved');
+                    setTimeout(()=>{
+                      this.classList.remove('moved');
+                    }, 50)
+                  
+            
+                }, {capture: true})
+              });
+        }
+    })
+}
+
+
+
 
 
 let testBlogArticles = [
@@ -1450,3 +1503,80 @@ if ( linksToAnchor.length ){
 }
 
 
+
+
+let articleNavLinks = document.querySelectorAll('.article-nav-link');
+if ( articleNavLinks.length ){
+    articleNavLinks.forEach( nl => {
+        nl.addEventListener('click', function(event){
+            event.preventDefault();
+
+            let targetClick = document.querySelector(this.getAttribute('href'));
+
+            if (targetClick){
+
+
+                let ot = targetClick.offsetTop;
+                
+                let headerHeight = header.offsetHeight;
+                ot = ot - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: ot,
+                    left: 0,
+                    behavior: "smooth"
+                });
+
+                
+            }
+        })
+    } )
+}
+
+
+let areaMap = document.querySelector('#map');
+
+if (  areaMap  ){
+    areaMap.addEventListener('click', function(){
+        areaMap.classList.add('clicked')
+    })
+}
+
+
+/*
+let rr = document.querySelector('.realty-grid');
+window.addEventListener('scroll', function(event){
+    if (  document.documentElement.clientWidth <= 640 ){
+        let cssData = rr.getBoundingClientRect();
+        let listBottom = cssData.bottom;
+        let listHeight = cssData.height;
+
+
+        if ( listBottom <=  document.documentElement.clientHeight - 100){
+            
+            jQuery( function( $ ){
+                $.ajax({
+                    url: '<?php echo admin_url('admin-ajax.php'); ?>',
+                    type: 'POST',
+                    data: 'action=myfilter&<?= $string_query ?>&page='+page+'&per_page='+<?=$post_per_page?>, // можно также передать в виде объекта
+                    success: function( data ) {                
+                        if(page*<?=$post_per_page?> >= <?= $count ?>){
+                            $( '#download-realties' ).css('display','none') 
+                        }
+                        page = page +1;
+                        $('.realty-grid').append()
+
+                        data.data.forEach(element => {
+                            $('.realty-grid').append(element)
+                            let event = new Event("reartyappended", {bubbles: true}); 
+                            downloadRealtiesBtn.dispatchEvent(event);
+                        });
+                
+                    }
+                });
+            });
+
+        }
+    }
+
+})*/

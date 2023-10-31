@@ -1,10 +1,24 @@
 .title-section {
     padding: 0;
-    height: 650px;
-
+    height: 731px;
+    position: relative;
     @include calculateResponsiveProperty(1024px, 1920px, 2rem, 3.125rem, padding-left );
 	@include calculateResponsiveProperty(1024px, 1920px, 2rem, 3.125rem, padding-right );
     @include calculateResponsiveProperty(1024px, 1920px, 40.625rem, 59.375rem, height );
+
+    margin-top: -82px;
+
+    @media (min-width: 1024px){
+        margin-top: -90px;
+
+        height: 100vh;
+    }
+    @media (min-width: 1260px){
+        margin-top: -135px;
+        
+    }
+
+    @include calculateResponsiveProperty(1024px, 1920px, 0rem, 3.75rem, margin-bottom);
     
 }
 .title-section__inner {
@@ -13,7 +27,7 @@
     padding: 60px 20px;
     position: relative;
     overflow: hidden;
-    
+    z-index: 5;
 
     @media (min-width: 1024px){
         border-radius: 10px;
@@ -39,9 +53,14 @@
     position: relative;
     overflow: hidden;
     height: 100%;
-
+    
     max-width: 830px;
     margin: 0 auto;
+    padding-top: 60px;
+
+    @include calculateResponsiveProperty(390px, 1024px, 5rem, 8rem, padding-top );
+
+
 
     .title-lg{
         margin-bottom: 10px;

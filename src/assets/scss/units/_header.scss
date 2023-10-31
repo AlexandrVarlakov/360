@@ -193,3 +193,68 @@
         display: flex;
     }
 }*/
+
+
+.header.index-header{
+    background-color: transparent;
+
+    .dark-logo{
+        display: none;
+    }
+
+
+}
+
+
+.header.index-header:not(.scrolled, .menu-active){
+    .desktop-menu__link{
+        color: #fff;
+
+        &:hover{
+            color: #1E1E1E;
+        }
+    }
+
+    .header__contact{
+        color: #fff;
+
+        &:hover{
+            color: #1E1E1E;
+        }
+    }
+
+    .link-favorites{
+        path{
+            stroke: #fff;
+            fill: transparent;
+        }
+
+        .link-favorites__qty{
+            background-color: #6F97A0;
+        }
+
+        &:hover{
+            path{
+                fill: #fff;
+            }
+            
+        }
+    }
+
+    .hamburger__cross-line{
+        background-color: #fff;
+    }
+}
+
+.header.index-header.scrolled, .header.index-header.menu-active{
+    .dark-logo{
+        display: initial;
+    }
+
+    .white-logo{
+        display: none;
+    }
+    background: #fff;
+
+
+}

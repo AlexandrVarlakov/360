@@ -13,12 +13,13 @@
     
 </head>
 <body>
-    <header class="header section">
+    <header class="header index-header section">
         <div class="header__content">
             
             <div class="header__left-block">
                 <a href="index.html" class="header__logo">
-                    <img src="assets/img/logo.png" alt="">
+                    <img src="assets/img/logo.png" alt="" class="dark-logo">
+                    <img src="assets/img/white-logo.png" alt="" class="white-logo">
                 </a>
 
                 <nav class="desktop-menu">
@@ -144,20 +145,21 @@
     <main>
         <section class="title-section">
             <div class="title-section__inner">
-                <picture>
-                    <source srcset="assets/img/index.jpg" media="(min-width: 768px)" />                    
-                    <img src="assets/img/index-mob.jpg" alt="" class="title-section__bg">
-                </picture>
+                
                 
 
 
                 <div class="title-section__content">
-                    <h1 class="title-lg text-center">Высококачественная недвижимость от ведущих застройщиков</h1>
-                    <p class="text-1 text-center">представляющих лучшие проекты в Дубае.</p>
+                    <h1 class="title-lg text-center ">Высококачественная недвижимость от ведущих застройщиков</h1>
+                    <p class="text-1 text-center ">представляющих лучшие проекты в Дубае.</p>
 
-                    <a href="#catalog" class="btn btn-darkgreen btn-mob-100" >Скачать каталог</a>
+                    <a href="#catalog" class="btn btn-darkgreen btn-mob-100" >Получить каталог</a>
                 </div>
             </div>
+            <picture>
+                <source srcset="assets/img/index.jpg" media="(min-width: 50px)" />                    
+                <img src="assets/img/index-mob.jpg" alt="" class="title-section__bg">
+            </picture>
         </section>
 
 
@@ -165,7 +167,7 @@
             <div class="s-cards-slider__inner">
                 <div class="s-cards-slider__title-block">
                     <div class="s-cards-slider__left">
-                        <h2 class="title-lg">Лучше предложения</h2>
+                        <h2 class="title-md">Лучшие предложения</h2>
                     </div>
                     <div class="s-cards-slider__right">
                         <button class="btn btn-darkgreen" data-hystmodal="#feedback-modal">получить консультацию</button>
@@ -415,7 +417,7 @@
 
                         <div class="bottom-result">
                             <p class="text-1">в первом полугодии 2022 года количество заключенных договоров об аренде увеличилось</p>
-                            <mark>более чем на 3 000</mark>
+                            <mark>более чем <span class="no-wrap">на 3 000</span></mark>
                             <p class="text-1">по сравнению с аналогичным периодом прошлого года</p>
                         </div>
                     </div>
@@ -442,7 +444,13 @@
         <section class="section s-branch">
             <div class="s-branch__inner b-radius bg-lightblue">
                 <div class="s-branch__text-block text-block-1">
-                    <h2 class="title-lg">Развитая<br />туристическая<br />отрасль</h2>
+                    <h2 class="title-md">Развитая<br />туристическая<br />отрасль</h2>
+
+                    <p class="text-1">Репатриация доходов, минимальное
+                        налогообложение, простые процедуры 
+                        получения виз, оформления торговых
+                        сделок, регистрации и получения
+                        разрешений.</p>
                 </div>
                 
 
@@ -1413,7 +1421,38 @@
 
         </section>
 
+        <section class="section s-top-consultation">
+            <div class="s-top-consultation__inner">
+                <div class="s-top-consultation__block block-1">
+                    <h2 class="title-lg ">Консультация с <br/>
+                        ведущим брокером</h2>
+                    <p class="text-1 ">Наши эксперты помогут
+                        выбрать Вам лучшее.</p>
+                    <p class="text-1 ">Вы получите полную информацию
+                        об интересующем вас объекте и
+                        доступных вариантах планировок.</p>
+                </div>
+                <div class="s-top-consultation__block block-2">
+                    <button class="btn btn-darkgreen btn-mob-100" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                </div>
+                <div class="s-top-consultation__block block-3">
+                    <h2 class="title-lg ">Иван Меркулов</h2>
+                    <p class="text-1 ">Главный эксперт Trust Real Estate
+                        по инвестициям в недвижимость</p>
+                </div>
+                <div class="s-top-consultation__block block-4">
+                    <a href="tel:+971502246756" class="title-lg  tel">+9 715 022 467 56</a>
+                    <address ><span class="text-1 ">Office 1913, Al Manara Tower,<br/>
+                        Business Bay, Dubai, UAE</span>
+                        <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3155 1.92865C11.8413 -0.685023 17.4042 -0.63934 21.8875 2.04831C26.3267 4.79071 29.0248 9.68507 28.9997 14.95C28.8963 20.1805 26.0033 25.0971 22.3869 28.8978C20.2997 31.1014 17.9647 33.0499 15.4297 34.7036C15.1687 34.8537 14.8827 34.9541 14.5859 35C14.3003 34.9879 14.0222 34.904 13.7766 34.7559C9.90645 32.2712 6.51119 29.0995 3.75411 25.3935C1.44707 22.2999 0.136371 18.5624 2.41032e-06 14.6885C-0.00299495 9.41345 2.78973 4.54232 7.3155 1.92865ZM9.93101 16.8721C10.6923 18.7375 12.4893 19.9543 14.4829 19.9543C15.7889 19.9636 17.0443 19.4436 17.9695 18.5103C18.8946 17.5769 19.4126 16.3077 19.408 14.9854C19.4149 12.967 18.2194 11.1435 16.3796 10.3662C14.5397 9.58889 12.4185 10.0112 11.0064 11.4359C9.59425 12.8606 9.16972 15.0067 9.93101 16.8721Z" fill="white"/>
+                        </svg>
+                    </address>
+                </div>
 
+                <img src="assets/img/man.png" alt="" class="man">
+            </div>
+        </section>
 
         <section class="section s-attractive">
             <div class="s-attractive__inner b-radius bg-lightblue">
@@ -1443,38 +1482,7 @@
             </div>
         </section>
 
-        <section class="section s-top-consultation">
-            <div class="s-top-consultation__inner">
-                <div class="s-top-consultation__block block-1">
-                    <h2 class="title-lg text-white">Консультация<br/>
-                        с Топ Брокером</h2>
-                    <p class="text-1 text-white">Наши эксперты помогут
-                        выбрать Вам лучшее.</p>
-                    <p class="text-1 text-white">Вы получите полную информацию
-                        об интересующем вас объекте и
-                        доступных вариантах планировок.</p>
-                </div>
-                <div class="s-top-consultation__block block-2">
-                    <button class="btn btn-darkgreen btn-mob-100" data-hystmodal="#feedback-modal">Получить консультацию</button>
-                </div>
-                <div class="s-top-consultation__block block-3">
-                    <h2 class="title-lg text-white">Иван Меркулов</h2>
-                    <p class="text-1 text-white">Главный эксперт Trust Real Estate
-                        по инвестициям в недвижимость</p>
-                </div>
-                <div class="s-top-consultation__block block-4">
-                    <a href="tel:+971502246756" class="title-lg text-white tel">+9 715 022 467 56</a>
-                    <address ><span class="text-1 text-white">Office 1913, Al Manara Tower,<br/>
-                        Business Bay, Dubai, UAE</span>
-                        <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3155 1.92865C11.8413 -0.685023 17.4042 -0.63934 21.8875 2.04831C26.3267 4.79071 29.0248 9.68507 28.9997 14.95C28.8963 20.1805 26.0033 25.0971 22.3869 28.8978C20.2997 31.1014 17.9647 33.0499 15.4297 34.7036C15.1687 34.8537 14.8827 34.9541 14.5859 35C14.3003 34.9879 14.0222 34.904 13.7766 34.7559C9.90645 32.2712 6.51119 29.0995 3.75411 25.3935C1.44707 22.2999 0.136371 18.5624 2.41032e-06 14.6885C-0.00299495 9.41345 2.78973 4.54232 7.3155 1.92865ZM9.93101 16.8721C10.6923 18.7375 12.4893 19.9543 14.4829 19.9543C15.7889 19.9636 17.0443 19.4436 17.9695 18.5103C18.8946 17.5769 19.4126 16.3077 19.408 14.9854C19.4149 12.967 18.2194 11.1435 16.3796 10.3662C14.5397 9.58889 12.4185 10.0112 11.0064 11.4359C9.59425 12.8606 9.16972 15.0067 9.93101 16.8721Z" fill="white"/>
-                        </svg>
-                    </address>
-                </div>
-
-                <img src="assets/img/man.png" alt="" class="man">
-            </div>
-        </section>
+        
 
         <section class="section s-catalog-form" id="catalog">
             <div class="s-catalog-form__inner b-radius bg-lightblue">
@@ -1530,8 +1538,9 @@
         </div>
 
         <div class="footer-soc-links">
+            <p class="text-2 text-opacity">Следите за нами</p>
             <a href="#" target="_blank"><img src="assets/img/icons/telegram.svg" alt=""></a>
-            <a href="#" target="_blank"><img src="assets/img/icons/instagram.svg" alt=""></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/instagram-footer.svg" alt=""></a>
         </div>
     </div>
 </footer>

@@ -145,16 +145,16 @@
     gap: 0 20px;
 }
 .rs-manager__photo {
-    width: 65px;
-    height: 65px;
+    width: 65px !important;
+    height: 65px !important;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
     flex-shrink: 0;
 
     @media (min-width: 1280px){
-        width: 85px;
-        height: 85px;
+        width: 85px !important;
+        height: 85px !important;
     }
 }
 .rs-manager__about {
