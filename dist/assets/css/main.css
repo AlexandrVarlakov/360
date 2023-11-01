@@ -1030,7 +1030,6 @@ label {
 
 .header__feed-btn {
   display: none;
-  font-size: 14px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -3410,7 +3409,7 @@ label {
   width: 100vw;
   height: 100vh;
   min-height: 600px;
-  background: #3F5452;
+  background: #7385A1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5103,7 +5102,7 @@ label {
 }
 @media (min-width: 1280px) {
   .realty-description {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.66fr 0.66fr 1fr;
     grid-gap: 25px;
     padding-bottom: 50px;
     margin-bottom: 50px;
@@ -5186,6 +5185,18 @@ label {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 15px;
+}
+@media (min-width: 480px) {
+  .realty-description__features ul {
+    grid-gap: 12px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 900px) {
+  .realty-description__features ul {
+    grid-gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media (min-width: 1600px) {
   .realty-description__features ul {
@@ -6770,7 +6781,7 @@ label {
   -o-transition: 500ms;
   transition: 500ms;
 }
-.area-block-hover .text-1, .area-block-hover .text-2, .area-block-hover .text-3, .area-block-hover .title-lg, .area-block-hover .title-md, .area-block-hover .entertainments__title, .area-block-hover .damac-description__big-num, .area-block-hover .infrastructure-tag--text, .area-block-hover .svg-clock path {
+.area-block-hover .text-1, .area-block-hover .text-2, .area-block-hover .text-3, .area-block-hover .title-lg, .area-block-hover .title-md, .area-block-hover .entertainments__title, .area-block-hover .damac-description__big-num, .area-block-hover .infrastructure-tag--text, .area-block-hover .svg-clock path, .area-block-hover .architector__name {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
@@ -6786,9 +6797,9 @@ label {
   transition: 500ms;
 }
 .area-block-hover:hover {
-  background-color: #3F5452;
+  background-color: #7385A1;
 }
-.area-block-hover:hover .text-1, .area-block-hover:hover .text-2, .area-block-hover:hover .text-3, .area-block-hover:hover .title-lg, .area-block-hover:hover .title-md, .area-block-hover:hover .entertainments__title, .area-block-hover:hover .damac-description__big-num, .area-block-hover:hover .infrastructure-tag--text {
+.area-block-hover:hover .text-1, .area-block-hover:hover .text-2, .area-block-hover:hover .text-3, .area-block-hover:hover .title-lg, .area-block-hover:hover .title-md, .area-block-hover:hover .entertainments__title, .area-block-hover:hover .damac-description__big-num, .area-block-hover:hover .infrastructure-tag--text, .area-block-hover:hover .architector__name {
   color: #FFF;
 }
 .area-block-hover:hover .prop-img-container img {
@@ -6802,6 +6813,10 @@ label {
 .area-block-hover:hover .btn {
   background-color: #fff;
   color: #1E1E1E;
+}
+.area-block-hover:hover .btn:hover {
+  background-color: #1E1E1E;
+  color: #fff;
 }
 
 .sa-bbay-description__img-col {
@@ -6925,6 +6940,18 @@ label {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
+  /*&:hover{
+      background-color: #3F5452;
+      .text-1, .title-lg, .title-md, .infrastructure-tag--text, .architector__name, .architector__name-block .text-3{
+          color: #fff;
+      }
+      .architector__name-block .text-3{
+          opacity: 1 ;
+      }
+      .architecture-item__img-block img{
+          transform: scale(1.1);
+      }
+  }*/
 }
 @media (min-width: 1024px) {
   .architecture-item {
@@ -6935,20 +6962,6 @@ label {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
-}
-.architecture-item:hover {
-  background-color: #3F5452;
-}
-.architecture-item:hover .text-1, .architecture-item:hover .title-lg, .architecture-item:hover .title-md, .architecture-item:hover .infrastructure-tag--text, .architecture-item:hover .architector__name, .architecture-item:hover .architector__name-block .text-3 {
-  color: #fff;
-}
-.architecture-item:hover .architector__name-block .text-3 {
-  opacity: 1;
-}
-.architecture-item:hover .architecture-item__img-block img {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 @media (min-width: 900px) {

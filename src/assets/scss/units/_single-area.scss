@@ -501,7 +501,7 @@
     transition: 500ms;
     
 
-    .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .svg-clock path{
+    .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .svg-clock path, .architector__name{
         transition: 500ms;
     }
 
@@ -516,8 +516,8 @@
     }
 
     &:hover{
-        background-color: #3F5452;
-        .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text{
+        background-color: $primary-color;
+        .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .architector__name{
             color: #FFF;
         }
         @media (min-width: 1024px){
@@ -538,6 +538,12 @@
         .btn{
             background-color: #fff;
             color: #1E1E1E;
+
+
+            &:hover{
+                background-color: #1E1E1E;
+                color: #fff;
+            }
         }
     }
 }
@@ -632,7 +638,7 @@
         transition: 500ms;
     }
 
-    &:hover{
+    /*&:hover{
         background-color: #3F5452;
         .text-1, .title-lg, .title-md, .infrastructure-tag--text, .architector__name, .architector__name-block .text-3{
             color: #fff;
@@ -643,8 +649,12 @@
         .architecture-item__img-block img{
             transform: scale(1.1);
         }
-    }
+    }*/
 }
+
+
+
+
 
 .architecture-item.item-1{
     @media (min-width: 900px){
