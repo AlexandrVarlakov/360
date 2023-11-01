@@ -113,7 +113,11 @@ address.text-2{
 	letter-spacing: 0.3px;
 
 	@include calculateResponsiveText(320px, 390px, 1.25rem, 1.875rem);
-	@include calculateResponsiveText(391px, 1920px, 1.875rem, 4rem );
+	@include calculateResponsiveText(391px, 1280px, 1.875rem, 2.5rem );
+
+	
+	@include calculateResponsiveText(1281px, 1920px, 2.5rem, 3.4375rem );
+	/*@include calculateResponsiveText(1281px, 1920px, 2.5rem, 4rem );*/
 }
 
 .title-md{
@@ -125,7 +129,8 @@ address.text-2{
 	letter-spacing: 0.3px;
 
 	@include calculateResponsiveText(320px, 390px, 1.25rem, 1.875rem);
-	@include calculateResponsiveText(391px, 1920px, 1.875rem, 2.75rem );
+	@include calculateResponsiveText(391px, 1280px, 1.875rem, 2.125rem );
+	@include calculateResponsiveText(1281px, 1920px, 2.25rem, 2.75rem );
 
 	@media (min-width: 1024px){
 		line-height: 110%;

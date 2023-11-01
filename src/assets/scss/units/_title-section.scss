@@ -7,20 +7,17 @@
 	@include calculateResponsiveProperty(1024px, 1920px, 2rem, 3.125rem, padding-right );
     @include calculateResponsiveProperty(1024px, 1920px, 40.625rem, 59.375rem, height );
 
-    margin-top: -82px;
+    
 
     @media (min-width: 1024px){
-        margin-top: -90px;
+        
 
         height: 100vh;
     }
     @media (min-width: 1260px){
-        margin-top: -137px;
+        
         
     }
-
-    @include calculateResponsiveProperty(1024px, 1920px, 0rem, 3.75rem, margin-bottom);
-
 
     background: url(../img/index.jpg);
     background-position-x: 13%;

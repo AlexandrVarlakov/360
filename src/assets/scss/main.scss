@@ -6,6 +6,8 @@
 $primary-color: #7385A1;
 $primary-color-hover: #889BB9;
 
+$black: #1E1E1E;
+
 @mixin calculateResponsiveText($startBreakPoint, $endBreakPoint, $startValue, $finishValue ){
 	@media (min-width: $startBreakPoint){
 		font-size: calculateResponsiveValue( $startBreakPoint, $endBreakPoint, $startValue, $finishValue );
@@ -125,6 +127,7 @@ main{
 	margin-bottom: 30px;
 	
 	@include calculateResponsiveProperty(390px, 1920px, 2rem, 6.25rem, margin-bottom );
+	@include calculateResponsiveProperty(390px, 1920px, 3.125rem, 6.25rem, row-gap );
 }
 
 main.sa-main{
@@ -154,7 +157,7 @@ main.sa-main{
 	
 	text-align: center;
 	font-family: 'Brutal Type';
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 500;
 	line-height: 100%; /* 16px */
 	letter-spacing: 1.12px;
@@ -345,6 +348,13 @@ label{
 		order: 2;
 	}
 }
+
+
+.iti--separate-dial-code .iti__selected-flag {
+	background-color: transparent !important;
+}
+
+
 @import 'units/header';
 @import 'units/footer';
 @import 'units/menu';

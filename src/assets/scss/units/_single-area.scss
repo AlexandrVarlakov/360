@@ -120,7 +120,7 @@
 
     .btn.btn-darkgreen{
         display: none;
-
+        flex-shrink: 0;
         @media (min-width: 1260px){
             display: flex;
         }

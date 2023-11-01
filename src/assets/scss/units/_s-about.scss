@@ -11,8 +11,7 @@
     @media (min-width: 1024px){
         grid-gap: 50px;
     }
-    margin-top: 12px;
-    @include calculateResponsiveProperty(390px, 1920px, .75rem, 3.75rem, margin-top );
+    
 }
 
 .s-about-content__left-block {

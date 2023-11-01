@@ -12,24 +12,26 @@
     }
 
     @media (min-width: 1024px){
-        background: #5F7F86;
+        background: $primary-color;
         .text-1{
             font-size: 16px;
         }
-        .title-lg, .text-1{
+        .title-md, .text-1{
             color: #F9F9F9
         }
 
         .btn{
             background-color: #fff;
-            color: #1E1E1E;
+            color: $black;
             &:hover{
-                background-color: #556B69;
+                background-color: $black;
                 color: #fff;
             }
         }
     }
     @include calculateResponsiveProperty(1024px, 1920px, 30rem, 40.625rem, height);
+
+    @include calculateResponsiveProperty(1024px, 1920px, 0rem, 3rem, margin-top);
     .man{
         width: calc(100% + 48px);
         margin-left: -24px;
@@ -46,6 +48,8 @@
         @media (min-width: 1440px){
             
             width: 46.354166666vw;
+
+            max-width: 900px;
         }
     }
 
@@ -64,7 +68,7 @@
 
 .s-top-consultation__block.block-1{
     margin-bottom: 35px;
-    .title-lg{
+    .title-md{
         margin-bottom: 24px;
     }
     .text-1:first-of-type{
@@ -79,7 +83,7 @@
     }
     @include calculateResponsiveProperty(1024px, 1920px, 1.5rem, 4.375rem, left );
     @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 4.375rem, top );
-    @include calculateResponsiveProperty(1024px, 1920px, 20rem, 30rem, max-width );
+    @include calculateResponsiveProperty(1024px, 1920px, 21rem, 30rem, max-width );
 }
 .s-top-consultation__block.block-2{
     margin-bottom: 35px;
@@ -92,7 +96,7 @@
 }
 .s-top-consultation__block.block-3{
     margin-bottom: 15px;
-    .title-lg{
+    .title-md{
         margin-bottom: 15px;
 
         

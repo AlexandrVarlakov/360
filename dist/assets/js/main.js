@@ -169,7 +169,7 @@ let realtySlider = new Swiper(".realty-swiper", {
         delay: 6000,
     },*/
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 12,
     
     scrollbar: {
         el: ".swiper-scrollbar",
@@ -928,7 +928,7 @@ if ( downloadMoreArticles && blogList){
 
             
         } )
-        
+            
         
     })
 }
@@ -1179,61 +1179,6 @@ if ( showMobFilters && deepFiltersBlock){
     })
 }
 
-const filterForm = document.querySelector('.filter-form');
-
-
-
-if ( filterForm ){
-    const filterQty = filterForm.querySelector('.show-all-filters__qty');    
-    function testChanges(){
-        let qty = 0;
-        let checkboxChecked = filterForm.querySelectorAll('input[type="checkbox"]:checked');
-        let checkboxRadio = filterForm.querySelectorAll('input[type="radio"]:checked:not([data-default])');
-        qty = checkboxChecked.length;
-        qty = qty + checkboxRadio.length;
-
-        let inputs = filterForm.querySelectorAll('input[data-range]');
-        
-        let rangeTest = false;
-
-        inputs.forEach( inp => {
-            if ( inp.value != inp.getAttribute('data-default') ) rangeTest = true;
-        } )
-
-        if ( rangeTest ) qty++;
-
-        if ( qty ) {
-            filterQty.innerHTML = qty;
-            filterQty.classList.add('active');
-        } else{
-            filterQty.innerHTML = qty;
-            filterQty.classList.remove('active');
-        }
-    }
-    testChanges();
-    let checkboxes = filterForm.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach( cb => {
-        cb.addEventListener('change', testChanges);
-    } )
-
-    let radios = filterForm.querySelectorAll('input[type="radio"]');
-    radios.forEach( rb => {
-        rb.addEventListener('change', testChanges);
-    } )
-
-    let inputs = filterForm.querySelectorAll('input[data-range]');
-    inputs.forEach( inp => {
-        inp.addEventListener('input', testChanges);
-    } )
-    /*let checkboxChecked = filterForm.querySelectorAll('input[type="checkbox"]:checked');
-        let checkboxRadio = filterForm.querySelectorAll('input[type="radio"]:checked');
-        qty = checkboxChecked.length;
-        qty = qty + checkboxRadio.length;
-
-        inp.addEventListener('input', function(){
-            let defaultValue = this.getAttribute('data-default');
-        })*/
-}
 
 
 function createNode(nodeType, nodeClasses = '', nodeSrc = '' , nodeHref = '', innerHTML=''){
@@ -1390,10 +1335,9 @@ if ( filterCurrencyInputs.length ){
                           num: {
                               mask: Number,
                               scale: 2,
-                              thousandsSeparator: '.',
+                              thousandsSeparator: ' ',
                               padFractionalZeros: true,
-                              radix: ',',
-                              mapToRadix: ['.'],
+                              
                           }
                       }
                   }
@@ -1538,13 +1482,183 @@ if (  areaMap  ){
 
 let sortByRadioInputs = document.querySelectorAll('input[name="order-by"]');
 
-sortByRadioInputs.forEach( ri => {
-    ri.addEventListener('change', function(){
-        let formNode = this.closest('form');
-        formNode.submit();
-    })
+if ( sortByRadioInputs.length ){
+    sortByRadioInputs.forEach( ri => {
+        ri.addEventListener('change', function(){
+            let formNode = this.closest('form');
+            formNode.submit();
+        })
+    
+    } )
+}
 
-} )
+
+const filterForm = document.querySelector('.filter-form');
+
+
+
+if ( filterForm ){
+    const filterQty = filterForm.querySelector('.show-all-filters__qty');    
+    function testChanges(){
+        let qty = 0;
+        let checkboxChecked = filterForm.querySelectorAll('input[name="rooms[]"]:checked');
+        let checkboxRadio = filterForm.querySelectorAll('input[type="radio"]:checked:not([data-default], [name="order-by"] )');
+        qty = checkboxChecked.length;
+        qty = qty + checkboxRadio.length;
+
+        let inputs = filterForm.querySelectorAll('.filter-currency-input');
+        
+        let rangeTest = false;
+
+        inputs.forEach( inp => {
+            let v = inp.value;
+            v = v.replace(/[\s.%]/g, '');
+            v = parseInt(v);
+
+            let df = inp.getAttribute('data-default');
+            df = df.replace(/[\s.%]/g, '');
+            df = parseInt(df);
+
+            console.log(v, df)  ; 
+            //console.log(valueCur, valueDefault);
+            if ( v !== df ) {
+                rangeTest = true;
+                console.log(v, df)  ; 
+            }
+        } )
+
+        if ( rangeTest ) qty++;
+
+        if ( qty ) {
+            filterQty.innerHTML = qty;
+            filterQty.classList.add('active');
+        } else{
+            filterQty.innerHTML = qty;
+            filterQty.classList.remove('active');
+        }
+    }
+    testChanges();
+    let checkboxes = filterForm.querySelectorAll('[name="rooms[]"]');
+    
+    checkboxes.forEach( cb => {
+        cb.addEventListener('change', testChanges);
+    } )
+
+    let radios = filterForm.querySelectorAll('input[type="radio"]');
+    radios.forEach( rb => {
+        rb.addEventListener('change', testChanges);
+    } )
+
+    let inputs = filterForm.querySelectorAll('.filter-currency-input');
+    inputs.forEach( inp => {
+        inp.addEventListener('input', ()=>{
+            testChanges();
+        });
+    } )
+    /*let checkboxChecked = filterForm.querySelectorAll('input[type="checkbox"]:checked');
+        let checkboxRadio = filterForm.querySelectorAll('input[type="radio"]:checked');
+        qty = checkboxChecked.length;
+        qty = qty + checkboxRadio.length;
+
+        inp.addEventListener('input', function(){
+            let defaultValue = this.getAttribute('data-default');
+        })*/
+}
+
+
+/*
+
+
+let maskPlaceHolder = '';
+let maskPlaceHolder1 = '';
+let mask;
+let mask1;
+phoneInput.addEventListener("countrychange", function(e) {
+	
+	this.value = "";
+    maskPlaceHolder = this.getAttribute('placeholder');
+    if ( maskPlaceHolder ){
+        let newMask = maskPlaceHolder.replace(new RegExp("[0-9]", "g"), "0");      
+        console.log(newMask);        
+        const maskOptions = {
+            mask: newMask
+
+        };
+        if ( mask ){
+			mask.updateOptions({mask: newMask});
+		} else{
+			mask = IMask(this, maskOptions);  
+		}
+    }
+});
+phoneInput.addEventListener("focus", function(e) {
+
+    if ( !maskPlaceHolder){
+        let maskPlaceHolder = this.getAttribute('placeholder');
+        
+        if ( maskPlaceHolder ){
+            let newMask = maskPlaceHolder.replace(new RegExp("[0-9]", "g"), "0");   
+			console.log(newMask);        
+            const maskOptions = {
+                mask: newMask
+    
+            };
+            if ( mask ){
+				mask.updateOptions({mask: newMask});
+			} else{
+				mask = IMask(this, maskOptions);  
+			}
+        }
+    }
+
+    
+});
+if ( phoneInput1 ){
+	phoneInput1.addEventListener("countrychange", function(e) {
+	this.value = "";
+    maskPlaceHolder1 = this.getAttribute('placeholder');
+		
+    if ( maskPlaceHolder1 ){
+        let newMask = maskPlaceHolder1.replace(new RegExp("[0-9]", "g"), "0");      
+        
+        const maskOptions = {
+            mask: newMask
+
+        };
+		
+		if ( mask1 ){
+			mask1.updateOptions({mask: newMask});
+		} else{
+			mask1 = IMask(this, maskOptions);  
+		}
+		
+        
+    }
+});
+phoneInput1.addEventListener("focus", function(e) {
+
+    if ( !maskPlaceHolder1){
+        let maskPlaceHolder1 = this.getAttribute('placeholder');
+        
+        if ( maskPlaceHolder1 ){
+            let newMask = maskPlaceHolder1.replace(new RegExp("[0-9]", "g"), "0");   
+			console.log(newMask);        
+            const maskOptions = {
+                mask: newMask
+    
+            };
+            if ( mask1 ){
+				mask1.updateOptions({mask: newMask});
+			} else{
+				mask1 = IMask(this, maskOptions);  
+			}    
+        }
+    }
+
+    
+});
+
+*/
 
 
 
@@ -1585,3 +1699,50 @@ window.addEventListener('scroll', function(event){
     }
 
 })*/
+
+
+/*
+
+let form = document.querySelector('.get-guide__form');
+   if ( form ){
+	form.onsubmit = function(event){
+    event.preventDefault();
+    console.log(1111)
+    if ( testRequired(this.name)  && testRequired(this.phone) && testMinLength(this.phone)){
+        let nameInput = this.name;
+        let phoneInput = this.phone;
+        let action = this.action1;
+        let data_body = "name=" + this.name.value + '&phone=' +  this.phone.value+'&action=sendEmail'+'&phone_code='+ this.action1.value; 
+        fetch(form.getAttribute('action'), {
+            method: "POST",
+            body: data_body,
+            headers:{"content-type": "application/x-www-form-urlencoded"} 
+        })
+        .then( (response) => {
+            console.log('nuce')
+            if (response.status !== 200) {
+                return Promise.reject();
+            }
+            feedbackform.close();
+            feedbackform.open('#thanks-modal');
+            nameInput.value = '';
+            phoneInput.value = '';
+            return response.text()
+        })
+        .then(i => console.log(i))
+        .catch(() => {console.log('ошибка')
+    
+            nameInput.value = '';
+            phoneInput.value = '';
+            feedbackform.close();
+            feedbackform.open('#thanks-modal');
+            
+        });
+    }
+
+
+    
+}
+	
+}
+*/
