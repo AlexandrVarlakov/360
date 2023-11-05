@@ -841,6 +841,14 @@ label {
   background-color: transparent !important;
 }
 
+.iti {
+  z-index: 10000 !important;
+}
+
+.iti__country-list {
+  z-index: 10000 !important;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -1391,14 +1399,18 @@ label {
 
 .footer__nav {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media (min-width: 768px) {
   .footer__nav {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 1200px) {
@@ -1532,6 +1544,7 @@ label {
   top: 0;
   width: 0;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   background-color: rgba(30, 30, 30, 0.7);
   z-index: 600;
@@ -1558,6 +1571,8 @@ label {
   width: 100vw;
   height: 100vh;
   max-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  max-height: calc(var(--vh, 1vh) * 100);
   background-color: #fff;
   -webkit-transition-duration: 600ms;
        -o-transition-duration: 600ms;
@@ -2519,15 +2534,14 @@ label {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 16px;
+  line-height: 125%;
   font-weight: 400;
-  line-height: 100%;
   letter-spacing: 0.16px;
 }
 @media (min-width: 1024px) {
   .realty-card__body .title {
     font-size: 18px;
     font-weight: 400;
-    line-height: 125%;
     letter-spacing: 0.18px;
     text-transform: uppercase;
   }
@@ -3236,6 +3250,12 @@ label {
   }
 }
 
+.modal.show.hystmodal--active {
+  max-height: 100vh;
+  overflow-y: auto;
+  max-height: calc(var(--vh, 1vh) * 100);
+}
+
 .feedback-modal.feedback-modal {
   display: grid;
   grid-template-columns: 1fr;
@@ -3267,7 +3287,7 @@ label {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -3408,6 +3428,7 @@ label {
 .modal-body.thanks-modal {
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height: 600px;
   background: #7385A1;
   display: -webkit-box;
@@ -3720,6 +3741,7 @@ label {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 35px 20px;
+  min-height: 320px;
   padding-bottom: 35px;
   border-bottom: 1px solid rgba(176, 188, 194, 0.5);
 }
@@ -3847,6 +3869,8 @@ label {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  z-index: 33;
+  position: relative;
 }
 .filter-form .text-nav {
   height: 20px;
@@ -4678,6 +4702,10 @@ label {
   padding-bottom: 6px !important;
 }
 
+.combo-select__inserted-value, .combo-select__placeholder {
+  display: none;
+}
+
 .realty-single {
   max-width: 100%;
   overflow: hidden;
@@ -5145,6 +5173,11 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  color: rgba(30, 30, 30, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 135%; /* 21.6px */
+  letter-spacing: 0.16px;
 }
 .realty-description__text-block .text-2 {
   opacity: 0.8;
@@ -6451,6 +6484,16 @@ label {
     padding-right: 5rem;
   }
 }
+@media (min-width: 1024px) {
+  .area-infrastructure__block {
+    row-gap: calc(0rem + (1vw - 10.24px) * 3.3482142857);
+  }
+}
+@media (min-width: 1920px) {
+  .area-infrastructure__block {
+    row-gap: 1.875rem;
+  }
+}
 
 .area-infrastructure__block.with-img {
   padding-bottom: 0;
@@ -6492,6 +6535,9 @@ label {
 @media (min-width: 1024px) {
   .area-infrastructure__img {
     padding-bottom: 63.724137931%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 .area-infrastructure__img img {
@@ -6669,6 +6715,14 @@ label {
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-radius: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .entertainments__item {
+    background-color: transparent !important;
+  }
+  .entertainments__item .text-1, .entertainments__item .entertainments__title {
+    color: #1E1E1E !important;
   }
 }
 @media (min-width: 768px) {
@@ -7002,6 +7056,9 @@ label {
 @media (min-width: 1024px) {
   .architecture-item__img-block {
     padding-bottom: 53%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 .architecture-item__img-block img {
@@ -7190,6 +7247,9 @@ label {
 }
 @media (min-width: 1024px) {
   .damac-description__img-block {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     border-radius: 10px 10px 0 0;
     padding-bottom: 31.636363636%;
   }
@@ -7452,6 +7512,11 @@ label {
     padding-bottom: 0px;
   }
 }
+@media (min-width: 1280px) {
+  .damac-entertainments__item.item-2 {
+    gap: 30px;
+  }
+}
 
 .description-grid {
   display: grid;
@@ -7493,6 +7558,16 @@ label {
     padding: 30px;
   }
 }
+@media (min-width: 1024px) {
+  .description-grid__item {
+    row-gap: calc(1.875rem + (1vw - 10.24px) * 5.5803571429);
+  }
+}
+@media (min-width: 1920px) {
+  .description-grid__item {
+    row-gap: 5rem;
+  }
+}
 
 .description-grid__img-block {
   position: relative;
@@ -7514,6 +7589,9 @@ label {
 @media (min-width: 1024px) {
   .description-grid__img-block {
     padding-bottom: 56%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -7763,6 +7841,9 @@ label {
 @media (min-width: 1024px) {
   .area-infrastructure.palm .area-infrastructure__img {
     padding-bottom: 51.051401869%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -7798,7 +7879,7 @@ label {
 }
 @media (min-width: 1024px) {
   .infrastructure-text-block {
-    padding-bottom: calc(0rem + (1vw - 10.24px) * 5.5803571429);
+    padding-bottom: calc(1rem + (1vw - 10.24px) * 3.7946428571);
   }
 }
 @media (min-width: 1920px) {
@@ -7872,6 +7953,18 @@ label {
 @media (min-width: 1920px) {
   .text-block-padding {
     padding-bottom: 3.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-block-padding.pb-0 {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-block-padding.pt-0 {
+    padding-top: 0 !important;
   }
 }
 

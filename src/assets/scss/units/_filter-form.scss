@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-
+    z-index: 33;
+    position: relative;
     .text-nav{
         height: 20px;
     }

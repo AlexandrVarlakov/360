@@ -5,7 +5,23 @@ const mobMenuLayer = document.querySelector('.mob-menu-layer');
 const mobMenu = document.querySelector('.mob-menu');
 const header = document.querySelector('.header');
 
+let vh = window.innerHeight * 0.01;
 
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+window.addEventListener('scroll', function(){
+	
+    if ( window.scrollY > 0 ){
+        header.classList.add('scrolled')
+    } else{
+        header.classList.remove('scrolled')
+    }
+})
 
 window.addEventListener('scroll', function(){
     if ( window.scrollY > 0 ){
@@ -14,6 +30,35 @@ window.addEventListener('scroll', function(){
         header.classList.remove('scrolled')
     }
 })
+
+
+let innerLinks = document.querySelectorAll('a[data-inner-link]');
+if ( innerLinks.length ){
+    innerLinks.forEach(il => {
+        il.addEventListener('click', function(event){
+            event.preventDefault();
+            let targetClick = document.querySelector(this.getAttribute('href'));
+
+            if (targetClick){
+
+
+                let ot = targetClick.offsetTop;
+                
+                let headerHeight = header.offsetHeight;
+                ot = ot - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: ot,
+                    left: 0,
+                    behavior: "smooth"
+                });
+
+                
+            }
+        })
+    })
+}
+
 
 hamburger.addEventListener('click', function(){
 
@@ -1263,7 +1308,7 @@ let rsGallery = new Swiper(".swiper.rs-gallery-slider", {
     
 })
 
-
+/*
 
 const addFavoriteInSingleRealty = document.querySelectorAll('.fvw-single-realty');
 const addFavoriteInRealtyCard = document.querySelectorAll('.fvw-realty-card');
@@ -1283,8 +1328,8 @@ if (addFavoriteInSingleRealty.length){
         })
     } )
 }
-
-
+*/
+/*
 if (  addFavoriteInRealtyCard.length ){
     addFavoriteInRealtyCard.forEach( btn => {
         btn.addEventListener('click', function(){
@@ -1298,7 +1343,7 @@ if (  addFavoriteInRealtyCard.length ){
 
         })
     } )
-}
+}*/
 
 
 let swiperNav  = new Swiper(".swiper.sa-inner-nav-swiper", {
@@ -1498,7 +1543,7 @@ const filterForm = document.querySelector('.filter-form');
 
 
 if ( filterForm ){
-    const filterQty = filterForm.querySelector('.show-all-filters__qty');    
+    let filterQty = document.querySelector('.show-all-filters__qty');    
     function testChanges(){
         let qty = 0;
         let checkboxChecked = filterForm.querySelectorAll('input[name="rooms[]"]:checked');

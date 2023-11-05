@@ -25,14 +25,14 @@
         flex-grow: 1;
 
         font-size: 16px;
-                
+        line-height: 125%;   
         font-weight: 400;
-        line-height: 100%; 
+        
         letter-spacing: 0.16px; 
         @media (min-width: 1024px){
             font-size: 18px;            
             font-weight: 400;
-            line-height: 125%;
+            
             letter-spacing: 0.18px;
             text-transform: uppercase;
         }

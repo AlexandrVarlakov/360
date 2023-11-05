@@ -38,7 +38,20 @@ if ( comboSelects.length ){
         if ( !cs.hasAttribute('data-type') ){
             const items = cs.querySelectorAll('input[type="radio"]');
                 let t = cs.querySelector('input[type="radio"]:checked');
-                if ( t ){
+                let parent, insertValue;
+                if  ( t ) {
+                    parent = t.closest('label');
+                    insertValue = parent.querySelector('.combo-select__inserted-value');    
+
+                    
+                }
+                
+
+                
+                if ( insertValue ){
+                    currentValue.innerHTML = insertValue.innerHTML;
+                    
+                } else if ( t ){
                     currentValue.innerHTML =  t.getAttribute('data-value');
                 }
             
@@ -47,7 +60,14 @@ if ( comboSelects.length ){
 
             items.forEach( item =>  {
                 item.addEventListener('change', function(){
-                    currentValue.innerHTML = this.getAttribute('data-value');
+                    let parent = this.closest('label');
+                    let insertValue = parent.querySelector('.combo-select__inserted-value');
+
+                    if ( insertValue ){
+                        currentValue.innerHTML = insertValue.innerHTML;
+                    } else{
+                        currentValue.innerHTML = this.getAttribute('data-value');
+                    }                    
                     cs.classList.remove('active');                
                 })
             })
@@ -83,7 +103,7 @@ function testCheckedCheckboxes(parent){
         
     } )
 
-    if (value === '') return parent.getAttribute('data-placeholder')
+    if (value === '') return parent.querySelector('.combo-select__placeholder').innerHTML;
 
     return value;
 }

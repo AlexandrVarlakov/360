@@ -64,6 +64,7 @@
     top: 0;
     width: 0;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
     background-color: rgba($color: #1E1E1E, $alpha: .7);
     z-index: 600;
@@ -84,6 +85,8 @@
     width: 100vw;
     height: 100vh;
     max-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    max-height: calc(var(--vh, 1vh) * 100);
     background-color: #fff;
     transition-duration: 600ms;
     transition-delay: 150ms;

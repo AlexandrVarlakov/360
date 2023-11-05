@@ -78,7 +78,7 @@
     display: flex;
     align-items: center;
     gap: 0 20px;
-
+    
     @media (min-width: 768px){
         order: 3;
     }
@@ -102,11 +102,13 @@
 
 .footer__nav{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    align-items: flex-start;
 
     @media (min-width: 768px){
         order: 2;
+        grid-template-columns: 1fr;
     }
 
     @media (min-width: 1200px){
