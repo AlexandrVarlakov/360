@@ -9,12 +9,18 @@
     }
 
     @media (min-width: 1400px){
-        grid-template-columns: 1fr 930px;
+        grid-template-columns: 1fr 1000px;
+        grid-gap: 35px 15px;
+    }
+    @media (min-width: 1460px){
+        grid-template-columns: 1fr 1080px;
         grid-gap: 35px;
 
     }
 }
-
+.filter-submit-wrap{
+    
+}
 .filter-form__search-string-container{
     display: flex;
     justify-content: space-between;
@@ -165,14 +171,21 @@
     @media (min-width: 640px){
         grid-template-columns: 1fr 1fr;
     }
+    
+    @media (min-width: 1200px){
+        grid-template-columns: 1fr 1fr 2fr;
+    }
 }
 .filter-form__deep-filters{
     display: none;
 
     @media (min-width: 1400px){
         display: grid !important;
+        grid-gap: 10px !important;    
+        grid-template-columns: 180px 160px 360px minmax(300px, 360px) !important; 
+    }
+    @media (min-width: 1460px){
         grid-gap: 25px !important;    
-        grid-template-columns: 180px 160px 360px 148px !important; 
     }
 }
 
@@ -253,6 +266,21 @@
         flex-direction: column;
         gap: 30px;
     }
+
+    @media (min-width: 640px){
+        grid-column: 1 / -1;
+        gap: 35px;
+    }
+
+    @media (min-width: 1200px){
+        grid-column: 3 / 4;
+        gap: 35px;
+    }
+
+    @media (min-width: 1400px){
+        grid-column: unset;
+        gap: 10px;
+    }
 }
 
 .filter-currency-block{
@@ -326,23 +354,73 @@
 }
 
 .filter-submit-wrap{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (min-width: 1400px){
+        flex-direction: row;
+
+        .bth{
+            flex-shrink: 0;
+        }
+    }
+
+
     .btn{
         width: 100%;
-        font-size: 14px;
+        
         padding: 27px 45px;
-        @media (min-width: 1400px){
-            height: 100%;
-        }
+        
     }
 
     @media (min-width: 640px){
         grid-column: 1 / 3;
-    }
+        
+        flex-direction: row;
+        justify-content: space-between;
+        .filter-submit, .filter-reset{
+            width: auto;
+            padding: 22px 25px;
+        }
 
+        .filter-reset{
+            padding: 22px 25px;
+            order: 1;
+        }
+
+        .filter-submit{
+            order: 2;
+            padding: 22px 35px;
+        }
+    }
+    @media (min-width: 1200px){
+        grid-column: 1 / 4;
+    }
     @media (min-width: 1400px){
         grid-column: unset;
-        padding-left: 15px;
+        padding-left: 0px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        .filter-reset{
+            padding: 22px 25px;
+        }
 
-        
+        .filter-submit{
+            padding: 22px 25px;
+        }
+    }
+    @media (min-width: 1460px){
+        padding-left: 15px;
+        .filter-reset{
+            padding: 22px 25px;
+         
+        }
+
+        .filter-submit{
+         
+            padding: 22px 35px;
+        }
     }
 }

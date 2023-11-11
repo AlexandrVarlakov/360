@@ -509,7 +509,7 @@
     transition: 500ms;
     
 
-    .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .svg-clock path, .architector__name{
+    .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .svg-clock path, .architector__name, .pay-plan-310__title, .dark-invert{
         transition: 500ms;
     }
 
@@ -525,9 +525,13 @@
 
     &:hover{
         background-color: $primary-color;
-        .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .architector__name{
+        .text-1, .text-2, .text-3, .title-lg, .title-md, .entertainments__title, .damac-description__big-num, .infrastructure-tag--text, .architector__name, .pay-plan-310__title{
             color: #FFF;
         }
+        .dark-invert{
+            filter: invert(1);
+        }
+        
         @media (min-width: 1024px){
 
         }
@@ -1005,6 +1009,13 @@
         padding: 30px;
     }
     @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 5rem, row-gap );
+}
+
+.description-grid__item.nb-description-item{
+    gap: 45px;
+    @media (min-width: 1024px){
+        gap: 55px;
+    }
 }
 
 .description-grid__img-block{

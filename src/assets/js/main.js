@@ -1791,3 +1791,19 @@ let form = document.querySelector('.get-guide__form');
 	
 }
 */
+
+
+let sliderPhotoGallery = new Swiper(".swiper.swiper-photo-gallery", {
+    speed: 1000,
+    
+    slidesPerView: 1,
+    spaceBetween: 25,
+        
+    breakpoints: {
+        
+        767: {
+            slidesPerView: 1.9,
+            
+        }
+    }
+})

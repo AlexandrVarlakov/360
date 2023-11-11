@@ -1,0 +1,299 @@
+.f-new-building{
+    padding-top: 50px;
+    
+    .text-1{
+        max-width: 690px;
+    }
+}
+
+.new-building-logo{
+    
+    width: 100%;
+    max-width: 500px;
+    img{
+        width: 100%;
+
+        max-width: 500px;
+    }
+}
+
+.desc-grid-310-options{
+    display: inline-grid;
+    grid-template-columns: auto;
+    
+
+    grid-gap: 35px;
+
+
+    @media (min-width: 1024px){
+        grid-template-columns: auto auto;
+        width: max-content;
+        grid-gap: 35px 45px;
+    }
+}
+
+
+.pay-plan-310__title{
+    font-size: 30px;
+    font-weight: 400;
+    @media (max-width: 1024px){
+        font-size: 35px;
+    }
+}
+
+.pay-plan-310__list{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @media (min-width: 1024px){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.section-infrastructure-maps{
+    @media (max-width: 639px){
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+.section-infrastructure-maps__map-container{
+    width: 100%;
+
+    @media (min-width: 640px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+
+        .s-area-map{
+            padding-bottom: 76.923076923%;
+            border-radius: 10px;
+        }
+
+
+        .s-area-map {
+            grid-column: 1 / 3;
+        }
+
+        .s-inf-map + .s-area-map {
+            grid-column: 2 / 3;
+        }
+    }
+
+    @media (min-width: 1024px){
+        grid-gap: 50px;
+    }
+    .s-area-map__inner{
+        @media (min-width: 640px){
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+}
+.s-inf-map__inner{
+    position: relative;
+    padding-bottom: 76.923076923%;
+    
+    @media (min-width: 640px){
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.nb-banner-block{
+    border-radius: 10px;
+    background: #F9F9F9; 
+    overflow: hidden;
+    @media (min-width: 640px){
+        position: relative;
+    }
+}
+
+.nb-banner-block__text-block{
+    padding: 40px 25px;
+    .text-2{
+        line-height: 1.35;
+    }
+    @media (min-width: 640px){
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .text-2{
+            text-align: center;
+        }
+    }
+
+    @include calculateResponsiveProperty(768px, 1920px, 2.5rem, 6.25rem, padding-top);
+}
+
+.nb-banner-block__img-block{
+    padding-bottom: 115%;
+    position: relative;
+
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        object-position: center;
+        transition: 8s;
+        @media (min-width: 768px){
+            object-position: top center;
+        }
+    }
+
+    &:hover{
+        img{
+            transition: 1s;
+
+            transform: scale(1.1);
+        }
+    }
+
+    @media (min-width: 768px){
+        padding-bottom: 0;
+    }
+
+    @include calculateResponsiveProperty(768px, 1920px, 30rem, 40.625rem, height );
+}
+
+
+.nb-banner-block__title{
+    position: relative;
+    display: inline-block;
+
+    .title-md{
+        position: relative;
+        z-index: 5;
+        display: inline-block;
+        @media (min-width: 640px){
+            text-align: center;
+        }
+    }
+}
+
+.nb-banner-block__title-decor{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nb-desc-grid__item{
+    border-radius: 10px;
+    overflow: hidden;
+    
+    background: #F9F9F9; 
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    @media (min-width: 640px){
+        
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1024px){
+        padding: 30px;
+    }
+
+    @media (min-width: 1200px){
+        grid-template-columns: 2fr 0.8fr 2fr;
+        grid-gap: 30px;
+        .col-2{
+            grid-column: span 2;
+        }
+    }
+}
+
+
+.nb-desc-grid__text-block{
+    padding: 40px 25px;
+
+    @media (max-width: 639px){
+        order: 1;
+    }
+    @media (min-width: 640px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+}
+
+.nb-desc-grid__img-block{
+    @media (max-width: 639px){
+        order: 2;
+    }
+}
+
+.nb-desc-grid__sobha-realty-logo{
+    max-width: 123px;
+
+    @include calculateResponsiveProperty(390px, 1920px, 7.6875rem, 13.375rem, max-width);
+}
+.nb-desc-grid__sobha-hartland-logo{
+    max-width: 184px;
+
+    @include calculateResponsiveProperty(390px, 1920px, 11.5rem, 21.25rem, max-width);
+}
+.nb-desc-grid__inner-res{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+
+    @media (min-width: 1024px){
+        flex-direction: row;
+        gap: 24px 45px;
+        flex-wrap: wrap;
+    }
+}
+
+.nb-desc-grid__img-block{
+    position: relative;
+    padding-bottom: 115%;
+    overflow: hidden;
+
+    @media (min-width: 1024px){
+        padding-bottom: 72.5%;
+        border-radius: 10px;
+    }
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.sobha-hartland-res{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

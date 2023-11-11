@@ -37,13 +37,17 @@
         margin-left: -24px;
 
         @media (min-width: 1024px){
-            width: 33.354vw;
+            width: 56vw;
             position: absolute;
             margin-left: 0;
             left: 55%;
             bottom: 0;
             transform: translate(-50%, 0);
+            max-width: 750px;
             
+        }
+        @media (min-width: 1100px){
+            //width: 40vw;
         }
         @media (min-width: 1440px){
             
@@ -80,6 +84,7 @@
 
     @media (min-width: 1024px){
         position: absolute;
+        
     }
     @include calculateResponsiveProperty(1024px, 1920px, 1.5rem, 4.375rem, left );
     @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 4.375rem, top );
@@ -90,6 +95,8 @@
     @media (min-width: 1024px){
         margin-bottom: 0px;
         position: absolute;
+        
+        z-index: 5;
     }
     @include calculateResponsiveProperty(1024px, 1920px, 1.5rem, 4.375rem, left );
     @include calculateResponsiveProperty(1024px, 1920px, 1.875rem, 4.375rem, bottom );
@@ -109,6 +116,7 @@
         margin-bottom: 35px;
         position: absolute;
         max-width: 300px;
+        z-index: 5;
         & > *{
             text-align: right
         }
@@ -128,9 +136,12 @@
             font-weight: 400;
             display: block;
             margin-bottom: 15px;
+            
         }
     }
-
+    @media (min-width: 1024px){
+        z-index: 5;
+    }
     address{
         display: none;
 

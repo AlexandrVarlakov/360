@@ -169,6 +169,18 @@ main.sa-main{
 	}
 }
 
+.btn.with-icon{
+	gap: 0 15px;
+	img{
+		flex-shrink: 0;
+	}
+	@media (min-width: 1024px){
+		padding: 13px 35px;
+		
+	}
+}
+
+
 .btn.fz-16{
 	font-size: 16px;
 }
@@ -181,6 +193,19 @@ main.sa-main{
 		background-color: $primary-color-hover;
 	}
 }
+
+.btn.btn-lightblue{
+	background-color: #F7F7FA;
+	color: #7385A1;
+
+	&:hover{
+		color: #fff;
+		background-color: #1E1E1E;
+	}
+}
+
+
+
 
 .btn.fz-16-14{
 	font-size: 16px;
@@ -360,6 +385,45 @@ label{
 	z-index: 10000 !important;
 }
 
+
+.section.section-gallery{
+	padding-right: 0 !important;
+
+	@media (max-width: 767px){
+		padding-left: 0 !important;
+		
+	}
+}
+
+
+.swiper.swiper-photo-gallery{
+	.swiper-slide{
+		overflow: hidden;
+
+		@media (min-width: 767px){
+			border-radius: 10px;
+		}
+	}
+
+	.swiper-slide > div{
+		padding-bottom: 115%;
+		position: relative;
+		@media( min-width: 480px){
+			padding-bottom: 58.510638297%;
+		}
+
+		img{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center
+		}
+	}
+}
+
 @import 'units/header';
 @import 'units/footer';
 @import 'units/menu';
@@ -381,6 +445,8 @@ label{
 @import 'units/realty-single';
 @import 'units/blog';
 @import 'units/article';
+
+@import 'units/new-building';
 @import 'units/single-area';
 @import 'units/common/width';
 @import 'units/get-guide';
