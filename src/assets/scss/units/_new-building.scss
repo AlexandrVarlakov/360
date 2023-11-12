@@ -75,10 +75,13 @@
 
         .s-area-map {
             grid-column: 1 / 3;
+            padding-bottom: 38%;
         }
 
         .s-inf-map + .s-area-map {
             grid-column: 2 / 3;
+
+            
         }
     }
 

@@ -1,0 +1,212 @@
+$vsm: 480px;
+$sm: 640px;
+$md: 768px;
+$nlg: 1024px;
+$xl: 1260px;
+$xxl: 1440px;
+
+$bs-break-points: (
+  vsm: $vsm,   
+  sm: $sm,   
+  md: $md,     
+  lg: $nlg,
+  xl: $xl,
+  xxl: $xxl
+);
+
+
+
+$flex-properties: (
+    "flex-direction": (
+      "row",
+      "row-reverse",
+      "column",
+      "column-reverse",
+    ),
+    "flex-wrap":(
+        "nowrap",
+        "wrap",
+        "wrap-reverse"
+    ),
+    "flex-shrink": (
+        "0",
+        "1"
+    ),
+    "flex-grow": (
+        "0",
+        "1"
+    ),
+    "order": (
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+    
+    ),
+);
+
+@each $property, $property-list in $flex-properties {        
+    @each $value in $property-list{
+        .#{$property}-#{$value}{
+            #{$property}: #{$value} !important;
+        }
+    }   
+}
+
+@each $brekpoint-name, $breakpoint-value in $bs-break-points{
+    @each $property, $property-list in $flex-properties {        
+        @each $value in $property-list{
+            @media (min-width: $breakpoint-value){
+                .#{$property}-#{$brekpoint-name}-#{$value}{
+                    #{$property}: #{$value} !important;
+                }
+            }
+        }   
+    }
+}
+
+
+
+$display-properties: (
+    block,
+    inline-block,
+    inline,
+    none,
+    table,
+    flex,
+    inline-flex,
+    grid,
+    inline-grid,
+);
+
+
+@each $property-name in $display-properties {
+    .d-#{$property-name} {
+        display: $property-name !important;
+        
+    }
+        
+}
+
+@each $brekpoint-name, $breakpoint-value in $bs-break-points{
+    @media (min-width: $breakpoint-value){
+        @each $property-name in $display-properties {
+            .d-#{$brekpoint-name}-#{$property-name} {
+                display: $property-name !important;                    
+            }
+        }
+    }
+}
+
+
+
+$gaps:(
+    0: 0px,
+    5: 5px, 
+    10: 10px, 
+    15: 15px, 
+    20: 20px, 
+    25: 25px, 
+    30: 30px, 
+    35: 35px, 
+    40: 40px, 
+    45: 45px, 
+    50: 50px, 
+    55: 55px, 
+    60: 60px, 
+    70: 70px, 
+    80: 80px, 
+   
+);
+
+
+@each $number, $offset in $gaps {
+
+    
+    .gx-#{$number}{
+        column-gap: $offset ;
+    }
+    .gy-#{$number}{
+        row-gap: $offset ;
+    }
+    
+}
+
+
+
+@each $bp-name, $break-point in $bs-break-points {
+    @each $number, $offset in $offsets {
+        
+        //margin-bottom
+        .gx-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                column-gap: $offset ;
+            }
+            
+        }
+        .gy-#{$bp-name}-#{$number}{
+            @media (min-width: $break-point){
+                row-gap: $offset ;
+            }
+            
+        }
+    }
+}
+
+
+$aligment-propirties:(
+    "justify-content": (
+        "start": "flex-start",
+        "end": "flex-end",
+        "center": "center",
+        "between": "space-between",
+        "around": "space-around",
+        "evenly": "space-evenly",
+        "stretch": "stretch"
+    ),
+    "align-items": (
+        "start": "flex-start",
+        "end": "flex-end",
+        "center": "center",
+        "stretch": "stretch",
+        "baseline": "baseline"
+    ),
+    "align-self": (
+        "start": "flex-start",
+        "end": "flex-end",
+        "center": "center",
+        "stretch": "stretch",
+        "baseline": "baseline"
+    )
+);
+
+
+@each $property, $property-list in $aligment-propirties {        
+    @each $key, $value in $property-list{
+        .#{$property}-#{$key}{
+            #{$property}: #{$value} !important;
+        }
+    }   
+}
+
+@each $brekpoint-name, $breakpoint-value in $bs-break-points{
+    @each $property, $property-list in $aligment-propirties {        
+        @each $key, $value in $property-list{
+            @media (min-width: $breakpoint-value){
+                .#{$property}-#{$brekpoint-name}-#{$key}{
+                    #{$property}: #{$value} !important;
+                }
+            }
+        }   
+    }
+}
+

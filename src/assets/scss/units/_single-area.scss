@@ -364,6 +364,8 @@
         padding-bottom: 38%;
         overflow: hidden;
         border-radius: 10px;
+
+        max-height: 680px;
         
     }
 }
@@ -375,7 +377,7 @@
     height: 100%;
     transform: translate(-50%, 0);
     overflow: hidden;
-
+    max-height: 680px;
     @media (min-width: 768px){
         width: 100%;
     }

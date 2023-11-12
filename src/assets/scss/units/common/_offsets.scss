@@ -3,7 +3,9 @@
 $lg: 992px;
 
 
+
 $break-points: (
+     
   lg: $lg,
 );
 
@@ -26,6 +28,10 @@ $offsets:(
     100: 100px, 
    
 );
+
+
+
+
 @each $number, $offset in $offsets {
 
     //margin-bottom
@@ -34,6 +40,7 @@ $offsets:(
     }
     
 }
+
 
 @each $bp-name, $break-point in $break-points {
     @each $number, $offset in $offsets {
@@ -47,6 +54,14 @@ $offsets:(
         }
     }
 }
+
+
+
+
+
+
+
+
 
 .block-margin-bottom{
     margin-bottom: 30px;

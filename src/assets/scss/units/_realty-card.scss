@@ -72,6 +72,14 @@
     }
 }
 
+.realty-card__price.h4[data-hystmodal="#feedback-modal"]{
+    cursor: pointer;
+    transition: 300ms;
+    &:hover{
+        color: #E7B05F;
+    }
+}
+
 .realty-card__option-icon{
     width: 23px;
     height: 23px;
