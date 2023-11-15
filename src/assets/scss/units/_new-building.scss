@@ -146,6 +146,10 @@
     @include calculateResponsiveProperty(768px, 1920px, 2.5rem, 6.25rem, padding-top);
 }
 
+.nb-banner-block__text-block.about{
+    @include calculateResponsiveProperty(768px, 1920px, 4rem, 9.375rem, padding-top);
+}
+
 .nb-banner-block__img-block{
     padding-bottom: 115%;
     position: relative;
@@ -180,6 +184,19 @@
 }
 
 
+
+
+.nb-banner-block__img-block.about{
+    img{
+        object-fit: cover;
+        object-position: left bottom;
+
+        @media (min-width: 1200px){
+            object-position: center center;
+        }
+    }
+}
+
 .nb-banner-block__title{
     position: relative;
     display: inline-block;
@@ -201,7 +218,18 @@
     width: 100%;
     height: 100%;
 }
+.nb-banner-block__title-decor.about{
+    height: auto;
+    width: 80%;
+    top: 25%;
 
+    @media (min-width: 560px){
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
 .nb-desc-grid__item{
     border-radius: 10px;

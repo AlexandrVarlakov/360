@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Краткое описание страницы"/>
+    <title>Сайт</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/swiper.min.css"> 
+    <link rel="stylesheet" href="assets/css/fancybox.min.css"> 
+    <link rel="stylesheet" href="assets/css/hystmodal.min.css"> 
+    <link rel="stylesheet" href="assets/css/main.min.css">     
+    
+</head>
+<body>
+    <header class="header about-header section">
+        <div class="header__content">
+            
+            <div class="header__left-block">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/logo.png" alt="" class="dark-logo">
+                    <img src="assets/img/white-logo.png" alt="" class="white-logo">
+                </a>
+
+                <nav class="desktop-menu">
+                    <ul class="desktop-menu__list">
+                        <li class="desktop-menu__item"><a href="sales.html" class="desktop-menu__link link-2 link-dark">Покупки</a></li>
+                        <li class="desktop-menu__item"><a href="rent.html" class="desktop-menu__link link-2 link-dark">Аренда</a></li>
+                        <li class="desktop-menu__item"><a href="new-buildings.html" class="desktop-menu__link link-2 link-dark">Новостройки</a></li>
+                        <li class="desktop-menu__item"><a href="areas.html" class="desktop-menu__link link-2 link-dark">Районы</a></li>                        
+                        <li class="desktop-menu__item"><a href="brokers.html" class="desktop-menu__link link-2 link-dark">Брокеры</a></li>
+                        <li class="desktop-menu__item"><a href="blog.html" class="desktop-menu__link link-2 link-dark">Блог</a></li>
+                        <li class="desktop-menu__item"><a href="about-us.html" class="desktop-menu__link link-2 link-dark">О нас</a></li>                        
+                    </ul>                    
+                </nav>
+            </div>
+
+            <div class="header__right-block">
+
+                <div class="combo-select site-currency">
+                    <div class="combo-select__outer-box">
+                        <div class="combo-select__current-value">USD</div>
+                        <div class="combo-select__arrow">
+                            <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 1L6.5 6L1 1" stroke="#B0BCC2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </div>
+                    </div>
+                    <div class="combo-select__drop">
+                        <div class="combo-select__drop--scroll">
+                            <ul>
+                                <li>                                                
+                                    <label  class="combo-select__item-text">USD
+                                        <input type="radio" name="order-by" data-value="USD" value="USD" class="combo-select__radio"  checked>
+                                    </label>
+                                </li>
+
+                                <li>                                                
+                                    <label  class="combo-select__item-text">RUB
+                                        <input type="radio" name="order-by" data-value="RUB" value="RUB" class="combo-select__radio"  >
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+
+
+                <div class="lang-switcher">
+                    <div class="lang-switcher__outer-block">
+                        <div class="lang-switcher__value-block">
+                            <span class="lang-switcher__icon-value">
+                                <img src="assets/img/icons/russian.svg" alt="">
+                            </span>
+                            <span class="lang-switcher__text-value">Русский</span>                            
+                        </div>                        
+                    </div>
+                    
+
+                    <ul class="lang-switcher__list">
+                        <li class="lang-switcher__item active">RU</li>
+                        <li class="lang-switcher__item">EN</li>
+                        <li class="lang-switcher__item">ES</li>
+                        <li class="lang-switcher__item">DE</li>
+                    </ul>
+                </div>
+
+
+                <a href="tel:+97144286160" class="header__contact link-dark">+971 4 428 61 60</a>
+
+
+                <a href="#" class="link-favorites">
+                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7484 19.3538C8.46358 18.0179 6.33801 16.4456 4.40978 14.6652C3.05414 13.3829 2.02211 11.8198 1.39273 10.0954C0.260151 6.75031 1.58308 2.92083 5.28539 1.78752C7.23117 1.19243 9.35626 1.53255 10.9959 2.70148C12.6361 1.53398 14.7605 1.19398 16.7064 1.78752C20.4087 2.92083 21.7411 6.75031 20.6086 10.0954C19.9792 11.8198 18.9471 13.3829 17.5915 14.6652C15.6633 16.4456 13.5377 18.0179 11.2529 19.3538L11.0054 19.5L10.7484 19.3538Z" stroke="#B0BCC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="link-favorites__qty">5</span>
+
+
+                </a>
+                
+                <button class="btn btn-darkgreen header__feed-btn" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                <div class="hamburger">
+                    <div class="hamburger__cross-line line-1"></div>
+                    <div class="hamburger__cross-line line-2"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="mob-menu-layer">
+        <div class="mob-menu">
+            
+            
+            <div class="mob-menu__content">
+                
+                
+                <nav class="mob-menu__nav">
+                    <ul class="mob-menu__list">                       
+
+                        <li class="mob-menu__item"><a href="sales.html" class="mob-menu__link  link-dark text-center">Покупки</a></li>
+                        <li class="mob-menu__item"><a href="rent.html" class="mob-menu__link  link-dark text-center">Аренда</a></li>
+                        <li class="mob-menu__item"><a href="new-buildings.html" class="mob-menu__link link-dark text-center">Новостройки</a></li>
+                        <li class="mob-menu__item"><a href="areas.html" class="mob-menu__link  link-dark text-center">Районы</a></li>                        
+                        <li class="mob-menu__item"><a href="brokers.html" class="mob-menu__link  link-dark text-center">Брокеры</a></li>
+                        <li class="mob-menu__item"><a href="blog.html" class="mob-menu__link link-dark text-center">Блог</a></li>
+                        <li class="mob-menu__item"><a href="about-us.html" class="mob-menu__link link-dark text-center">О нас</a></li>
+                    </ul>
+                </nav>
+
+                <div  class="mob-menu__bottom">
+                    <div class="mob-menu__tbottom">
+                        <div class="mob-menu__tbottom-left">
+                            <div class="lang-switcher">
+                                <div class="lang-switcher__outer-block">
+                                    <div class="lang-switcher__value-block">
+                                        <span class="lang-switcher__icon-value">
+                                            <img src="assets/img/icons/russian.svg" alt="">
+                                        </span>
+                                        
+                                    </div>                        
+                                </div>
+                                
+            
+                                <ul class="lang-switcher__list">
+                                    <li class="lang-switcher__item active">RU</li>
+                                    <li class="lang-switcher__item">EN</li>
+                                    <li class="lang-switcher__item">ES</li>
+                                    <li class="lang-switcher__item">DE</li>
+                                </ul>
+                            </div>
+    
+                            <div class="combo-select site-currency">
+                                <div class="combo-select__outer-box">
+                                    <div class="combo-select__current-value">USD</div>
+                                    <div class="combo-select__arrow">
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6L1 1" stroke="#B0BCC2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                    </div>
+                                </div>
+                                <div class="combo-select__drop">
+                                    <div class="combo-select__drop--scroll">
+                                        <ul>
+                                            <li>                                                
+                                                <label  class="combo-select__item-text">USD
+                                                    <input type="radio" name="order-by" data-value="USD" value="USD" class="combo-select__radio"  checked>
+                                                </label>
+                                            </li>
+            
+                                            <li>                                                
+                                                <label  class="combo-select__item-text">RUB
+                                                    <input type="radio" name="order-by" data-value="RUB" value="RUB" class="combo-select__radio"  >
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                        <div class="mob-menu__soc-links">
+                            <a href="#" target="_blank"><img src="assets/img/icons/telegram.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="assets/img/icons/instagram-footer.svg" alt=""></a>
+                        </div>
+                    </div>
+
+
+                    <div class="mob-menu__feed-btn-container">
+                        <button class="btn btn-darkgreen  btn-mob-100" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="about-title-section">
+            <div class="about-title-section__bg-block">
+                <img src="assets/img/logo.png" alt="" class="about-title-section__bb-logo">
+            </div>
+            <div class="about-title-section__title-block">
+                <img src="assets/img/logo.png" alt="" class="about-title-section__tb-logo">
+                <h1 class="title-lg ">Опыт, надежность и <br/>эксклюзивные предложения<br/> <span>от ведущих застройщиков</span></h1>
+            </div>
+        </section>
+
+        <section class="section" >
+            <div class="section-inner">
+                <div class="description-grid">
+                    <div class="description-grid__item about-description-item item-full-padding area-block-hover ">
+                        <div class="description-grid__text-block">
+                            <h3 class="title-lg mw-600">С 2016 года <br />успешно работаем <br />на международном <br />рынке недвижимости</h3>                                                    
+                        </div>
+                        
+                        <div class="description-grid__text-block ">
+                            <p class="text-1 mw-320">В нашем составе пять компаний <br />с офисами в Дубае, Абу-Даби и Вене</p>
+                        </div>
+                    </div>
+    
+                    <div class="description-grid__item about-description-item item-full-padding area-block-hover">
+                        <div class="description-grid__text-block ">
+                            <p class="text-1 mb-10">Наш опыт и надежность позволяют нам предоставлять</p>
+                            <h3 class="title-lg mw-600">профессиональные <br />консультации и <br />поддержку на всех <br />этапах сделки</h3>
+                            
+                            
+                        </div>
+
+                        <div class="description-grid__text-block">
+                            <p class="text-1 mw-320">обеспечивая безопасность <br />и уверенность нашим клиентам</p>         
+                        </div>
+                        
+                        
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-inner">
+                <div class="nb-banner-block">
+                    <div class="nb-banner-block__text-block about">
+                        <div class="nb-banner-block__title mb-15">
+                            <h2 class="title-md mw-100 about-title-banner">Эксклюзивный доступ <br />
+                                к самым выгодным предложениям</h2>
+    
+                            <img src="assets/img/about/title-decoration.svg" alt="" class="nb-banner-block__title-decor about">
+                        </div>
+    
+                        <p class="text-2 fw-300">на первичном и вторичном рынках недвижимости ОАЭ</p>
+                    </div>
+                    <div class="nb-banner-block__img-block about prop-img-container">
+                        <img src="assets/img/about/banner.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="section-inner">
+                <div class="our-profi area-block-hover">
+                    <div class="our-profi__text-block text-block-padding">
+                        <div class="mb-45">
+                            <h2 class="title-lg mw-100 mb-15">50+ топовых, <br/>квалифицированных <br/>специалистов</h2>
+
+                            <p class="text-1">которые общаются с клиентами <br /> на более чем 15 языках.</p>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-darkgreen btn-mob-100" data-hystmodal="#feedback-modal">Получить консультацию</button>
+                        </div>
+                    </div>
+
+                    <div class="our-profi__img-block">
+                        <div>
+                            <picture>
+                                <source srcset="assets/img/about/profi/1.png" media="(min-width: 900px)" />
+                                <img src="assets/img/about/profi/1-mob.png" alt="" class="" />
+                            </picture>
+                        </div>
+
+                        <div>
+                            <picture>
+                                <source srcset="assets/img/about/profi/2.png" media="(min-width: 900px)" />
+                                <img src="assets/img/about/profi/2-mob.png" alt="" class="" />
+                            </picture>
+                        </div>
+
+                        <div>
+                            <picture>
+                                <source srcset="assets/img/about/profi/3.png" media="(min-width: 900px)" />
+                                <img src="assets/img/about/profi/3-mob.png" alt="" class="" />
+                            </picture>
+                        </div>
+                        
+                          
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+@@include('templates/footer.html')

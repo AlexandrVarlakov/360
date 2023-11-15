@@ -1020,6 +1020,14 @@
     }
 }
 
+.description-grid__item.about-description-item{
+    row-gap: 16px;
+
+
+    @include calculateResponsiveProperty(390px, 900px, 1rem, 4rem, row-gap );
+    @include calculateResponsiveProperty(901px, 1920px, 4rem, 11.25rem, row-gap );
+}
+
 .description-grid__img-block{
     position: relative;
     padding-bottom: 114.285714286%;
