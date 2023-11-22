@@ -147,7 +147,7 @@
 }
 
 .nb-banner-block__text-block.about{
-    @include calculateResponsiveProperty(768px, 1920px, 4rem, 9.375rem, padding-top);
+    @include calculateResponsiveProperty(640px, 1920px, 7rem, 9.375rem, padding-top);
 }
 
 .nb-banner-block__img-block{
@@ -190,9 +190,11 @@
     img{
         object-fit: cover;
         object-position: left bottom;
-
+        @media (min-width: 768px){
+            object-position: 50% 26%;
+        }
         @media (min-width: 1200px){
-            object-position: center center;
+            //object-position: center center;
         }
     }
 }

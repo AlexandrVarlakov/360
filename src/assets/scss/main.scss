@@ -386,6 +386,15 @@ label{
 }
 
 
+img[data-lazy-src]:not(.lazyloaded) {
+	max-width: 1px !important;
+}
+.linguise_switcher_dropdown li.linguise_current .linguise_current_lang {
+	border: none !important;
+}
+.linguise_current {
+	border-bottom: none !important;
+}
 .section.section-gallery{
 	padding-right: 0 !important;
 
@@ -424,6 +433,17 @@ label{
 	}
 }
 
+.modal-body.feedback-modal{
+	overflow-x: hidden;
+}
+
+.header{
+	z-index: 19000;
+}
+
+.mob-menu-layer{
+	z-index: 18000;
+}
 @import 'units/header';
 @import 'units/footer';
 @import 'units/menu';

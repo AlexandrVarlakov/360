@@ -35,6 +35,12 @@
         }
         
     }
+
+
+
+
+
+
    
     .s-catalog-form__text-block {
         .title-md{
@@ -125,3 +131,16 @@
         position: relative;
         z-index: 30;
     }
+
+
+
+.s-catalog-form.fin-mod{
+    .s-catalog-form__inner {
+       
+        @media (min-width: 1700px){
+            grid-template-columns: 720px 720px;
+            justify-content: space-between;
+        }
+        
+    }
+}

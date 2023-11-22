@@ -874,6 +874,18 @@ label {
   z-index: 10000 !important;
 }
 
+img[data-lazy-src]:not(.lazyloaded) {
+  max-width: 1px !important;
+}
+
+.linguise_switcher_dropdown li.linguise_current .linguise_current_lang {
+  border: none !important;
+}
+
+.linguise_current {
+  border-bottom: none !important;
+}
+
 .section.section-gallery {
   padding-right: 0 !important;
 }
@@ -910,6 +922,18 @@ label {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.modal-body.feedback-modal {
+  overflow-x: hidden;
+}
+
+.header {
+  z-index: 19000;
+}
+
+.mob-menu-layer {
+  z-index: 18000;
 }
 
 .header {
@@ -1264,6 +1288,10 @@ label {
   }
 }
 
+.lccaret.top path {
+  fill: #B0BCC2;
+}
+
 .header.index-header:not(.scrolled, .menu-active) .desktop-menu__link {
   color: #fff;
 }
@@ -1292,6 +1320,9 @@ label {
   background-color: #E7B05F;
 }
 .header.index-header:not(.scrolled, .menu-active) .link-favorites:hover path {
+  fill: #fff;
+}
+.header.index-header:not(.scrolled, .menu-active) .lccaret.top path {
   fill: #fff;
 }
 .header.index-header:not(.scrolled, .menu-active) .hamburger__cross-line {
@@ -3158,6 +3189,15 @@ label {
 .s-catalog__top {
   position: relative;
   z-index: 30;
+}
+
+@media (min-width: 1700px) {
+  .s-catalog-form.fin-mod .s-catalog-form__inner {
+    grid-template-columns: 720px 720px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .s-top-consultation__inner {
@@ -6669,9 +6709,9 @@ label {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .nb-banner-block__text-block.about {
-    padding-top: calc(4rem + (1vw - 7.68px) * 7.4652777778);
+    padding-top: calc(7rem + (1vw - 6.4px) * 2.96875);
   }
 }
 @media (min-width: 1920px) {
@@ -6734,13 +6774,12 @@ label {
   -o-object-position: left bottom;
      object-position: left bottom;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .nb-banner-block__img-block.about img {
-    -o-object-position: center center;
-       object-position: center center;
+    -o-object-position: 50% 26%;
+       object-position: 50% 26%;
   }
 }
-
 .nb-banner-block__title {
   position: relative;
   display: inline-block;

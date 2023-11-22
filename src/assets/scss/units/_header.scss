@@ -235,7 +235,11 @@
     }
 }
 
-
+.lccaret.top{
+    path{
+        fill: #B0BCC2;
+    }
+}
 .header.index-header:not(.scrolled, .menu-active){
     .desktop-menu__link{
         color: #fff;
@@ -279,7 +283,11 @@
             
         }
     }
-
+    .lccaret.top{
+        path{
+            fill: #fff;
+        }
+    }
     .hamburger__cross-line{
         background-color: #fff;
     }

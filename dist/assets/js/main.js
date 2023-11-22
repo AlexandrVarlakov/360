@@ -419,6 +419,37 @@ form.onsubmit = function(event){
     
 }
 
+/*
+if(typeof window.obUnloader != 'object')
+    {
+        window.obUnloader = () => {
+            feedbackform.open('#stop-modal');
+        }
+    }
+
+*/
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+document.body.addEventListener('mouseout', function(event){
+    //alert(document.documentElement.clientWidth)
+
+    let y  =  event.clientY;
+    if ( document.documentElement.clientWidth > 1200 && y <= 0 ){
+        if ( getCookie('closemodal') ){
+
+        } else{
+            document.cookie = "closemodal=true; max-age=10800";
+            feedbackform.open('#stop-modal');
+        }
+        
+        //
+    }
+    //
+})
 
 let getCatalogForm = document.querySelector('.s-catalog-form__form');
 
