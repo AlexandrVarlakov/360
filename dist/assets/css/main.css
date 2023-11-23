@@ -984,6 +984,11 @@ img[data-lazy-src]:not(.lazyloaded) {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (min-width: 1260px) {
+  .header__content {
+    gap: 30px;
+  }
+}
 
 .header__left-block {
   display: -webkit-box;
@@ -992,6 +997,16 @@ img[data-lazy-src]:not(.lazyloaded) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 1260px) {
+  .header__left-block {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: calc(50% + 5vw);
+  }
 }
 
 .header__right-block {
@@ -1043,6 +1058,12 @@ img[data-lazy-src]:not(.lazyloaded) {
     -webkit-column-gap: 1.875rem;
        -moz-column-gap: 1.875rem;
             column-gap: 1.875rem;
+  }
+}
+@media (min-width: 1260px) {
+  .header__right-block {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
 }
 
@@ -1269,6 +1290,13 @@ img[data-lazy-src]:not(.lazyloaded) {
   display: none;
 }
 
+.header > .dotts-menu-container .desktop-menu__link {
+  color: #1E1E1E !important;
+}
+.header > .dotts-menu-container .desktop-menu__link:hover {
+  color: #E7B05F !important;
+}
+
 .header.about-header .white-logo {
   display: none;
 }
@@ -1292,75 +1320,78 @@ img[data-lazy-src]:not(.lazyloaded) {
   fill: #B0BCC2;
 }
 
-.header.index-header:not(.scrolled, .menu-active) .desktop-menu__link {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .desktop-menu__link {
   color: #fff;
 }
-.header.index-header:not(.scrolled, .menu-active) .desktop-menu__link:hover {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .desktop-menu__link:hover {
   color: #E7B05F;
 }
-.header.index-header:not(.scrolled, .menu-active) .header__contact {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .btn-dotted-menu path {
+  fill: #fff;
+}
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__contact {
   color: #fff;
 }
-.header.index-header:not(.scrolled, .menu-active) .header__contact:hover {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__contact:hover {
   color: #E7B05F;
 }
-.header.index-header:not(.scrolled, .menu-active) .header__feed-btn {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__feed-btn {
   color: #1E1E1E !important;
   background-color: #fff !important;
 }
-.header.index-header:not(.scrolled, .menu-active) .header__feed-btn:hover {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__feed-btn:hover {
   background-color: #1E1E1E !important;
   color: #fff !important;
 }
-.header.index-header:not(.scrolled, .menu-active) .link-favorites path {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .link-favorites path {
   stroke: #fff;
   fill: transparent;
 }
-.header.index-header:not(.scrolled, .menu-active) .link-favorites .link-favorites__qty {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .link-favorites .link-favorites__qty {
   background-color: #E7B05F;
 }
-.header.index-header:not(.scrolled, .menu-active) .link-favorites:hover path {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .link-favorites:hover path {
   fill: #fff;
 }
-.header.index-header:not(.scrolled, .menu-active) .lccaret.top path {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .lccaret.top path {
   fill: #fff;
 }
-.header.index-header:not(.scrolled, .menu-active) .hamburger__cross-line {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .hamburger__cross-line {
   background-color: #fff;
 }
 
 @media (min-width: 768px) {
-  .header.about-header:not(.scrolled, .menu-active) .desktop-menu__link {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .desktop-menu__link {
     color: #fff;
   }
-  .header.about-header:not(.scrolled, .menu-active) .desktop-menu__link:hover {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .desktop-menu__link:hover {
     color: #E7B05F;
   }
-  .header.about-header:not(.scrolled, .menu-active) .header__contact {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__contact {
     color: #fff;
   }
-  .header.about-header:not(.scrolled, .menu-active) .header__contact:hover {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__contact:hover {
     color: #E7B05F;
   }
-  .header.about-header:not(.scrolled, .menu-active) .header__feed-btn {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__feed-btn {
     color: #1E1E1E !important;
     background-color: #fff !important;
   }
-  .header.about-header:not(.scrolled, .menu-active) .header__feed-btn:hover {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .header__feed-btn:hover {
     background-color: #1E1E1E !important;
     color: #fff !important;
   }
-  .header.about-header:not(.scrolled, .menu-active) .link-favorites path {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .link-favorites path {
     stroke: #fff;
     fill: transparent;
   }
-  .header.about-header:not(.scrolled, .menu-active) .link-favorites .link-favorites__qty {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .link-favorites .link-favorites__qty {
     background-color: #E7B05F;
   }
-  .header.about-header:not(.scrolled, .menu-active) .link-favorites:hover path {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .link-favorites:hover path {
     fill: #fff;
   }
-  .header.about-header:not(.scrolled, .menu-active) .hamburger__cross-line {
+  .header.about-header:not(.scrolled, .menu-active, .dotts-menu-open) .hamburger__cross-line {
     background-color: #fff;
   }
 }
@@ -1375,14 +1406,14 @@ img[data-lazy-src]:not(.lazyloaded) {
   display: none;
 }
 
-.header.about-header.scrolled, .header.about-header.menu-active {
+.header.about-header.scrolled, .header.about-header.menu-active, .header.dotts-menu-open {
   background: #fff;
 }
 @media (min-width: 768px) {
-  .header.about-header.scrolled .dark-logo, .header.about-header.menu-active .dark-logo {
+  .header.about-header.scrolled .dark-logo, .header.about-header.menu-active .dark-logo, .header.dotts-menu-open .dark-logo {
     display: initial;
   }
-  .header.about-header.scrolled .white-logo, .header.about-header.menu-active .white-logo {
+  .header.about-header.scrolled .white-logo, .header.about-header.menu-active .white-logo, .header.dotts-menu-open .white-logo {
     display: none;
   }
 }
@@ -1406,10 +1437,10 @@ img[data-lazy-src]:not(.lazyloaded) {
           transform: translate(0, calc(100% + 5px));
 }
 
-.header.index-header:not(.scrolled, .menu-active) .combo-select__current-value {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) .combo-select__current-value {
   color: #fff;
 }
-.header.index-header:not(.scrolled, .menu-active) path {
+.header.index-header:not(.scrolled, .menu-active, .dotts-menu-open) path {
   stroke: #fff;
 }
 
@@ -1618,13 +1649,118 @@ img[data-lazy-src]:not(.lazyloaded) {
   }
 }
 
+.ttt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .desktop-menu {
   display: none;
 }
 @media (min-width: 1260px) {
   .desktop-menu {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 32px;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
+}
+
+.btn-dotted-menu {
+  line-height: 1;
+  display: none;
+}
+
+@media (min-width: 1260px) {
+  .has-hidden-menu-items .btn-dotted-menu {
+    display: initial;
+  }
+}
+
+.header:not(.has-hidden-menu-items) .dotts-menu-container {
+  display: none !important;
+}
+
+.dotts-menu-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  -webkit-transform: translate(0, calc(100% - 15px));
+      -ms-transform: translate(0, calc(100% - 15px));
+          transform: translate(0, calc(100% - 15px));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #fff;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(176, 188, 194, 0.3);
+  border-top: 1px solid rgba(176, 188, 194, 0.3);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  opacity: 0;
+}
+.dotts-menu-container .desktop-menu {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+@media (min-width: 1260px) {
+  .dotts-menu-open .dotts-menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: showdottedmenu 300ms forwards;
+            animation: showdottedmenu 300ms forwards;
+  }
+}
+
+@-webkit-keyframes showdottedmenu {
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+
+@keyframes showdottedmenu {
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+.desktop-menu__item.hidden {
+  display: none;
+}
+
+.desktop-menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .desktop-menu__list {
@@ -1634,6 +1770,9 @@ img[data-lazy-src]:not(.lazyloaded) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (min-width: 1260px) {
   .desktop-menu__list {
@@ -1648,6 +1787,10 @@ img[data-lazy-src]:not(.lazyloaded) {
        -moz-column-gap: 1.875rem;
             column-gap: 1.875rem;
   }
+}
+
+.desktop-menu__link {
+  white-space: nowrap;
 }
 
 .hamburger {

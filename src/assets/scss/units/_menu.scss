@@ -1,18 +1,111 @@
+.ttt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
+
 .desktop-menu{
     display: none;
 
     @media (min-width: 1260px){
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        overflow: hidden;
+        flex-grow: 1;
     }
 }
 
+.btn-dotted-menu{
+    line-height: 1;
+    
+
+    display: none;
+
+    
+}
+
+
+.has-hidden-menu-items{
+    .btn-dotted-menu{
+        @media (min-width: 1260px){
+            display: initial;
+        }
+    }
+}
+
+
+
+.header:not(.has-hidden-menu-items){
+    
+    .dotts-menu-container{
+        display: none !important;
+    }
+}
+
+
+.dotts-menu-container{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translate(0, calc(100% - 15px));
+    
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #fff;    
+    display: none;
+    justify-content: center;
+    border-bottom: 1px solid rgba(176,188,194,.3);
+    border-top: 1px solid rgba(176,188,194,.3);
+    transition: 300ms;
+    opacity: 0;
+    
+    .desktop-menu{
+        flex-grow: 0;
+    }
+    
+}
+.dotts-menu-open{
+    .dotts-menu-container{
+        @media (min-width: 1260px){
+            display: flex;
+            animation: showdottedmenu 300ms forwards;
+        }
+    }
+}
+@keyframes showdottedmenu{
+    to{
+        opacity: 1;
+        transform: translate(0, 100% );
+
+    }
+}
+.desktop-menu__item.hidden{
+    display: none;
+}
+
+.desktop-menu-wrap{
+    display: flex;
+    align-items: center;
+
+    
+}
 .desktop-menu__list{
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
     @include calculateResponsiveProperty(1260px, 1920px, 1.25rem, 1.875rem, column-gap );
 }
 
+.desktop-menu__link{
+    white-space: nowrap;
+}
+.menu-list-wrap{
+    //width: 100%;
+}
 .hamburger{
     width: 26px;
     height: 26px;

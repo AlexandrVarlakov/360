@@ -7,6 +7,124 @@ const header = document.querySelector('.header');
 
 let vh = window.innerHeight * 0.01;
 
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    const desktopmenu = document.querySelector('.header__content .desktop-menu');
+    const menuWrap = desktopmenu.querySelector('.desktop-menu__list');
+    
+    window.addEventListener('scroll', function(){
+        header.classList.remove('dotts-menu-open')
+    })
+
+    const btnOpenDottedMenu = document.querySelector('.btn-dotted-menu');
+
+
+    btnOpenDottedMenu.addEventListener('click', function(){
+        if ( !header.classList.contains('dotts-menu-open') ){
+            header.classList.add('dotts-menu-open')
+        } else {
+            header.classList.remove('dotts-menu-open')
+        }
+    })
+
+
+  
+    let menuWidth =  desktopmenu.offsetWidth;
+    let menuWrapWidth = menuWrap.offsetWidth;
+  
+    const items = desktopmenu.querySelectorAll('.header__content .desktop-menu__item') ;
+    
+    const dottedMenuItems = document.querySelectorAll('.dotts-menu-container .desktop-menu__item');
+  
+    
+
+    if ( document.documentElement.clientWidth > 1259 ){
+      
+      let itemPos = items.length - 1;
+    
+      while (menuWrapWidth > (menuWidth - 20) ){
+          
+          items[itemPos].classList.add('hidden');
+          dottedMenuItems[itemPos].classList.remove('hidden');
+          itemPos--;
+          menuWrapWidth = menuWrap.offsetWidth;
+      }
+      let allDottedItems = document.querySelectorAll('.dotts-menu-container .desktop-menu__item');
+      let hiddenDottedItems = document.querySelectorAll('.dotts-menu-container .desktop-menu__item.hidden');
+
+      if (allDottedItems.length === hiddenDottedItems.length ){
+        
+        header.classList.remove('has-hidden-menu-items')
+      } else{
+        header.classList.add('has-hidden-menu-items');
+      }
+
+    }
+  
+  
+  
+    window.addEventListener('resize', function(){
+      if ( document.documentElement.clientWidth > 1259 ){
+        let menuWidth =  desktopmenu.offsetWidth;
+        
+        items.forEach(item => {
+          item.classList.remove('hidden')
+        })
+  
+        dottedMenuItems.forEach(item => {
+          item.classList.add('hidden')
+        })
+  
+        
+        menuWrapWidth = menuWrap.offsetWidth;
+        let itemPos = items.length - 1;
+      
+        while (menuWrapWidth > (menuWidth - 20)){
+          
+  
+            items[itemPos].classList.add('hidden');
+            dottedMenuItems[itemPos].classList.remove('hidden');
+            itemPos--;
+            menuWrapWidth = menuWrap.offsetWidth;
+        }
+        
+            let allDottedItems = document.querySelectorAll('.dotts-menu-container .desktop-menu__item');
+            let hiddenDottedItems = document.querySelectorAll('.dotts-menu-container .desktop-menu__item.hidden');
+    
+            if (allDottedItems.length === hiddenDottedItems.length ){
+            
+            header.classList.remove('has-hidden-menu-items')
+            } else{
+            header.classList.add('has-hidden-menu-items');
+            }
+      }
+  
+  
+  
+    })
+    
+  
+  
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 window.addEventListener('resize', () => {
   // We execute the same script as before
